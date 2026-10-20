@@ -1,0 +1,41 @@
+{
+  "utc": "2026-10-20T00:57:04.196Z",
+  "requested_seconds": 600.0,
+  "actual_elapsed_seconds": 600.0126096250024,
+  "provider": "fixture",
+  "real_wall_clock": true,
+  "inferences": 30,
+  "artifact_count": 1,
+  "interruptions": 1,
+  "control_timeline": [
+    {
+      "event": "new_document",
+      "elapsed": 90.00787216699973,
+      "control": "running"
+    },
+    {
+      "event": "pause",
+      "elapsed": 270.00271633399825,
+      "control": "paused"
+    },
+    {
+      "event": "resume",
+      "elapsed": 360.00693854199926,
+      "control": "running"
+    },
+    {
+      "event": "status",
+      "elapsed": 480.0021584589995,
+      "control": "running"
+    },
+    {
+      "event": "stop",
+      "elapsed": 600.0066457919966,
+      "control": "stopped"
+    }
+  ],
+  "shutdown_joined": true,
+  "limitations": "Local fixture provider; not a multi-day live-model soak.",
+  "restart_retains_stop": true,
+  "restart_artifacts": 1
+}

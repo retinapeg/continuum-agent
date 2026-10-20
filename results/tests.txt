@@ -1,0 +1,33 @@
+test_constant_paired_interval (test_continuum.BenchmarkTests.test_constant_paired_interval) ... ok
+test_invalid_configuration (test_continuum.BenchmarkTests.test_invalid_configuration) ... ok
+test_reproducible_artifacts (test_continuum.BenchmarkTests.test_reproducible_artifacts) ... ok
+test_all_policies_same_event_aligned_completion (test_continuum.SimulationTests.test_all_policies_same_event_aligned_completion) ... ok
+test_cancellation_precedes_same_time_decision (test_continuum.SimulationTests.test_cancellation_precedes_same_time_decision) ... ok
+test_cost_identity (test_continuum.SimulationTests.test_cost_identity) ... ok
+test_database_contains_complete_trace_and_refuses_reuse (test_continuum.SimulationTests.test_database_contains_complete_trace_and_refuses_reuse) ... ok
+test_deadline_is_inclusive (test_continuum.SimulationTests.test_deadline_is_inclusive) ... ok
+test_deterministic_scenarios_and_runs (test_continuum.SimulationTests.test_deterministic_scenarios_and_runs) ... ok
+test_false_positive_and_retry (test_continuum.SimulationTests.test_false_positive_and_retry) ... ok
+test_memory_control_all_policies (test_continuum.SimulationTests.test_memory_control_all_policies) ... ok
+test_periodic_can_beat_adaptive_precision (test_continuum.SimulationTests.test_periodic_can_beat_adaptive_precision) ... ok
+test_quiet_goal_hand_calculated (test_continuum.SimulationTests.test_quiet_goal_hand_calculated) ... ok
+test_activation_changes_idle_schedule (test_continuum.StateTests.test_activation_changes_idle_schedule) ... ok
+test_exact_decay_and_fractional_time (test_continuum.StateTests.test_exact_decay_and_fractional_time) ... ok
+test_partition_invariance (test_continuum.StateTests.test_partition_invariance) ... ok
+test_reject_time_reversal (test_continuum.StateTests.test_reject_time_reversal) ... ok
+test_action_time_prevents_late_ingestion (test_continuum.StorageTests.test_action_time_prevents_late_ingestion) ... ok
+test_cancel_blocks_actions (test_continuum.StorageTests.test_cancel_blocks_actions) ... ok
+test_conflicting_id_rejected (test_continuum.StorageTests.test_conflicting_id_rejected) ... ok
+test_duplicate_is_noop (test_continuum.StorageTests.test_duplicate_is_noop) ... ok
+test_failed_action_preserves_state (test_continuum.StorageTests.test_failed_action_preserves_state) ... ok
+test_failed_ingestion_rolls_back (test_continuum.StorageTests.test_failed_ingestion_rolls_back) ... ok
+test_out_of_order_event_rejected (test_continuum.StorageTests.test_out_of_order_event_rejected) ... ok
+test_reopen_preserves_memory_state_and_actions (test_continuum.StorageTests.test_reopen_preserves_memory_state_and_actions) ... ok
+test_retry_cooldown_and_no_duplicate_success (test_continuum.StorageTests.test_retry_cooldown_and_no_duplicate_success) ... ok
+test_revision_expiry_and_confidence (test_continuum.StorageTests.test_revision_expiry_and_confidence) ... ok
+test_unknown_event_rejected (test_continuum.StorageTests.test_unknown_event_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 0.346s
+
+OK

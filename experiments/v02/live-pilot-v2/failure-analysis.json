@@ -1,0 +1,40 @@
+{
+  "call_failures": [
+    {
+      "unit": "delayed_dependencies-101-r0-C-b6",
+      "created": 42.0,
+      "status": "outcome-unknown",
+      "error": "total provider output limit exceeded"
+    },
+    {
+      "unit": "delayed_dependencies-101-r0-E-b6",
+      "created": 0.0,
+      "status": "failed",
+      "error": "model slot unavailable or cancelled"
+    },
+    {
+      "unit": "document_update-101-r0-C-b6",
+      "created": 42.0,
+      "status": "outcome-unknown",
+      "error": "total provider output limit exceeded"
+    },
+    {
+      "unit": "document_update-101-r0-D-b6",
+      "created": 12.0,
+      "status": "failed",
+      "error": "unexpected ambient tool request"
+    },
+    {
+      "unit": "document_update-101-r0-D-b6",
+      "created": 72.0,
+      "status": "outcome-unknown",
+      "error": "total provider output limit exceeded"
+    }
+  ],
+  "taxonomy": {
+    "total provider output limit exceeded": 3,
+    "model slot unavailable or cancelled": 1,
+    "unexpected ambient tool request": 1
+  },
+  "realized_D_E_schedules": []
+}

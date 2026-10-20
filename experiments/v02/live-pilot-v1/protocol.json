@@ -1,0 +1,317 @@
+{
+  "bootstrap": {
+    "cluster": "family-seed scenario, repetitions averaged first",
+    "draws": 2000,
+    "seed": 719
+  },
+  "budgets": [
+    4
+  ],
+  "conditions": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "context_budget": 18000,
+  "created_at": "2026-10-20T00:27:59.321Z",
+  "environment": {
+    "cli_version": "2.1.236 (Claude Code)",
+    "jsonschema": "4.26.0",
+    "python": "3.13.15 (main, Aug  5 2026, 12:25:43) [Clang 21.0.0 (clang-2100.1.1.101)]"
+  },
+  "limits": {
+    "campaign_seconds": 7200,
+    "concurrency": 2,
+    "deadline_seconds": 90,
+    "output_bytes": 180000,
+    "output_tokens": 3000,
+    "provider_calls": 2000,
+    "retries": 0
+  },
+  "live": true,
+  "provider": "claude",
+  "repetitions": 1,
+  "requested_model": "claude-sonnet-4-6",
+  "schedule": "public-prefix schedule v1, E identical to D; memory ablation separate",
+  "scoring": "opportunity temporal matching v1; all attempted units included; structured Status/Risk claims only",
+  "seeds": [
+    101
+  ],
+  "source_manifest": {
+    "continuum/research/__init__.py": "5b93a6783e26c9a717119a5e088780b6082e263198f4693ab1f1c0dc64f935cd",
+    "continuum/research/campaign.py": "4702a3a001f9b696fd97d31e0f1707c3a627cf40a5d8ab268e5edeeb13607ed1",
+    "continuum/research/scoring.py": "4ed95b95af40164519b220cf258c9bf75a55ba90f1d95bad8d3c0c70c9d43670",
+    "continuum/research/worlds.py": "41842c257e61a034078ee28867ece66542266643784ac829cd39ed98cd43511b",
+    "continuum/runtime/__init__.py": "82b81f77870e23e928fa964344da0fcbc572cb0d68659123e79e54a31bdd3085",
+    "continuum/runtime/__main__.py": "cf7390a2508a0fcad4777a4a629fc5212ab655cb45845975995f835676a834e3",
+    "continuum/runtime/capabilities.py": "db10c554ff02ca8c997f8437c0f12eadc9e94d10fbeea150b40b744032ce6e56",
+    "continuum/runtime/cli.py": "7e2a9e2a8e8bef950ca5bf3ed870b88a788ebee7680ce316be30de8eb72bd374",
+    "continuum/runtime/common.py": "2cbfb5857a2cd019f78cc3f9617de2957d060a6101dc87766f1067dc6f1c2e59",
+    "continuum/runtime/contracts.py": "1dd29c122d576d115bc8a22e8b64dc6c67d41afbd5eeb9d490ec1343a99d1b2e",
+    "continuum/runtime/database.py": "362e820e0c596f7ca8a676254610de1d5548fe38cef2ab4748513b8124a0cad6",
+    "continuum/runtime/dynamics.py": "d7d9c481c120466749e726fa101f44f7224d21a3489246fee82ea18b27d3a663",
+    "continuum/runtime/engine.py": "c8be0ae36cf923b633ee249723a84b859837f17dfc58d1d45694a63d8432007e",
+    "continuum/runtime/integration.py": "ec9f1dba3814b6bbcd3ac77f6e20621a3d428b03c41ffeba07eff8a8a673c8a3",
+    "continuum/runtime/memory.py": "cc1155012fe51a4c18d3f074ab04e644e466908bc21ef23e3ed8daed8738b400",
+    "continuum/runtime/notifications.py": "5551e43c76ed551cd3554fb5fb793fc12c2dbebea4da7f2aa9c41309b63807ac",
+    "continuum/runtime/providers.py": "d3c1584d668251b5fd426fd46f1677ac31c9b7c0153d1fb415ca56fdec59377a",
+    "continuum/runtime/quota.py": "cfde985abbf48ba4cbba0d963fef12589296f7a509d72c790bff4a91c892c0aa",
+    "continuum/runtime/routing.py": "02584f43ae3c6c003ed7dd0439aa622aa871357e05190c90a9a777e9069e9580",
+    "continuum/runtime/watcher.py": "f244452851482f52379a0d28a1b5b4cd25ee0b93364e5f0038de7efcdabd98ea",
+    "continuum/runtime/web.py": "2c5b0375fc62b24d9a0128d5e4b5a72c939ccd9c9a4ea5514dcd1e46988f5d54"
+  },
+  "split": "pilot",
+  "units": [
+    {
+      "budget": 4,
+      "condition": "B",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-101-r0-B-b4",
+      "repetition": 0,
+      "seed": 101
+    },
+    {
+      "budget": 4,
+      "condition": "A",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-101-r0-A-b4",
+      "repetition": 0,
+      "seed": 101
+    },
+    {
+      "budget": 4,
+      "condition": "D",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-101-r0-D-b4",
+      "repetition": 0,
+      "seed": 101
+    },
+    {
+      "budget": 4,
+      "condition": "C",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-101-r0-C-b4",
+      "repetition": 0,
+      "seed": 101
+    },
+    {
+      "budget": 4,
+      "condition": "E",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-101-r0-E-b4",
+      "repetition": 0,
+      "seed": 101
+    },
+    {
+      "budget": 4,
+      "condition": "B",
+      "family": "changed_instructions",
+      "id": "changed_instructions-101-r0-B-b4",
+      "repetition": 0,
+      "seed": 101
+    },
+    {
+      "budget": 4,
+      "condition": "A",
+      "family": "changed_instructions",
+      "id": "changed_instructions-101-r0-A-b4",
+      "repetition": 0,
+      "seed": 101
+    },
+    {
+      "budget": 4,
+      "condition": "D",
+      "family": "changed_instructions",
+      "id": "changed_instructions-101-r0-D-b4",
+      "repetition": 0,
+      "seed": 101
+    },
+    {
+      "budget": 4,
+      "condition": "C",
+      "family": "changed_instructions",
+      "id": "changed_instructions-101-r0-C-b4",
+      "repetition": 0,
+      "seed": 101
+    },
+    {
+      "budget": 4,
+      "condition": "E",
+      "family": "changed_instructions",
+      "id": "changed_instructions-101-r0-E-b4",
+      "repetition": 0,
+      "seed": 101
+    },
+    {
+      "budget": 4,
+      "condition": "B",
+      "family": "deadline_followup",
+      "id": "deadline_followup-101-r0-B-b4",
+      "repetition": 0,
+      "seed": 101
+    },
+    {
+      "budget": 4,
+      "condition": "A",
+      "family": "deadline_followup",
+      "id": "deadline_followup-101-r0-A-b4",
+      "repetition": 0,
+      "seed": 101
+    },
+    {
+      "budget": 4,
+      "condition": "D",
+      "family": "deadline_followup",
+      "id": "deadline_followup-101-r0-D-b4",
+      "repetition": 0,
+      "seed": 101
+    },
+    {
+      "budget": 4,
+      "condition": "C",
+      "family": "deadline_followup",
+      "id": "deadline_followup-101-r0-C-b4",
+      "repetition": 0,
+      "seed": 101
+    },
+    {
+      "budget": 4,
+      "condition": "E",
+      "family": "deadline_followup",
+      "id": "deadline_followup-101-r0-E-b4",
+      "repetition": 0,
+      "seed": 101
+    },
+    {
+      "budget": 4,
+      "condition": "B",
+      "family": "document_update",
+      "id": "document_update-101-r0-B-b4",
+      "repetition": 0,
+      "seed": 101
+    },
+    {
+      "budget": 4,
+      "condition": "A",
+      "family": "document_update",
+      "id": "document_update-101-r0-A-b4",
+      "repetition": 0,
+      "seed": 101
+    },
+    {
+      "budget": 4,
+      "condition": "D",
+      "family": "document_update",
+      "id": "document_update-101-r0-D-b4",
+      "repetition": 0,
+      "seed": 101
+    },
+    {
+      "budget": 4,
+      "condition": "C",
+      "family": "document_update",
+      "id": "document_update-101-r0-C-b4",
+      "repetition": 0,
+      "seed": 101
+    },
+    {
+      "budget": 4,
+      "condition": "E",
+      "family": "document_update",
+      "id": "document_update-101-r0-E-b4",
+      "repetition": 0,
+      "seed": 101
+    },
+    {
+      "budget": 4,
+      "condition": "B",
+      "family": "interrupted_work",
+      "id": "interrupted_work-101-r0-B-b4",
+      "repetition": 0,
+      "seed": 101
+    },
+    {
+      "budget": 4,
+      "condition": "A",
+      "family": "interrupted_work",
+      "id": "interrupted_work-101-r0-A-b4",
+      "repetition": 0,
+      "seed": 101
+    },
+    {
+      "budget": 4,
+      "condition": "D",
+      "family": "interrupted_work",
+      "id": "interrupted_work-101-r0-D-b4",
+      "repetition": 0,
+      "seed": 101
+    },
+    {
+      "budget": 4,
+      "condition": "C",
+      "family": "interrupted_work",
+      "id": "interrupted_work-101-r0-C-b4",
+      "repetition": 0,
+      "seed": 101
+    },
+    {
+      "budget": 4,
+      "condition": "E",
+      "family": "interrupted_work",
+      "id": "interrupted_work-101-r0-E-b4",
+      "repetition": 0,
+      "seed": 101
+    },
+    {
+      "budget": 4,
+      "condition": "B",
+      "family": "memory_revision",
+      "id": "memory_revision-101-r0-B-b4",
+      "repetition": 0,
+      "seed": 101
+    },
+    {
+      "budget": 4,
+      "condition": "A",
+      "family": "memory_revision",
+      "id": "memory_revision-101-r0-A-b4",
+      "repetition": 0,
+      "seed": 101
+    },
+    {
+      "budget": 4,
+      "condition": "D",
+      "family": "memory_revision",
+      "id": "memory_revision-101-r0-D-b4",
+      "repetition": 0,
+      "seed": 101
+    },
+    {
+      "budget": 4,
+      "condition": "C",
+      "family": "memory_revision",
+      "id": "memory_revision-101-r0-C-b4",
+      "repetition": 0,
+      "seed": 101
+    },
+    {
+      "budget": 4,
+      "condition": "E",
+      "family": "memory_revision",
+      "id": "memory_revision-101-r0-E-b4",
+      "repetition": 0,
+      "seed": 101
+    }
+  ],
+  "version": "continuum.protocol.v2.1",
+  "world_hashes": {
+    "changed_instructions-101": "a21b91ecb0316fb6dc5b0ce1a368b31412626cc7c73a413c4d319471f70e3867",
+    "deadline_followup-101": "7a568df88de787ff7d46a03f2c122992964296d9037caf41aeac8df1b20bcb7f",
+    "delayed_dependencies-101": "ecf826919a2acbc842f560db3c7aa090b941f4b09f39dd424fc8089b61783d5f",
+    "document_update-101": "ae0c6f135bbbfe24cda051c87c23925e7deecb7d4e9b354953fefb02069b3916",
+    "interrupted_work-101": "cfdc2f3d971c27ee70cd2af2728bb24692d1f1664afa83e5590ffce19ab8bbe3",
+    "memory_revision-101": "a130339f0275be4d98789e817d33b8fc30110b70044bae04a7d9ec3879b26f40"
+  }
+}

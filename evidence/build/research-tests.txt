@@ -1,0 +1,54 @@
+test_discrete_and_analytic_timestamp_control (test_core.DynamicsTests.test_discrete_and_analytic_timestamp_control) ... ok
+test_long_gap_finite_bounded (test_core.DynamicsTests.test_long_gap_finite_bounded) ... ok
+test_reversal_and_nonfinite (test_core.DynamicsTests.test_reversal_and_nonfinite) ... ok
+test_semigroup_and_zero (test_core.DynamicsTests.test_semigroup_and_zero) ... ok
+test_conflicts_and_model_speculation (test_core.MemoryTests.test_conflicts_and_model_speculation) ... ok
+test_forget_purges_derived_context (test_core.MemoryTests.test_forget_purges_derived_context) ... ok
+test_preference_correction_preserves_history (test_core.MemoryTests.test_preference_correction_preserves_history) ... ok
+test_private_memory_excluded (test_core.MemoryTests.test_private_memory_excluded) ... ok
+test_retrieval_budget_receipt (test_core.MemoryTests.test_retrieval_budget_receipt) ... ok
+test_checkpoints (test_core.RecoveryTests.test_checkpoints) ... ok
+test_envelope_dedup_cursor_and_conflict (test_core.RecoveryTests.test_envelope_dedup_cursor_and_conflict) ... ok
+test_strict_envelope (test_core.RecoveryTests.test_strict_envelope) ... ok
+test_artifact_multistep_and_no_duplicate (test_core.RuntimeTests.test_artifact_multistep_and_no_duplicate) ... ok
+test_cancel_during_deliberation_discards (test_core.RuntimeTests.test_cancel_during_deliberation_discards) ... ok
+test_chat_and_persistent_goal (test_core.RuntimeTests.test_chat_and_persistent_goal) ... ok
+test_duplicate_and_out_of_order (test_core.RuntimeTests.test_duplicate_and_out_of_order) ... ok
+test_invalid_proposal_fails (test_core.RuntimeTests.test_invalid_proposal_fails) ... ok
+test_lock (test_core.RuntimeTests.test_lock) ... ok
+test_pause_resume_stop_persist (test_core.RuntimeTests.test_pause_resume_stop_persist) ... ok
+test_quiet_no_loop (test_core.RuntimeTests.test_quiet_no_loop) ... ok
+test_state_ablation_hides_features (test_core.RuntimeTests.test_state_ablation_hides_features) ... ok
+test_unknown_inference_not_blindly_retried (test_core.RuntimeTests.test_unknown_inference_not_blindly_retried) ... ok
+test_capability_injection_schema (test_core.SecurityTests.test_capability_injection_schema) ... ok
+test_outbox_quiet_budget_duplicate_muting (test_core.SecurityTests.test_outbox_quiet_budget_duplicate_muting) ... ok
+test_paths (test_core.SecurityTests.test_paths) ... ok
+test_prompt_injection_cannot_grant_permissions (test_core.SecurityTests.test_prompt_injection_cannot_grant_permissions) ... ok
+test_revocation_mid_tool (test_core.SecurityTests.test_revocation_mid_tool) ... ok
+test_source_forgery_rejected (test_core.SecurityTests.test_source_forgery_rejected) ... ok
+test_unannounced_document_denied (test_core.SecurityTests.test_unannounced_document_denied) ... ok
+test_blocked_stdin_deadline (test_regressions.ReviewRegressions.test_blocked_stdin_deadline) ... ok
+test_codex_fails_closed_before_inference (test_regressions.ReviewRegressions.test_codex_fails_closed_before_inference) ... ok
+test_derived_events_affect_state (test_regressions.ReviewRegressions.test_derived_events_affect_state) ... ok
+test_forget_same_topic_and_cached_source (test_regressions.ReviewRegressions.test_forget_same_topic_and_cached_source) ... ok
+test_historical_message_not_reply_exemption (test_regressions.ReviewRegressions.test_historical_message_not_reply_exemption) ... ok
+test_newest_document_version_wins (test_regressions.ReviewRegressions.test_newest_document_version_wins) ... ok
+test_nonfinite_proposal_denied (test_regressions.ReviewRegressions.test_nonfinite_proposal_denied) ... ok
+test_output_bound_and_eof (test_regressions.ReviewRegressions.test_output_bound_and_eof) ... ok
+test_private_fact_api_and_forged_control (test_regressions.ReviewRegressions.test_private_fact_api_and_forged_control) ... ok
+test_stop_survives_unknown_provider_outcome (test_regressions.ReviewRegressions.test_stop_survives_unknown_provider_outcome) ... ok
+test_real_runtime_fixture_episode_and_reuse (test_research.ResearchExecutionTests.test_real_runtime_fixture_episode_and_reuse) ... /Users/leo/Projects/continuum-agent/.venv/lib/python3.13/site-packages/jsonschema/_keywords.py:282: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x10a889a80>
+  def type(validator, types, instance, schema):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_null_and_duplicate (test_research.ScorerTests.test_null_and_duplicate) ... ok
+test_positive_and_early_false_positive (test_research.ScorerTests.test_positive_and_early_false_positive) ... ok
+test_reproducible_worlds_and_equal_ablation_schedule (test_research.ScorerTests.test_reproducible_worlds_and_equal_ablation_schedule) ... ok
+test_router_fixed_and_unknown_retry (test_research.ScorerTests.test_router_fixed_and_unknown_retry) ... ok
+test_stale_claims (test_research.ScorerTests.test_stale_claims) ... ok
+test_wrong_source_and_failed_effect (test_research.ScorerTests.test_wrong_source_and_failed_effect) ... ok
+
+----------------------------------------------------------------------
+Ran 46 tests in 0.723s
+
+OK

@@ -1,0 +1,22 @@
+{
+  "development_only": true,
+  "episodes": 6,
+  "results": {
+    "fixed-haiku": {
+      "valid": 1,
+      "verified_artifacts": 0,
+      "episodes": 2
+    },
+    "fixed-sonnet": {
+      "valid": 2,
+      "verified_artifacts": 0,
+      "episodes": 2
+    },
+    "router": {
+      "valid": 2,
+      "verified_artifacts": 1,
+      "episodes": 2
+    }
+  },
+  "conclusion": "Small operational check; no model-quality or router superiority inference."
+}

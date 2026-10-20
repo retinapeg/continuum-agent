@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "message_id",
+    "trace_id",
+    "correlation_id",
+    "causation_id",
+    "source",
+    "target",
+    "kind",
+    "created_at",
+    "deadline_at",
+    "idempotency_key",
+    "payload"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "leo.integration.v1"
+    },
+    "message_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "trace_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "correlation_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "target": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "idempotency_key": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "causation_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "kind": {
+      "enum": [
+        "task.requested",
+        "task.progress",
+        "task.completed",
+        "task.failed",
+        "task.cancel.requested",
+        "task.cancelled",
+        "approval.requested"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "Z$"
+    },
+    "deadline_at": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "Z$"
+        }
+      ]
+    },
+    "payload": {
+      "type": "object",
+      "maxProperties": 20
+    }
+  }
+}

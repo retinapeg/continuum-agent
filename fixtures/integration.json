@@ -1,0 +1,17 @@
+{
+  "schema_version": "leo.integration.v1",
+  "message_id": "6005b441-f3c2-44ca-b430-300a7b087498",
+  "trace_id": "f6779176-34dc-454d-b356-b65a31c09b06",
+  "correlation_id": "6005b441-f3c2-44ca-b430-300a7b087498",
+  "causation_id": null,
+  "source": "continuum",
+  "target": "exchange-local-stub",
+  "kind": "task.requested",
+  "created_at": "2026-10-20T00:21:06.781Z",
+  "deadline_at": null,
+  "idempotency_key": "6005b441-f3c2-44ca-b430-300a7b087498",
+  "payload": {
+    "title": "Fictional source-backed brief",
+    "artifact": "brief.md"
+  }
+}

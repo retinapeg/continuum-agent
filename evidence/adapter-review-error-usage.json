@@ -1,0 +1,60 @@
+{
+  "schema_version": "continuum.adapter_review.v1",
+  "created_at": "2026-10-20T01:05:03.760337Z",
+  "scope": "Read-only source and installed binary review plus one controlled fake subprocess. No model calls, source changes, or campaign changes.",
+  "provider_version": "Claude Code 2.1.236",
+  "source_hashes": {
+    "continuum/runtime/providers.py": "38b3238c71e19aa5db0bc79ec866e14fca122fada609c20e0180a063371f0259",
+    "continuum/runtime/engine.py": "479babacb6d4a11462061c44df14b416614859a7b22712b6055d6a95f7e7d6d8"
+  },
+  "installed_binary_sha256": "6bc4ba992d2786cbf0237c4453ca53c1fdf0c3b3d83ffa0025c0d8190ed27848",
+  "official_source": "https://code.claude.com/docs/en/agent-sdk/cost-tracking",
+  "findings": [
+    {
+      "id": "ERROR_USAGE_DROPPED",
+      "severity": "measurement_limitation",
+      "evidence": "Installed error-result schema and structured-output retry exhaustion emission contain usage, modelUsage, total_cost_usd, num_turns, duration_ms and duration_api_ms. Adapter raises on is_error before reading them; engine except stores only status/error."
+    },
+    {
+      "id": "CANCELLED_RESPONSE_USAGE_DROPPED",
+      "severity": "measurement_limitation",
+      "evidence": "Runtime control-epoch cancellation branch returns before persisting an available Response usage and elapsed receipt."
+    },
+    {
+      "id": "INVOCATIONS_ARE_NOT_INFERENCE_REQUESTS",
+      "severity": "reporting_limitation",
+      "evidence": "Structured-output retry exhaustion reports five internal attempts within a single CLI invocation. Quota counts invocations; auxiliary model usage can also occur."
+    }
+  ],
+  "fake_subprocess_check": {
+    "fixture_is_synthetic": true,
+    "result_subtype": "error_max_structured_output_retries",
+    "provided_usage": {
+      "input_tokens": 11,
+      "output_tokens": 13,
+      "cache_read_input_tokens": 17,
+      "cache_creation_input_tokens": 19
+    },
+    "provided_modelUsage_costUSD": 0.002,
+    "observed_exception": "ProviderError",
+    "observed_exception_attributes": {
+      "status": "failed",
+      "known_unsent": false
+    },
+    "usage_preserved": false
+  },
+  "after_campaign_fix": [
+    "Collect terminal result telemetry before inspecting is_error. Share normalization between success and failure.",
+    "Carry sanitized usage, reported primary identities, elapsed time, output bytes and terminal subtype on ProviderError; persist them in exception receipts.",
+    "Persist telemetry from completed but discarded/cancelled proposals without retaining raw proposal content.",
+    "Preserve missing telemetry as null with reasons; do not infer costs from five attempts or rerun old trials to backfill."
+  ],
+  "regression_tests": [
+    "Error result with usage and modelUsage persists metrics once while remaining failed.",
+    "Error result without usage but with modelUsage preserves known aggregate only.",
+    "Missing terminal result retains null totals, not zero.",
+    "Auxiliary model rows contribute usage without changing primary model identity.",
+    "Cancellation after receipt preserves telemetry and executes no proposal."
+  ],
+  "campaign_handling": "Keep frozen source and current raw results unchanged. Report failed-call usage as missing; aggregates are observed usage lower bounds when errors have lost telemetry. Lost terminal records cannot be reconstructed from progress counts."
+}

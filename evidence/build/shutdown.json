@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-20T01:59:34.215Z",
+  "owned_lock_keeper_pid": 16287,
+  "command_identity_checked": true,
+  "build_lock_released": true,
+  "main_campaign_process_exit": 0,
+  "post_repair_preflight_exit": 0,
+  "soak_shutdown_joined": true,
+  "unfamiliar_processes_signalled": false,
+  "changes_left_uncommitted": true
+}

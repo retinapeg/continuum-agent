@@ -1,0 +1,222 @@
+[
+  {
+    "id": "301-fixed-haiku",
+    "seed": 301,
+    "condition": "fixed-haiku",
+    "valid": false,
+    "verified_artifact": false,
+    "calls": [
+      {
+        "id": "4f15c022-dd0f-49fe-ab9a-92d61eb144fa",
+        "provider": "claude",
+        "requested_model": "claude-haiku-4-5-20251001",
+        "reported_model": null,
+        "status": "failed",
+        "input_hash": "5408e5aab7c88b2267d4c05285ae3fc17dba243b2c4f4f4e038d23fa4e34c0a6",
+        "output_hash": null,
+        "usage": null,
+        "error": "model slot unavailable or cancelled",
+        "elapsed": null,
+        "created": 100.0
+      }
+    ],
+    "routes": []
+  },
+  {
+    "id": "301-router",
+    "seed": 301,
+    "condition": "router",
+    "valid": true,
+    "verified_artifact": false,
+    "calls": [
+      {
+        "id": "d94d11e5-d8f8-4c45-a74c-e4b591a05f85",
+        "provider": "router",
+        "requested_model": "configured-rules-v1",
+        "reported_model": "claude-haiku-4-5-20251001",
+        "status": "succeeded",
+        "input_hash": "e988f69dc8402220b04815c0b7d826a383f512f881f4ddca51dead6270093ba4",
+        "output_hash": "a06b784366d8884f13beeefae63b2d51bc6af8d3ba7fc0d141639ea721e85501",
+        "usage": "{\"accounting_note\":\"Aggregate per-model rows once, including auxiliaries; never add final usage again.\",\"api_equivalent_usd\":0.009778,\"cache_creation\":0,\"cached_read\":0,\"calculation_version\":1,\"charge\":null,\"charge_reason\":\"subscription invoice not observed\",\"currency\":null,\"estimate_currency\":\"USD\",\"other\":null,\"output\":698,\"per_model_reported\":{\"claude-haiku-4-5-20251001\":{\"cacheCreationInputTokens\":0,\"cacheReadInputTokens\":0,\"canonicalModel\":\"claude-haiku-4-5\",\"contextWindow\":200000,\"costUSD\":0.009778,\"inputTokens\":6288,\"maxOutputTokens\":32000,\"outputTokens\":698,\"provider\":\"firstParty\",\"webSearchRequests\":0}},\"primary_usage\":{\"cache_creation\":0,\"cached_read\":0,\"output\":682,\"uncached_input\":3949},\"rate_date\":null,\"rate_source\":\"CLI-reported modelUsage estimates; underlying rates not independently supplied\",\"source\":\"modelUsage_aggregate\",\"uncached_input\":6288}",
+        "error": null,
+        "elapsed": 9.732627958001103,
+        "created": 100.0
+      }
+    ],
+    "routes": [
+      {
+        "attempt_index": 0,
+        "candidates": [
+          {
+            "model": "claude-haiku-4-5-20251001",
+            "provider": "claude",
+            "reliability": 0.6666666666666666,
+            "task_classes": [
+              "document",
+              "conversation"
+            ],
+            "verified": true
+          },
+          {
+            "model": "claude-sonnet-4-6",
+            "provider": "claude",
+            "reliability": 0.6666666666666666,
+            "task_classes": [
+              "document",
+              "conversation"
+            ],
+            "verified": true
+          }
+        ],
+        "chosen": {
+          "model": "claude-haiku-4-5-20251001",
+          "provider": "claude",
+          "reliability": 0.6666666666666666,
+          "task_classes": [
+            "document",
+            "conversation"
+          ],
+          "verified": true
+        },
+        "fallback": false,
+        "prior_checkpoint": 100.0,
+        "reason": "verified_task_support_then_measured_reliability",
+        "reliability_estimator": "(measured_valid_responses+1)/(measured_attempts+2)",
+        "type": "routing.selected"
+      }
+    ]
+  },
+  {
+    "id": "301-fixed-sonnet",
+    "seed": 301,
+    "condition": "fixed-sonnet",
+    "valid": true,
+    "verified_artifact": false,
+    "calls": [
+      {
+        "id": "83a985be-a69e-4c10-aa92-679d0f634305",
+        "provider": "claude",
+        "requested_model": "claude-sonnet-4-6",
+        "reported_model": "claude-sonnet-4-6",
+        "status": "succeeded",
+        "input_hash": "5390fa1dae2624fe1852bcfd4d412f0fc5a439f34b198e1e68b4fca0818da82d",
+        "output_hash": "b70f5cfb88f9e0625802b9c51ddf10869a84e5e7e7c3fe2b08e95e477e47fc00",
+        "usage": "{\"accounting_note\":\"Aggregate per-model rows once, including auxiliaries; never add final usage again.\",\"api_equivalent_usd\":0.0275858,\"cache_creation\":1954,\"cached_read\":1826,\"calculation_version\":1,\"charge\":null,\"charge_reason\":\"subscription invoice not observed\",\"currency\":null,\"estimate_currency\":\"USD\",\"other\":null,\"output\":875,\"per_model_reported\":{\"claude-haiku-4-5-20251001\":{\"cacheCreationInputTokens\":0,\"cacheReadInputTokens\":0,\"canonicalModel\":\"claude-haiku-4-5\",\"contextWindow\":200000,\"costUSD\":0.002435,\"inputTokens\":2350,\"maxOutputTokens\":32000,\"outputTokens\":17,\"provider\":\"firstParty\",\"webSearchRequests\":0},\"claude-sonnet-4-6\":{\"cacheCreationInputTokens\":1954,\"cacheReadInputTokens\":1826,\"canonicalModel\":\"claude-sonnet-4-6\",\"contextWindow\":200000,\"costUSD\":0.0251508,\"inputTokens\":3,\"maxOutputTokens\":32000,\"outputTokens\":858,\"provider\":\"firstParty\",\"webSearchRequests\":0}},\"primary_usage\":{\"cache_creation\":1954,\"cached_read\":1826,\"output\":858,\"uncached_input\":3},\"rate_date\":null,\"rate_source\":\"CLI-reported modelUsage estimates; underlying rates not independently supplied\",\"source\":\"modelUsage_aggregate\",\"uncached_input\":2353}",
+        "error": null,
+        "elapsed": 17.20308837500488,
+        "created": 100.0
+      }
+    ],
+    "routes": []
+  },
+  {
+    "id": "302-fixed-haiku",
+    "seed": 302,
+    "condition": "fixed-haiku",
+    "valid": true,
+    "verified_artifact": false,
+    "calls": [
+      {
+        "id": "8f56d760-2007-4906-8db1-c15dbb8903d3",
+        "provider": "claude",
+        "requested_model": "claude-haiku-4-5-20251001",
+        "reported_model": "claude-haiku-4-5-20251001",
+        "status": "succeeded",
+        "input_hash": "1c6ca05809e29e503f302df3d917f12a1e0a42ed2e942cdc5f65d0492cdb3d5e",
+        "output_hash": "960583549622dcee50a2eec5a54084fd6f3d3fbbdd112dcfca80755a61983bc0",
+        "usage": "{\"accounting_note\":\"Aggregate per-model rows once, including auxiliaries; never add final usage again.\",\"api_equivalent_usd\":0.009773,\"cache_creation\":0,\"cached_read\":0,\"calculation_version\":1,\"charge\":null,\"charge_reason\":\"subscription invoice not observed\",\"currency\":null,\"estimate_currency\":\"USD\",\"other\":null,\"output\":689,\"per_model_reported\":{\"claude-haiku-4-5-20251001\":{\"cacheCreationInputTokens\":0,\"cacheReadInputTokens\":0,\"canonicalModel\":\"claude-haiku-4-5\",\"contextWindow\":200000,\"costUSD\":0.009773,\"inputTokens\":6328,\"maxOutputTokens\":32000,\"outputTokens\":689,\"provider\":\"firstParty\",\"webSearchRequests\":0}},\"primary_usage\":{\"cache_creation\":0,\"cached_read\":0,\"output\":672,\"uncached_input\":3969},\"rate_date\":null,\"rate_source\":\"CLI-reported modelUsage estimates; underlying rates not independently supplied\",\"source\":\"modelUsage_aggregate\",\"uncached_input\":6328}",
+        "error": null,
+        "elapsed": 7.66079683299904,
+        "created": 100.0
+      }
+    ],
+    "routes": []
+  },
+  {
+    "id": "302-router",
+    "seed": 302,
+    "condition": "router",
+    "valid": true,
+    "verified_artifact": true,
+    "calls": [
+      {
+        "id": "bcd69e2d-42f3-43bd-a380-cdf3178d1b97",
+        "provider": "router",
+        "requested_model": "configured-rules-v1",
+        "reported_model": "claude-haiku-4-5-20251001",
+        "status": "succeeded",
+        "input_hash": "bbfe7cd1e4c09ddab9c3ef151b1e1250680136c4a4d7d86ffd548292a48f9b8f",
+        "output_hash": "fccb528ff595099b27ea37127f2d73c7b6e42f7d35ee64dd66276b01b7f35fc3",
+        "usage": "{\"accounting_note\":\"Aggregate per-model rows once, including auxiliaries; never add final usage again.\",\"api_equivalent_usd\":0.009708999999999999,\"cache_creation\":0,\"cached_read\":0,\"calculation_version\":1,\"charge\":null,\"charge_reason\":\"subscription invoice not observed\",\"currency\":null,\"estimate_currency\":\"USD\",\"other\":null,\"output\":675,\"per_model_reported\":{\"claude-haiku-4-5-20251001\":{\"cacheCreationInputTokens\":0,\"cacheReadInputTokens\":0,\"canonicalModel\":\"claude-haiku-4-5\",\"contextWindow\":200000,\"costUSD\":0.009708999999999999,\"inputTokens\":6334,\"maxOutputTokens\":32000,\"outputTokens\":675,\"provider\":\"firstParty\",\"webSearchRequests\":0}},\"primary_usage\":{\"cache_creation\":0,\"cached_read\":0,\"output\":657,\"uncached_input\":3972},\"rate_date\":null,\"rate_source\":\"CLI-reported modelUsage estimates; underlying rates not independently supplied\",\"source\":\"modelUsage_aggregate\",\"uncached_input\":6334}",
+        "error": null,
+        "elapsed": 8.142978333002247,
+        "created": 100.0
+      }
+    ],
+    "routes": [
+      {
+        "attempt_index": 0,
+        "candidates": [
+          {
+            "model": "claude-haiku-4-5-20251001",
+            "provider": "claude",
+            "reliability": 0.6666666666666666,
+            "task_classes": [
+              "document",
+              "conversation"
+            ],
+            "verified": true
+          },
+          {
+            "model": "claude-sonnet-4-6",
+            "provider": "claude",
+            "reliability": 0.6666666666666666,
+            "task_classes": [
+              "document",
+              "conversation"
+            ],
+            "verified": true
+          }
+        ],
+        "chosen": {
+          "model": "claude-haiku-4-5-20251001",
+          "provider": "claude",
+          "reliability": 0.6666666666666666,
+          "task_classes": [
+            "document",
+            "conversation"
+          ],
+          "verified": true
+        },
+        "fallback": false,
+        "prior_checkpoint": 100.0,
+        "reason": "verified_task_support_then_measured_reliability",
+        "reliability_estimator": "(measured_valid_responses+1)/(measured_attempts+2)",
+        "type": "routing.selected"
+      }
+    ]
+  },
+  {
+    "id": "302-fixed-sonnet",
+    "seed": 302,
+    "condition": "fixed-sonnet",
+    "valid": true,
+    "verified_artifact": false,
+    "calls": [
+      {
+        "id": "af7c3317-4683-4978-8517-b89235ef342e",
+        "provider": "claude",
+        "requested_model": "claude-sonnet-4-6",
+        "reported_model": "claude-sonnet-4-6",
+        "status": "succeeded",
+        "input_hash": "84136b22f9d2aae901a4f0ad1927b1b2c634e001923bec004e1727845ad4c7f6",
+        "output_hash": "12af01ddc051ade02c5149fa54d2f9dc830ae4a4421b707814a88bca67796421",
+        "usage": "{\"accounting_note\":\"Aggregate per-model rows once, including auxiliaries; never add final usage again.\",\"api_equivalent_usd\":0.0265518,\"cache_creation\":1952,\"cached_read\":1826,\"calculation_version\":1,\"charge\":null,\"charge_reason\":\"subscription invoice not observed\",\"currency\":null,\"estimate_currency\":\"USD\",\"other\":null,\"output\":807,\"per_model_reported\":{\"claude-haiku-4-5-20251001\":{\"cacheCreationInputTokens\":0,\"cacheReadInputTokens\":0,\"canonicalModel\":\"claude-haiku-4-5\",\"contextWindow\":200000,\"costUSD\":0.002433,\"inputTokens\":2348,\"maxOutputTokens\":32000,\"outputTokens\":17,\"provider\":\"firstParty\",\"webSearchRequests\":0},\"claude-sonnet-4-6\":{\"cacheCreationInputTokens\":1952,\"cacheReadInputTokens\":1826,\"canonicalModel\":\"claude-sonnet-4-6\",\"contextWindow\":200000,\"costUSD\":0.0241188,\"inputTokens\":3,\"maxOutputTokens\":32000,\"outputTokens\":790,\"provider\":\"firstParty\",\"webSearchRequests\":0}},\"primary_usage\":{\"cache_creation\":1952,\"cached_read\":1826,\"output\":790,\"uncached_input\":3},\"rate_date\":null,\"rate_source\":\"CLI-reported modelUsage estimates; underlying rates not independently supplied\",\"source\":\"modelUsage_aggregate\",\"uncached_input\":2351}",
+        "error": null,
+        "elapsed": 12.29504133300361,
+        "created": 100.0
+      }
+    ],
+    "routes": []
+  }
+]

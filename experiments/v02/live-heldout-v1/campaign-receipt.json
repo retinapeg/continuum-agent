@@ -1,0 +1,12 @@
+{
+  "kind": "experimental-agent-campaign",
+  "first_provider_attempt_utc": "2026-10-20T00:47:19.607Z",
+  "last_unit_result_utc": "2026-10-20T01:55:29.466176+00:00",
+  "observed_call_to_result_window_seconds": 4089.859176158905,
+  "timing_scope": "UTC first provider attempt to final unit result file; excludes setup/report generation, not a monotonic whole-build timer",
+  "attempted_episodes": 180,
+  "provider_attempts": 844,
+  "protocol_sha256": "bf7f4a978b916e74733e6d63d091b6b029550d59747c5364405c38bce6dc1509",
+  "actual_subscription_charge": null,
+  "charge_reason": "not observed; API-equivalent estimates are not invoices"
+}

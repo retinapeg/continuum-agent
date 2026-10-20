@@ -1,0 +1,9 @@
+--- baseline/config.json
++++ candidate/config.json
+@@ -1,5 +1,5 @@
+ {
+-  "reflection_seconds": 30,
++  "reflection_seconds": 60,
+   "period_seconds": 30,
+   "policy": "D"
+ }

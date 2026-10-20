@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-20T01:58:33.612Z",
+  "frozen_integrity": {
+    "live-heldout-v1": {
+      "protocol_checksum": "matches",
+      "archived_source_members": "match manifest"
+    },
+    "offline-final-v2": {
+      "protocol_checksum": "matches",
+      "archived_source_members": "match manifest"
+    }
+  },
+  "heldout_unit_databases_integrity_ok": 180,
+  "broken_root_document_links": [],
+  "script_syntax": "valid",
+  "project_ledger_invocations": 1041,
+  "earlier_preledger_preflights": 2,
+  "declared_project_ceiling": 2000,
+  "actual_subscription_charge": null
+}

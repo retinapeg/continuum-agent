@@ -1,0 +1,13 @@
+{
+  "completed_resume_after_source_change": "passed",
+  "before": {
+    "calls": 844,
+    "raw_results_sha256": "7138ad237dd3ccd0d89c967ec36cb2a6931072602ec1bdc2e649d213e3dab22b"
+  },
+  "after": {
+    "calls": 844,
+    "raw_results_sha256": "7138ad237dd3ccd0d89c967ec36cb2a6931072602ec1bdc2e649d213e3dab22b"
+  },
+  "new_model_calls": 0,
+  "exit_code": 0
+}

@@ -1,0 +1,25 @@
+{
+  "created_at": "2026-10-20T00:29:55.709Z",
+  "split": "development-improvement",
+  "scenario_hashes": {
+    "delayed_dependencies-200": "1f4dfcb314ee6ba8cddcb859238b9bd29eba14f266a320bf4a315d0fbbb19da5",
+    "document_update-201": "54758ed69a5ddd0ac06d4e6e1893c4165276aa028277c704c84243b4261f375f",
+    "interrupted_work-202": "ea707cf1acad025bd1bfda36d4e8b480bc7aed4d7103c5d164d3c3a4399784b2"
+  },
+  "baseline": {
+    "reflection_seconds": 30,
+    "period_seconds": 30,
+    "policy": "D"
+  },
+  "candidate": {
+    "reflection_seconds": 60,
+    "period_seconds": 30,
+    "policy": "D"
+  },
+  "protected": [
+    "permissions",
+    "scorer",
+    "original_evidence"
+  ],
+  "promotion": "human approval with fresh evaluation required"
+}

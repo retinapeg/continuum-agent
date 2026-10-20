@@ -1,0 +1,19 @@
+{
+  "applied_utc": "2026-10-20T01:55:55.621301+00:00",
+  "purpose": "Retain error/discarded-response usage; allow completed-only no-inference resume after source drift; close campaign SQLite handles",
+  "frozen_protocol_sha256": "bf7f4a978b916e74733e6d63d091b6b029550d59747c5364405c38bce6dc1509",
+  "historical_telemetry_backfilled": false,
+  "frozen_results_sha256": "7138ad237dd3ccd0d89c967ec36cb2a6931072602ec1bdc2e649d213e3dab22b",
+  "before": {
+    "continuum/runtime/providers.py": "38b3238c71e19aa5db0bc79ec866e14fca122fada609c20e0180a063371f0259",
+    "continuum/runtime/engine.py": "479babacb6d4a11462061c44df14b416614859a7b22712b6055d6a95f7e7d6d8",
+    "continuum/research/campaign.py": "d3f831d07b501e8b35e5cd015d699082c895450365a45a2ce708d58fe9fc2966",
+    "tests_runtime/test_accounting.py": null
+  },
+  "after": {
+    "continuum/runtime/providers.py": "5a23f9a8f41d2ae6f21aba9a278ce0895928ed3d5b2eb3c38ed89654c5e42735",
+    "continuum/runtime/engine.py": "22ac6f5180cc91244adaf9a47adae9e43fb7cfbca1c8efc4b7fcbcbfb65b7fc2",
+    "continuum/research/campaign.py": "aedb184ccd7c0f3e150f5e06c796bdaa167680911dd846af0a9ff0e513db61fd",
+    "tests_runtime/test_accounting.py": "b91b2291836a36bd396030c6e52308de16b4444fbb3be18b71926cfe63709989"
+  }
+}

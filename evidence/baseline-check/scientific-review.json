@@ -1,0 +1,48 @@
+{
+  "blockers_pending_root_fixes": [
+    "Infrastructure episode_error fallback omits opportunity/intervention counts. Pooled recall must retain each attempted unit's predeclared eligible opportunities, and unavailable intervention counts must not be silently treated as observed zero."
+  ],
+  "checks": {
+    "d_e_eligible_schedule_equal_180_development_scenarios": true,
+    "narrative_with_pipe_rejected": true,
+    "schedule_ignores_private_labels": true,
+    "table_stale_fields_counted": true
+  },
+  "conclusion": "No direct answer-key leakage or additional material methodological blockers found. One pooled-denominator fallback edge remains for coordinator repair before final freeze; conclusions must stay bounded to the declared synthetic templates.",
+  "further_live_trials_requested": false,
+  "limitations": [
+    "Only six handcrafted task templates, three held-out seeds per family and two model repetitions; no broad real-world or unseen-family generalization.",
+    "D_no_memory is a lexical retrieval ablation; observation history remains available.",
+    "Provider work occurs in real time but scenario deadlines and latency use virtual time.",
+    "Document scoring verifies named structured fields, required sources and format; unrestricted prose/recommendation factuality is not fully verified.",
+    "Clarification scoring uses lexical anchors, evidence IDs, a question mark and local receipt; quality beyond that rubric is not established.",
+    "recovery_success denotes completion after clean reopen in this workload; separate checkpoint tests cover crash handling.",
+    "API-equivalent cost estimates are not observed subscription invoices."
+  ],
+  "resolved_or_confirmed": [
+    "No observed scorer/future-label leakage through provider observation interface. Approved documents are materialized at reveal times.",
+    "D and E eligible schedules match; coordinator reports explicit experimental schedule skip gates fixed with regressions.",
+    "Paired intervals match repetition IDs within scenario before scenario-cluster bootstrap; budgets are stratified.",
+    "Frozen source archives plus manifest checks protect version provenance and resume; campaign lock prevents concurrent duplicate units.",
+    "Outcome-unknown call recovery pauses, and campaign checks recovered ambiguity before replaying old controls.",
+    "Project-wide model quota is separately enforced by runtime/quota.py, in addition to per-campaign Budget; early preflight calls are separately recorded.",
+    "Independently verified actual explicit-schedule skip gates are disabled in Runtime.tick.",
+    "Independently verified real Markdown table detection rejects narrative with a stray pipe; stale parsed-table fields are counted.",
+    "Inspected project-wide ModelSlot quota plus campaign quota; 2,000 invocation claim applies to ledger-governed calls with early preflights separately recorded.",
+    "Aggregate analysis now emits contributing counts, pooled intervention ratios, observed cost subtotals, and all-attempt cost per verified outcome only when telemetry is complete."
+  ],
+  "review": "independent scientific-method final review",
+  "scope": [
+    "continuum/research/worlds.py",
+    "continuum/research/scoring.py",
+    "continuum/research/campaign.py",
+    "EXPERIMENT_PROTOCOL.md"
+  ],
+  "source_edits": false,
+  "source_sha256": {
+    "EXPERIMENT_PROTOCOL.md": "6d37c496b33c9c198812baae4735b346e8c08def45bf4bb26627fca952604ae1",
+    "continuum/research/campaign.py": "84c69df95c0edd408deb0e0e4f1b39be28c18af85fbe7cb726cbf2c40dad5603",
+    "continuum/research/scoring.py": "8654d08a9f550dc006395e426b0fc4f49a47f8d88d53d29ceadacf7e7bbae36a",
+    "continuum/research/worlds.py": "41842c257e61a034078ee28867ece66542266643784ac829cd39ed98cd43511b"
+  }
+}

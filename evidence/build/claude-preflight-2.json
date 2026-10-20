@@ -1,0 +1,67 @@
+{
+  "provider": "claude",
+  "requested_model": "claude-sonnet-4-6",
+  "auth": {
+    "authenticated": true,
+    "auth_method": "claude.ai",
+    "subscription_type": "max"
+  },
+  "progress_events": 28,
+  "status": "verified",
+  "reported_model": "claude-sonnet-4-6",
+  "usage": {
+    "uncached_input": 3,
+    "cached_read": 1826,
+    "cache_creation": 789,
+    "output": 242,
+    "other": null,
+    "source": "final_result_usage",
+    "currency": null,
+    "charge": null,
+    "charge_reason": "subscription invoice not observed",
+    "calculation_version": 1,
+    "per_model_reported": {
+      "claude-haiku-4-5-20251001": {
+        "inputTokens": 1185,
+        "outputTokens": 14,
+        "cacheReadInputTokens": 0,
+        "cacheCreationInputTokens": 0,
+        "webSearchRequests": 0,
+        "costUSD": 0.001255,
+        "contextWindow": 200000,
+        "maxOutputTokens": 32000,
+        "canonicalModel": "claude-haiku-4-5",
+        "provider": "firstParty"
+      },
+      "claude-sonnet-4-6": {
+        "inputTokens": 3,
+        "outputTokens": 242,
+        "cacheReadInputTokens": 1826,
+        "cacheCreationInputTokens": 789,
+        "webSearchRequests": 0,
+        "costUSD": 0.0089208,
+        "contextWindow": 200000,
+        "maxOutputTokens": 32000,
+        "canonicalModel": "claude-sonnet-4-6",
+        "provider": "firstParty"
+      }
+    },
+    "accounting_note": "Final cumulative usage counted once; per-model breakdown is diagnostic, not added again."
+  },
+  "proposal": {
+    "summary": "User sent a preflight test message requesting a brief hello with no actions or memories.",
+    "actions": [],
+    "memory_updates": [],
+    "goal_updates": [],
+    "message": {
+      "text": "Hello! \ud83d\udc4b I'm Continuum, your persistent local assistant. All systems nominal!",
+      "reason": "reply",
+      "topic": "greeting",
+      "evidence_ids": [
+        "fictional-preflight"
+      ]
+    },
+    "next_delay": 300
+  },
+  "elapsed": 4.748807707997912
+}

@@ -1,0 +1,1531 @@
+{
+  "bootstrap": {
+    "cluster": "family-seed scenario, repetitions averaged first",
+    "draws": 2000,
+    "seed": 719
+  },
+  "budgets": [
+    6
+  ],
+  "conditions": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "context_budget": 18000,
+  "created_at": "2026-10-20T00:41:33.696Z",
+  "environment": {
+    "cli_version": "2.1.236 (Claude Code)",
+    "jsonschema": "4.26.0",
+    "python": "3.13.15 (main, Aug  5 2026, 12:25:43) [Clang 21.0.0 (clang-2100.1.1.101)]"
+  },
+  "limits": {
+    "campaign_seconds": 7200,
+    "concurrency": 2,
+    "deadline_seconds": 90,
+    "output_bytes": 1000000,
+    "output_tokens": 3000,
+    "provider_calls": 2000,
+    "retries": 0
+  },
+  "live": true,
+  "provider": "claude",
+  "repetitions": 2,
+  "requested_model": "claude-haiku-4-5-20251001",
+  "schedule": "public-prefix schedule v1, E identical to D; memory ablation separate",
+  "scoring": "opportunity temporal matching v1; all attempted units included; structured Status/Risk claims only",
+  "seeds": [
+    1001,
+    1002,
+    1003
+  ],
+  "source_manifest": {
+    "continuum/research/__init__.py": "5b93a6783e26c9a717119a5e088780b6082e263198f4693ab1f1c0dc64f935cd",
+    "continuum/research/campaign.py": "d3f831d07b501e8b35e5cd015d699082c895450365a45a2ce708d58fe9fc2966",
+    "continuum/research/scoring.py": "8654d08a9f550dc006395e426b0fc4f49a47f8d88d53d29ceadacf7e7bbae36a",
+    "continuum/research/worlds.py": "41842c257e61a034078ee28867ece66542266643784ac829cd39ed98cd43511b",
+    "continuum/runtime/__init__.py": "82b81f77870e23e928fa964344da0fcbc572cb0d68659123e79e54a31bdd3085",
+    "continuum/runtime/__main__.py": "cf7390a2508a0fcad4777a4a629fc5212ab655cb45845975995f835676a834e3",
+    "continuum/runtime/capabilities.py": "6ca0c41a4f49abd585e2f2d03c2d8247bea4fd2b532248a39dfd81e357b6c84a",
+    "continuum/runtime/cli.py": "a8caa2149bb3602ae916c9699d22f72425348d91d72ac2290c1026ee8abcff0b",
+    "continuum/runtime/common.py": "2cbfb5857a2cd019f78cc3f9617de2957d060a6101dc87766f1067dc6f1c2e59",
+    "continuum/runtime/contracts.py": "1dd29c122d576d115bc8a22e8b64dc6c67d41afbd5eeb9d490ec1343a99d1b2e",
+    "continuum/runtime/database.py": "362e820e0c596f7ca8a676254610de1d5548fe38cef2ab4748513b8124a0cad6",
+    "continuum/runtime/dynamics.py": "d7d9c481c120466749e726fa101f44f7224d21a3489246fee82ea18b27d3a663",
+    "continuum/runtime/engine.py": "479babacb6d4a11462061c44df14b416614859a7b22712b6055d6a95f7e7d6d8",
+    "continuum/runtime/integration.py": "ec9f1dba3814b6bbcd3ac77f6e20621a3d428b03c41ffeba07eff8a8a673c8a3",
+    "continuum/runtime/memory.py": "3625a4015bb1fd2f841eb69705e06f1ade052606164c9766be856753e7ab7def",
+    "continuum/runtime/notifications.py": "d4a67ebef780624c0f28568ca87ccda39e0bda6790c6af96ce54c5dc8df93024",
+    "continuum/runtime/providers.py": "38b3238c71e19aa5db0bc79ec866e14fca122fada609c20e0180a063371f0259",
+    "continuum/runtime/quota.py": "cfde985abbf48ba4cbba0d963fef12589296f7a509d72c790bff4a91c892c0aa",
+    "continuum/runtime/routing.py": "d5376c2ad806b8e1fdc9e6368f7bd07847e3fa477216914398ea16a8351a532d",
+    "continuum/runtime/watcher.py": "f244452851482f52379a0d28a1b5b4cd25ee0b93364e5f0038de7efcdabd98ea",
+    "continuum/runtime/web.py": "f549e952ab9737fb5f36c8e5a41751197369c35c9987f60a7a8e72213be4392a"
+  },
+  "split": "held-out",
+  "units": [
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-1001-r0-C-b6",
+      "repetition": 0,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-1001-r0-E-b6",
+      "repetition": 0,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-1001-r0-D-b6",
+      "repetition": 0,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-1001-r0-B-b6",
+      "repetition": 0,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-1001-r0-A-b6",
+      "repetition": 0,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-1001-r1-C-b6",
+      "repetition": 1,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-1001-r1-A-b6",
+      "repetition": 1,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-1001-r1-B-b6",
+      "repetition": 1,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-1001-r1-D-b6",
+      "repetition": 1,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-1001-r1-E-b6",
+      "repetition": 1,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "changed_instructions",
+      "id": "changed_instructions-1001-r0-C-b6",
+      "repetition": 0,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "changed_instructions",
+      "id": "changed_instructions-1001-r0-E-b6",
+      "repetition": 0,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "changed_instructions",
+      "id": "changed_instructions-1001-r0-D-b6",
+      "repetition": 0,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "changed_instructions",
+      "id": "changed_instructions-1001-r0-B-b6",
+      "repetition": 0,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "changed_instructions",
+      "id": "changed_instructions-1001-r0-A-b6",
+      "repetition": 0,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "changed_instructions",
+      "id": "changed_instructions-1001-r1-C-b6",
+      "repetition": 1,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "changed_instructions",
+      "id": "changed_instructions-1001-r1-A-b6",
+      "repetition": 1,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "changed_instructions",
+      "id": "changed_instructions-1001-r1-B-b6",
+      "repetition": 1,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "changed_instructions",
+      "id": "changed_instructions-1001-r1-D-b6",
+      "repetition": 1,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "changed_instructions",
+      "id": "changed_instructions-1001-r1-E-b6",
+      "repetition": 1,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "deadline_followup",
+      "id": "deadline_followup-1001-r0-C-b6",
+      "repetition": 0,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "deadline_followup",
+      "id": "deadline_followup-1001-r0-E-b6",
+      "repetition": 0,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "deadline_followup",
+      "id": "deadline_followup-1001-r0-D-b6",
+      "repetition": 0,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "deadline_followup",
+      "id": "deadline_followup-1001-r0-B-b6",
+      "repetition": 0,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "deadline_followup",
+      "id": "deadline_followup-1001-r0-A-b6",
+      "repetition": 0,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "deadline_followup",
+      "id": "deadline_followup-1001-r1-C-b6",
+      "repetition": 1,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "deadline_followup",
+      "id": "deadline_followup-1001-r1-A-b6",
+      "repetition": 1,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "deadline_followup",
+      "id": "deadline_followup-1001-r1-B-b6",
+      "repetition": 1,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "deadline_followup",
+      "id": "deadline_followup-1001-r1-D-b6",
+      "repetition": 1,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "deadline_followup",
+      "id": "deadline_followup-1001-r1-E-b6",
+      "repetition": 1,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "document_update",
+      "id": "document_update-1001-r0-C-b6",
+      "repetition": 0,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "document_update",
+      "id": "document_update-1001-r0-E-b6",
+      "repetition": 0,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "document_update",
+      "id": "document_update-1001-r0-D-b6",
+      "repetition": 0,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "document_update",
+      "id": "document_update-1001-r0-B-b6",
+      "repetition": 0,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "document_update",
+      "id": "document_update-1001-r0-A-b6",
+      "repetition": 0,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "document_update",
+      "id": "document_update-1001-r1-C-b6",
+      "repetition": 1,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "document_update",
+      "id": "document_update-1001-r1-A-b6",
+      "repetition": 1,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "document_update",
+      "id": "document_update-1001-r1-B-b6",
+      "repetition": 1,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "document_update",
+      "id": "document_update-1001-r1-D-b6",
+      "repetition": 1,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "document_update",
+      "id": "document_update-1001-r1-E-b6",
+      "repetition": 1,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "interrupted_work",
+      "id": "interrupted_work-1001-r0-C-b6",
+      "repetition": 0,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "interrupted_work",
+      "id": "interrupted_work-1001-r0-E-b6",
+      "repetition": 0,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "interrupted_work",
+      "id": "interrupted_work-1001-r0-D-b6",
+      "repetition": 0,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "interrupted_work",
+      "id": "interrupted_work-1001-r0-B-b6",
+      "repetition": 0,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "interrupted_work",
+      "id": "interrupted_work-1001-r0-A-b6",
+      "repetition": 0,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "interrupted_work",
+      "id": "interrupted_work-1001-r1-C-b6",
+      "repetition": 1,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "interrupted_work",
+      "id": "interrupted_work-1001-r1-A-b6",
+      "repetition": 1,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "interrupted_work",
+      "id": "interrupted_work-1001-r1-B-b6",
+      "repetition": 1,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "interrupted_work",
+      "id": "interrupted_work-1001-r1-D-b6",
+      "repetition": 1,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "interrupted_work",
+      "id": "interrupted_work-1001-r1-E-b6",
+      "repetition": 1,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "memory_revision",
+      "id": "memory_revision-1001-r0-C-b6",
+      "repetition": 0,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "memory_revision",
+      "id": "memory_revision-1001-r0-E-b6",
+      "repetition": 0,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "memory_revision",
+      "id": "memory_revision-1001-r0-D-b6",
+      "repetition": 0,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "memory_revision",
+      "id": "memory_revision-1001-r0-B-b6",
+      "repetition": 0,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "memory_revision",
+      "id": "memory_revision-1001-r0-A-b6",
+      "repetition": 0,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "memory_revision",
+      "id": "memory_revision-1001-r1-C-b6",
+      "repetition": 1,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "memory_revision",
+      "id": "memory_revision-1001-r1-A-b6",
+      "repetition": 1,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "memory_revision",
+      "id": "memory_revision-1001-r1-B-b6",
+      "repetition": 1,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "memory_revision",
+      "id": "memory_revision-1001-r1-D-b6",
+      "repetition": 1,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "memory_revision",
+      "id": "memory_revision-1001-r1-E-b6",
+      "repetition": 1,
+      "seed": 1001
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-1002-r0-C-b6",
+      "repetition": 0,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-1002-r0-A-b6",
+      "repetition": 0,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-1002-r0-B-b6",
+      "repetition": 0,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-1002-r0-D-b6",
+      "repetition": 0,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-1002-r0-E-b6",
+      "repetition": 0,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-1002-r1-C-b6",
+      "repetition": 1,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-1002-r1-D-b6",
+      "repetition": 1,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-1002-r1-E-b6",
+      "repetition": 1,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-1002-r1-A-b6",
+      "repetition": 1,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-1002-r1-B-b6",
+      "repetition": 1,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "changed_instructions",
+      "id": "changed_instructions-1002-r0-C-b6",
+      "repetition": 0,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "changed_instructions",
+      "id": "changed_instructions-1002-r0-A-b6",
+      "repetition": 0,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "changed_instructions",
+      "id": "changed_instructions-1002-r0-B-b6",
+      "repetition": 0,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "changed_instructions",
+      "id": "changed_instructions-1002-r0-D-b6",
+      "repetition": 0,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "changed_instructions",
+      "id": "changed_instructions-1002-r0-E-b6",
+      "repetition": 0,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "changed_instructions",
+      "id": "changed_instructions-1002-r1-C-b6",
+      "repetition": 1,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "changed_instructions",
+      "id": "changed_instructions-1002-r1-D-b6",
+      "repetition": 1,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "changed_instructions",
+      "id": "changed_instructions-1002-r1-E-b6",
+      "repetition": 1,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "changed_instructions",
+      "id": "changed_instructions-1002-r1-A-b6",
+      "repetition": 1,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "changed_instructions",
+      "id": "changed_instructions-1002-r1-B-b6",
+      "repetition": 1,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "deadline_followup",
+      "id": "deadline_followup-1002-r0-C-b6",
+      "repetition": 0,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "deadline_followup",
+      "id": "deadline_followup-1002-r0-A-b6",
+      "repetition": 0,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "deadline_followup",
+      "id": "deadline_followup-1002-r0-B-b6",
+      "repetition": 0,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "deadline_followup",
+      "id": "deadline_followup-1002-r0-D-b6",
+      "repetition": 0,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "deadline_followup",
+      "id": "deadline_followup-1002-r0-E-b6",
+      "repetition": 0,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "deadline_followup",
+      "id": "deadline_followup-1002-r1-C-b6",
+      "repetition": 1,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "deadline_followup",
+      "id": "deadline_followup-1002-r1-D-b6",
+      "repetition": 1,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "deadline_followup",
+      "id": "deadline_followup-1002-r1-E-b6",
+      "repetition": 1,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "deadline_followup",
+      "id": "deadline_followup-1002-r1-A-b6",
+      "repetition": 1,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "deadline_followup",
+      "id": "deadline_followup-1002-r1-B-b6",
+      "repetition": 1,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "document_update",
+      "id": "document_update-1002-r0-C-b6",
+      "repetition": 0,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "document_update",
+      "id": "document_update-1002-r0-A-b6",
+      "repetition": 0,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "document_update",
+      "id": "document_update-1002-r0-B-b6",
+      "repetition": 0,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "document_update",
+      "id": "document_update-1002-r0-D-b6",
+      "repetition": 0,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "document_update",
+      "id": "document_update-1002-r0-E-b6",
+      "repetition": 0,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "document_update",
+      "id": "document_update-1002-r1-C-b6",
+      "repetition": 1,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "document_update",
+      "id": "document_update-1002-r1-D-b6",
+      "repetition": 1,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "document_update",
+      "id": "document_update-1002-r1-E-b6",
+      "repetition": 1,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "document_update",
+      "id": "document_update-1002-r1-A-b6",
+      "repetition": 1,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "document_update",
+      "id": "document_update-1002-r1-B-b6",
+      "repetition": 1,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "interrupted_work",
+      "id": "interrupted_work-1002-r0-C-b6",
+      "repetition": 0,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "interrupted_work",
+      "id": "interrupted_work-1002-r0-A-b6",
+      "repetition": 0,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "interrupted_work",
+      "id": "interrupted_work-1002-r0-B-b6",
+      "repetition": 0,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "interrupted_work",
+      "id": "interrupted_work-1002-r0-D-b6",
+      "repetition": 0,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "interrupted_work",
+      "id": "interrupted_work-1002-r0-E-b6",
+      "repetition": 0,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "interrupted_work",
+      "id": "interrupted_work-1002-r1-C-b6",
+      "repetition": 1,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "interrupted_work",
+      "id": "interrupted_work-1002-r1-D-b6",
+      "repetition": 1,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "interrupted_work",
+      "id": "interrupted_work-1002-r1-E-b6",
+      "repetition": 1,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "interrupted_work",
+      "id": "interrupted_work-1002-r1-A-b6",
+      "repetition": 1,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "interrupted_work",
+      "id": "interrupted_work-1002-r1-B-b6",
+      "repetition": 1,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "memory_revision",
+      "id": "memory_revision-1002-r0-C-b6",
+      "repetition": 0,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "memory_revision",
+      "id": "memory_revision-1002-r0-A-b6",
+      "repetition": 0,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "memory_revision",
+      "id": "memory_revision-1002-r0-B-b6",
+      "repetition": 0,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "memory_revision",
+      "id": "memory_revision-1002-r0-D-b6",
+      "repetition": 0,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "memory_revision",
+      "id": "memory_revision-1002-r0-E-b6",
+      "repetition": 0,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "memory_revision",
+      "id": "memory_revision-1002-r1-C-b6",
+      "repetition": 1,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "memory_revision",
+      "id": "memory_revision-1002-r1-D-b6",
+      "repetition": 1,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "memory_revision",
+      "id": "memory_revision-1002-r1-E-b6",
+      "repetition": 1,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "memory_revision",
+      "id": "memory_revision-1002-r1-A-b6",
+      "repetition": 1,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "memory_revision",
+      "id": "memory_revision-1002-r1-B-b6",
+      "repetition": 1,
+      "seed": 1002
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-1003-r0-C-b6",
+      "repetition": 0,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-1003-r0-D-b6",
+      "repetition": 0,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-1003-r0-E-b6",
+      "repetition": 0,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-1003-r0-A-b6",
+      "repetition": 0,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-1003-r0-B-b6",
+      "repetition": 0,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-1003-r1-D-b6",
+      "repetition": 1,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-1003-r1-A-b6",
+      "repetition": 1,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-1003-r1-C-b6",
+      "repetition": 1,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-1003-r1-B-b6",
+      "repetition": 1,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "delayed_dependencies",
+      "id": "delayed_dependencies-1003-r1-E-b6",
+      "repetition": 1,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "changed_instructions",
+      "id": "changed_instructions-1003-r0-C-b6",
+      "repetition": 0,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "changed_instructions",
+      "id": "changed_instructions-1003-r0-D-b6",
+      "repetition": 0,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "changed_instructions",
+      "id": "changed_instructions-1003-r0-E-b6",
+      "repetition": 0,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "changed_instructions",
+      "id": "changed_instructions-1003-r0-A-b6",
+      "repetition": 0,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "changed_instructions",
+      "id": "changed_instructions-1003-r0-B-b6",
+      "repetition": 0,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "changed_instructions",
+      "id": "changed_instructions-1003-r1-D-b6",
+      "repetition": 1,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "changed_instructions",
+      "id": "changed_instructions-1003-r1-A-b6",
+      "repetition": 1,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "changed_instructions",
+      "id": "changed_instructions-1003-r1-C-b6",
+      "repetition": 1,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "changed_instructions",
+      "id": "changed_instructions-1003-r1-B-b6",
+      "repetition": 1,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "changed_instructions",
+      "id": "changed_instructions-1003-r1-E-b6",
+      "repetition": 1,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "deadline_followup",
+      "id": "deadline_followup-1003-r0-C-b6",
+      "repetition": 0,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "deadline_followup",
+      "id": "deadline_followup-1003-r0-D-b6",
+      "repetition": 0,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "deadline_followup",
+      "id": "deadline_followup-1003-r0-E-b6",
+      "repetition": 0,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "deadline_followup",
+      "id": "deadline_followup-1003-r0-A-b6",
+      "repetition": 0,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "deadline_followup",
+      "id": "deadline_followup-1003-r0-B-b6",
+      "repetition": 0,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "deadline_followup",
+      "id": "deadline_followup-1003-r1-D-b6",
+      "repetition": 1,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "deadline_followup",
+      "id": "deadline_followup-1003-r1-A-b6",
+      "repetition": 1,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "deadline_followup",
+      "id": "deadline_followup-1003-r1-C-b6",
+      "repetition": 1,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "deadline_followup",
+      "id": "deadline_followup-1003-r1-B-b6",
+      "repetition": 1,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "deadline_followup",
+      "id": "deadline_followup-1003-r1-E-b6",
+      "repetition": 1,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "document_update",
+      "id": "document_update-1003-r0-C-b6",
+      "repetition": 0,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "document_update",
+      "id": "document_update-1003-r0-D-b6",
+      "repetition": 0,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "document_update",
+      "id": "document_update-1003-r0-E-b6",
+      "repetition": 0,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "document_update",
+      "id": "document_update-1003-r0-A-b6",
+      "repetition": 0,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "document_update",
+      "id": "document_update-1003-r0-B-b6",
+      "repetition": 0,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "document_update",
+      "id": "document_update-1003-r1-D-b6",
+      "repetition": 1,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "document_update",
+      "id": "document_update-1003-r1-A-b6",
+      "repetition": 1,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "document_update",
+      "id": "document_update-1003-r1-C-b6",
+      "repetition": 1,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "document_update",
+      "id": "document_update-1003-r1-B-b6",
+      "repetition": 1,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "document_update",
+      "id": "document_update-1003-r1-E-b6",
+      "repetition": 1,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "interrupted_work",
+      "id": "interrupted_work-1003-r0-C-b6",
+      "repetition": 0,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "interrupted_work",
+      "id": "interrupted_work-1003-r0-D-b6",
+      "repetition": 0,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "interrupted_work",
+      "id": "interrupted_work-1003-r0-E-b6",
+      "repetition": 0,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "interrupted_work",
+      "id": "interrupted_work-1003-r0-A-b6",
+      "repetition": 0,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "interrupted_work",
+      "id": "interrupted_work-1003-r0-B-b6",
+      "repetition": 0,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "interrupted_work",
+      "id": "interrupted_work-1003-r1-D-b6",
+      "repetition": 1,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "interrupted_work",
+      "id": "interrupted_work-1003-r1-A-b6",
+      "repetition": 1,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "interrupted_work",
+      "id": "interrupted_work-1003-r1-C-b6",
+      "repetition": 1,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "interrupted_work",
+      "id": "interrupted_work-1003-r1-B-b6",
+      "repetition": 1,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "interrupted_work",
+      "id": "interrupted_work-1003-r1-E-b6",
+      "repetition": 1,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "memory_revision",
+      "id": "memory_revision-1003-r0-C-b6",
+      "repetition": 0,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "memory_revision",
+      "id": "memory_revision-1003-r0-D-b6",
+      "repetition": 0,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "memory_revision",
+      "id": "memory_revision-1003-r0-E-b6",
+      "repetition": 0,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "memory_revision",
+      "id": "memory_revision-1003-r0-A-b6",
+      "repetition": 0,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "memory_revision",
+      "id": "memory_revision-1003-r0-B-b6",
+      "repetition": 0,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "D",
+      "family": "memory_revision",
+      "id": "memory_revision-1003-r1-D-b6",
+      "repetition": 1,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "A",
+      "family": "memory_revision",
+      "id": "memory_revision-1003-r1-A-b6",
+      "repetition": 1,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "C",
+      "family": "memory_revision",
+      "id": "memory_revision-1003-r1-C-b6",
+      "repetition": 1,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "B",
+      "family": "memory_revision",
+      "id": "memory_revision-1003-r1-B-b6",
+      "repetition": 1,
+      "seed": 1003
+    },
+    {
+      "budget": 6,
+      "condition": "E",
+      "family": "memory_revision",
+      "id": "memory_revision-1003-r1-E-b6",
+      "repetition": 1,
+      "seed": 1003
+    }
+  ],
+  "version": "continuum.protocol.v2.1",
+  "world_hashes": {
+    "changed_instructions-1001": "d15c95daa6ce72d862008a3ebafac75d0e8085ce40f3cef9ae92665602800e4f",
+    "changed_instructions-1002": "39d494cdafb53c15bcc1a0cf1e1c59ba459524524a2f30d7d67303d72690e126",
+    "changed_instructions-1003": "8bdf65e43fd66823c09d96bc2d6d8fa856ec79f18e0802e7ed74a3f5cad8d56e",
+    "deadline_followup-1001": "c67ed9c76bf860052eb3e4ac2554dd72637ad187ccc492c78b4f67e08597cc32",
+    "deadline_followup-1002": "8588c0b334fdacac2b010ab6db049d2db9354f1c885ecb1cccede24f09dee990",
+    "deadline_followup-1003": "7788319db38713b76013673f9be93417d445843daadc6af8fc5762fe726d76b1",
+    "delayed_dependencies-1001": "6b678ed3c02ecda76b222ba91cd47e45bb44f0fb3d4d3992bd3e5813dc2b8e60",
+    "delayed_dependencies-1002": "2510006a5e0ddf82e8024db4aa35fa578e0645cf2927ca5cc20a9458bbc74428",
+    "delayed_dependencies-1003": "042c07cdc85db47ff14fc9ce1ca11b587e44f5453b29cb385880bb76b8dad960",
+    "document_update-1001": "161a0287036b9a12593598c1b665b0c7221ffba16f355db47cbbb3e298753d49",
+    "document_update-1002": "477bd13cc33f035ead36e603628a920e7942bcb1405b1276a6d7ce54e526206a",
+    "document_update-1003": "2169992f270d278395d7db2df5538cb8adf3f7854508978b0de5091fb43ea28b",
+    "interrupted_work-1001": "0534a80f9c572647aa11a764c37ff81571f8af97d562cc0f9546f123dd69c4fe",
+    "interrupted_work-1002": "49eaa8e06ede08f547ed004bbad89e3edd7eb68be58e83191b1868b11beb2f02",
+    "interrupted_work-1003": "8846dba756f33c2eadcbeadf368aba9e20bbd35788a4329e912e33ed0a5290cb",
+    "memory_revision-1001": "3f03bb5b59d0c0621d8161ed55662675ec903a69d10370eb271f26edf1595797",
+    "memory_revision-1002": "03c47c357026cf1c5129da69bd36eff920e8c255f5abcb79465fb42700b34c24",
+    "memory_revision-1003": "67fc4e49807826dcbc818f1a9e4b5c16b0adc8239078cd2b2a9256d98a473873"
+  }
+}

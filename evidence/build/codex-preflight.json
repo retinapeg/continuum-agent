@@ -1,0 +1,16 @@
+{
+  "kind": "development-provider-preflight",
+  "utc": "2026-10-20T00:45:43.665Z",
+  "provider": "codex",
+  "requested_model": "gpt-6-luna",
+  "inference_attempted": false,
+  "reported_model": null,
+  "usage": null,
+  "auth": {
+    "authenticated": true,
+    "auth_method": "ChatGPT"
+  },
+  "status": "NOT VERIFIED",
+  "reason": "NOT VERIFIED: complete ambient-tool isolation unavailable; Codex inference disabled",
+  "known_unsent": true
+}

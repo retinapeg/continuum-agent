@@ -1,0 +1,187 @@
+{
+  "A": {
+    "attempted_calls": 54,
+    "calls_with_usage": 52,
+    "calls_without_usage": 2,
+    "categories": {
+      "api_equivalent_usd": {
+        "calls_with_category": 52,
+        "complete_total": null,
+        "known_subtotal": 0.5835
+      },
+      "cache_creation": {
+        "calls_with_category": 52,
+        "complete_total": null,
+        "known_subtotal": 34348
+      },
+      "cached_read": {
+        "calls_with_category": 52,
+        "complete_total": null,
+        "known_subtotal": 0
+      },
+      "other": {
+        "calls_with_category": 0,
+        "complete_total": null,
+        "known_subtotal": null
+      },
+      "output": {
+        "calls_with_category": 52,
+        "complete_total": null,
+        "known_subtotal": 45537
+      },
+      "uncached_input": {
+        "calls_with_category": 52,
+        "complete_total": null,
+        "known_subtotal": 287119
+      }
+    }
+  },
+  "B": {
+    "attempted_calls": 174,
+    "calls_with_usage": 165,
+    "calls_without_usage": 9,
+    "categories": {
+      "api_equivalent_usd": {
+        "calls_with_category": 165,
+        "complete_total": null,
+        "known_subtotal": 2.3086566
+      },
+      "cache_creation": {
+        "calls_with_category": 165,
+        "complete_total": null,
+        "known_subtotal": 399926
+      },
+      "cached_read": {
+        "calls_with_category": 165,
+        "complete_total": null,
+        "known_subtotal": 36526
+      },
+      "other": {
+        "calls_with_category": 0,
+        "complete_total": null,
+        "known_subtotal": null
+      },
+      "output": {
+        "calls_with_category": 165,
+        "complete_total": null,
+        "known_subtotal": 149342
+      },
+      "uncached_input": {
+        "calls_with_category": 165,
+        "complete_total": null,
+        "known_subtotal": 758442
+      }
+    }
+  },
+  "C": {
+    "attempted_calls": 184,
+    "calls_with_usage": 182,
+    "calls_without_usage": 2,
+    "categories": {
+      "api_equivalent_usd": {
+        "calls_with_category": 182,
+        "complete_total": null,
+        "known_subtotal": 2.679661
+      },
+      "cache_creation": {
+        "calls_with_category": 182,
+        "complete_total": null,
+        "known_subtotal": 513780
+      },
+      "cached_read": {
+        "calls_with_category": 182,
+        "complete_total": null,
+        "known_subtotal": 48000
+      },
+      "other": {
+        "calls_with_category": 0,
+        "complete_total": null,
+        "known_subtotal": null
+      },
+      "output": {
+        "calls_with_category": 182,
+        "complete_total": null,
+        "known_subtotal": 165909
+      },
+      "uncached_input": {
+        "calls_with_category": 182,
+        "complete_total": null,
+        "known_subtotal": 817756
+      }
+    }
+  },
+  "D": {
+    "attempted_calls": 216,
+    "calls_with_usage": 212,
+    "calls_without_usage": 4,
+    "categories": {
+      "api_equivalent_usd": {
+        "calls_with_category": 212,
+        "complete_total": null,
+        "known_subtotal": 3.0481248
+      },
+      "cache_creation": {
+        "calls_with_category": 212,
+        "complete_total": null,
+        "known_subtotal": 575414
+      },
+      "cached_read": {
+        "calls_with_category": 212,
+        "complete_total": null,
+        "known_subtotal": 71708
+      },
+      "other": {
+        "calls_with_category": 0,
+        "complete_total": null,
+        "known_subtotal": null
+      },
+      "output": {
+        "calls_with_category": 212,
+        "complete_total": null,
+        "known_subtotal": 188667
+      },
+      "uncached_input": {
+        "calls_with_category": 212,
+        "complete_total": null,
+        "known_subtotal": 946791
+      }
+    }
+  },
+  "E": {
+    "attempted_calls": 216,
+    "calls_with_usage": 209,
+    "calls_without_usage": 7,
+    "categories": {
+      "api_equivalent_usd": {
+        "calls_with_category": 209,
+        "complete_total": null,
+        "known_subtotal": 2.9376087
+      },
+      "cache_creation": {
+        "calls_with_category": 209,
+        "complete_total": null,
+        "known_subtotal": 520664
+      },
+      "cached_read": {
+        "calls_with_category": 209,
+        "complete_total": null,
+        "known_subtotal": 47147
+      },
+      "other": {
+        "calls_with_category": 0,
+        "complete_total": null,
+        "known_subtotal": null
+      },
+      "output": {
+        "calls_with_category": 209,
+        "complete_total": null,
+        "known_subtotal": 187621
+      },
+      "uncached_input": {
+        "calls_with_category": 209,
+        "complete_total": null,
+        "known_subtotal": 953461
+      }
+    }
+  }
+}

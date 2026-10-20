@@ -1,0 +1,22 @@
+{
+  "status": "staged, not applied to running campaign",
+  "candidate_manifest": {
+    "continuum/runtime/providers.py": "5a23f9a8f41d2ae6f21aba9a278ce0895928ed3d5b2eb3c38ed89654c5e42735",
+    "continuum/runtime/engine.py": "22ac6f5180cc91244adaf9a47adae9e43fb7cfbca1c8efc4b7fcbcbfb65b7fc2",
+    "continuum/research/campaign.py": "aedb184ccd7c0f3e150f5e06c796bdaa167680911dd846af0a9ff0e513db61fd",
+    "tests_runtime/test_accounting.py": "b91b2291836a36bd396030c6e52308de16b4444fbb3be18b71926cfe63709989"
+  },
+  "diff": "evidence/build/post-campaign-accounting.patch",
+  "checks": {
+    "full_runtime_suite_before_connection_cleanup": "78 passed in 2.050 seconds",
+    "accounting_resume_suite_after_connection_cleanup": "9 passed in 0.328 seconds",
+    "independent_read_only_review": "approved; no material defect found"
+  },
+  "main_campaign_source_unchanged": true,
+  "limitations": [
+    "historical dropped telemetry unrecoverable",
+    "missing terminal telemetry remains null",
+    "CLI estimates are not subscription charges"
+  ],
+  "live_calls_for_this_candidate": 0
+}

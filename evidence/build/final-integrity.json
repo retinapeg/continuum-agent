@@ -1,0 +1,25 @@
+{
+  "original_source_tests_results_unchanged": {
+    "OVERNIGHT_REPORT.md": true,
+    "continuum/__init__.py": true,
+    "continuum/__main__.py": true,
+    "continuum/agents.py": true,
+    "continuum/benchmark.py": true,
+    "continuum/cli.py": true,
+    "continuum/model.py": true,
+    "continuum/scenarios.py": true,
+    "continuum/simulation.py": true,
+    "continuum/storage.py": true,
+    "results/demo.json": true,
+    "results/demo.sqlite": true,
+    "results/manifest.json": true,
+    "results/runs.csv": true,
+    "results/summary.json": true,
+    "results/tests.txt": true,
+    "tests/test_continuum.py": true
+  },
+  "archive_hash_matches": true,
+  "archive_members_readable_and_match": true,
+  "original_git_head": null,
+  "changes_left_uncommitted": true
+}

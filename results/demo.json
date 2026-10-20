@@ -1,0 +1,16 @@
+{
+  "attempts": 10,
+  "completed": 10,
+  "completion_rate": 1.0,
+  "cost_units": 13.95,
+  "decisions": 37,
+  "feasible_goals": 10,
+  "interruptions": 10,
+  "intervention_precision": 1.0,
+  "intervention_recall": 1.0,
+  "latency_mean": 0.0,
+  "memory_accuracy": 1.0,
+  "policy": "adaptive",
+  "scenario": "quiet_deadlines",
+  "seed": 0
+}

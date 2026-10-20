@@ -1,0 +1,410 @@
+{
+  "attempted_episodes": 30,
+  "by_family": {
+    "changed_instructions": {
+      "A": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "B": {
+        "completion": 1,
+        "episodes": 1
+      },
+      "C": {
+        "completion": 1,
+        "episodes": 1
+      },
+      "D": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "E": {
+        "completion": 1,
+        "episodes": 1
+      }
+    },
+    "deadline_followup": {
+      "A": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "B": {
+        "completion": 1,
+        "episodes": 1
+      },
+      "C": {
+        "completion": 1,
+        "episodes": 1
+      },
+      "D": {
+        "completion": 1,
+        "episodes": 1
+      },
+      "E": {
+        "completion": 1,
+        "episodes": 1
+      }
+    },
+    "delayed_dependencies": {
+      "A": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "B": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "C": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "D": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "E": {
+        "completion": 0,
+        "episodes": 1
+      }
+    },
+    "document_update": {
+      "A": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "B": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "C": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "D": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "E": {
+        "completion": 0,
+        "episodes": 1
+      }
+    },
+    "interrupted_work": {
+      "A": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "B": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "C": {
+        "completion": 1,
+        "episodes": 1
+      },
+      "D": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "E": {
+        "completion": 0,
+        "episodes": 1
+      }
+    },
+    "memory_revision": {
+      "A": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "B": {
+        "completion": 1,
+        "episodes": 1
+      },
+      "C": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "D": {
+        "completion": 1,
+        "episodes": 1
+      },
+      "E": {
+        "completion": 0,
+        "episodes": 1
+      }
+    }
+  },
+  "charge_reason": "not observed; CLI API-equivalent estimates are not invoices",
+  "means": {
+    "A/budget-4": {
+      "api_equivalent_usd": 0.041217366666666665,
+      "api_equivalent_usd_n": 6,
+      "appropriate_clarification": 0,
+      "appropriate_clarification_n": 2,
+      "appropriate_inaction": null,
+      "appropriate_inaction_n": 0,
+      "conditional_valid_completion": 0,
+      "contradiction_handled": 0,
+      "contradiction_handled_n": 1,
+      "cost_per_verified_outcome_all_attempts": null,
+      "cost_unknown_reason": null,
+      "duplicate_effects": 0,
+      "duplicate_effects_n": 6,
+      "episodes": 6,
+      "goal_completion": 0,
+      "goal_completion_n": 6,
+      "interruptions": 0.8333333333333334,
+      "interruptions_n": 6,
+      "interruptions_per_simulated_hour": 25.0,
+      "intervention_precision": 0.5,
+      "intervention_precision_n": 1,
+      "intervention_recall": 0.16666666666666666,
+      "intervention_recall_n": 6,
+      "known_api_estimate_usd_subtotal": 0.2473042,
+      "latency": 0.0,
+      "latency_n": 1,
+      "pooled_intervention_precision": 0.5,
+      "pooled_intervention_recall": 0.16666666666666666,
+      "provider_calls": 1.5,
+      "provider_calls_n": 6,
+      "provider_failures": 0,
+      "provider_failures_n": 6,
+      "recovery_success": 0,
+      "recovery_success_n": 1,
+      "stale_fact_uses": 0,
+      "stale_fact_uses_n": 6,
+      "supported_fact_accuracy": null,
+      "supported_fact_accuracy_n": 0,
+      "token_totals": {
+        "cache_creation": 17712,
+        "cached_read": 16434,
+        "output": 7723,
+        "uncached_input": 21303
+      },
+      "total_api_equivalent_usd": 0.2473042,
+      "valid_executions": 6
+    },
+    "B/budget-4": {
+      "api_equivalent_usd": 0.10449693333333333,
+      "api_equivalent_usd_n": 6,
+      "appropriate_clarification": 1,
+      "appropriate_clarification_n": 2,
+      "appropriate_inaction": null,
+      "appropriate_inaction_n": 0,
+      "conditional_valid_completion": 0.5,
+      "contradiction_handled": 1,
+      "contradiction_handled_n": 1,
+      "cost_per_verified_outcome_all_attempts": 0.20899386666666667,
+      "cost_unknown_reason": null,
+      "duplicate_effects": 0,
+      "duplicate_effects_n": 6,
+      "episodes": 6,
+      "goal_completion": 0.5,
+      "goal_completion_n": 6,
+      "interruptions": 1.3333333333333333,
+      "interruptions_n": 6,
+      "interruptions_per_simulated_hour": 40.0,
+      "intervention_precision": 0.5,
+      "intervention_precision_n": 6,
+      "intervention_recall": 0.5,
+      "intervention_recall_n": 6,
+      "known_api_estimate_usd_subtotal": 0.6269816,
+      "latency": 18.0,
+      "latency_n": 3,
+      "pooled_intervention_precision": 0.5,
+      "pooled_intervention_recall": 0.5,
+      "provider_calls": 3.5,
+      "provider_calls_n": 6,
+      "provider_failures": 0,
+      "provider_failures_n": 6,
+      "recovery_success": 0,
+      "recovery_success_n": 1,
+      "stale_fact_uses": 0,
+      "stale_fact_uses_n": 6,
+      "supported_fact_accuracy": 1.0,
+      "supported_fact_accuracy_n": 1,
+      "token_totals": {
+        "cache_creation": 48030,
+        "cached_read": 42922,
+        "output": 18201,
+        "uncached_input": 55422
+      },
+      "total_api_equivalent_usd": 0.6269816,
+      "valid_executions": 6
+    },
+    "C/budget-4": {
+      "api_equivalent_usd": 0.10296838333333333,
+      "api_equivalent_usd_n": 6,
+      "appropriate_clarification": 0.5,
+      "appropriate_clarification_n": 2,
+      "appropriate_inaction": null,
+      "appropriate_inaction_n": 0,
+      "conditional_valid_completion": 0.5,
+      "contradiction_handled": 0,
+      "contradiction_handled_n": 1,
+      "cost_per_verified_outcome_all_attempts": 0.2059367666666667,
+      "cost_unknown_reason": null,
+      "duplicate_effects": 0,
+      "duplicate_effects_n": 6,
+      "episodes": 6,
+      "goal_completion": 0.5,
+      "goal_completion_n": 6,
+      "interruptions": 1.5,
+      "interruptions_n": 6,
+      "interruptions_per_simulated_hour": 45.0,
+      "intervention_precision": 0.75,
+      "intervention_precision_n": 4,
+      "intervention_recall": 0.5,
+      "intervention_recall_n": 6,
+      "known_api_estimate_usd_subtotal": 0.6178103,
+      "latency": 4.0,
+      "latency_n": 3,
+      "pooled_intervention_precision": 0.75,
+      "pooled_intervention_recall": 0.5,
+      "provider_calls": 3.5,
+      "provider_calls_n": 6,
+      "provider_failures": 0,
+      "provider_failures_n": 6,
+      "recovery_success": 1,
+      "recovery_success_n": 1,
+      "stale_fact_uses": 0,
+      "stale_fact_uses_n": 6,
+      "supported_fact_accuracy": 1.0,
+      "supported_fact_accuracy_n": 2,
+      "token_totals": {
+        "cache_creation": 48104,
+        "cached_read": 42621,
+        "output": 17521,
+        "uncached_input": 56027
+      },
+      "total_api_equivalent_usd": 0.6178103,
+      "valid_executions": 6
+    },
+    "D/budget-4": {
+      "api_equivalent_usd": 0.09642985,
+      "api_equivalent_usd_n": 6,
+      "appropriate_clarification": 1,
+      "appropriate_clarification_n": 2,
+      "appropriate_inaction": null,
+      "appropriate_inaction_n": 0,
+      "conditional_valid_completion": 0.3333333333333333,
+      "contradiction_handled": 1,
+      "contradiction_handled_n": 1,
+      "cost_per_verified_outcome_all_attempts": 0.28928955,
+      "cost_unknown_reason": null,
+      "duplicate_effects": 0,
+      "duplicate_effects_n": 6,
+      "episodes": 6,
+      "goal_completion": 0.3333333333333333,
+      "goal_completion_n": 6,
+      "interruptions": 1.3333333333333333,
+      "interruptions_n": 6,
+      "interruptions_per_simulated_hour": 40.0,
+      "intervention_precision": 1.0,
+      "intervention_precision_n": 2,
+      "intervention_recall": 0.3333333333333333,
+      "intervention_recall_n": 6,
+      "known_api_estimate_usd_subtotal": 0.5785791,
+      "latency": 0.0,
+      "latency_n": 2,
+      "pooled_intervention_precision": 1.0,
+      "pooled_intervention_recall": 0.3333333333333333,
+      "provider_calls": 3.3333333333333335,
+      "provider_calls_n": 6,
+      "provider_failures": 0,
+      "provider_failures_n": 6,
+      "recovery_success": 0,
+      "recovery_success_n": 1,
+      "stale_fact_uses": 0,
+      "stale_fact_uses_n": 6,
+      "supported_fact_accuracy": null,
+      "supported_fact_accuracy_n": 0,
+      "token_totals": {
+        "cache_creation": 45758,
+        "cached_read": 40357,
+        "output": 16092,
+        "uncached_input": 52932
+      },
+      "total_api_equivalent_usd": 0.5785791,
+      "valid_executions": 6
+    },
+    "E/budget-4": {
+      "api_equivalent_usd": 0.10903593333333333,
+      "api_equivalent_usd_n": 6,
+      "appropriate_clarification": 0.5,
+      "appropriate_clarification_n": 2,
+      "appropriate_inaction": null,
+      "appropriate_inaction_n": 0,
+      "conditional_valid_completion": 0.3333333333333333,
+      "contradiction_handled": 0,
+      "contradiction_handled_n": 1,
+      "cost_per_verified_outcome_all_attempts": 0.3271078,
+      "cost_unknown_reason": null,
+      "duplicate_effects": 0,
+      "duplicate_effects_n": 6,
+      "episodes": 6,
+      "goal_completion": 0.3333333333333333,
+      "goal_completion_n": 6,
+      "interruptions": 1.1666666666666667,
+      "interruptions_n": 6,
+      "interruptions_per_simulated_hour": 35.0,
+      "intervention_precision": 0.625,
+      "intervention_precision_n": 4,
+      "intervention_recall": 0.5,
+      "intervention_recall_n": 6,
+      "known_api_estimate_usd_subtotal": 0.6542156,
+      "latency": 2.0,
+      "latency_n": 3,
+      "pooled_intervention_precision": 0.6,
+      "pooled_intervention_recall": 0.5,
+      "provider_calls": 3.6666666666666665,
+      "provider_calls_n": 6,
+      "provider_failures": 0,
+      "provider_failures_n": 6,
+      "recovery_success": 0,
+      "recovery_success_n": 1,
+      "stale_fact_uses": 0,
+      "stale_fact_uses_n": 6,
+      "supported_fact_accuracy": 0.5,
+      "supported_fact_accuracy_n": 2,
+      "token_totals": {
+        "cache_creation": 49596,
+        "cached_read": 44282,
+        "output": 19211,
+        "uncached_input": 57776
+      },
+      "total_api_equivalent_usd": 0.6542156,
+      "valid_executions": 6
+    }
+  },
+  "paired_scenario_bootstrap_95": {
+    "D-minus-A/budget-4": {
+      "high": 0.6666666666666666,
+      "low": 0,
+      "mean": 0.3333333333333333,
+      "scenarios": 6
+    },
+    "D-minus-B/budget-4": {
+      "high": 0,
+      "low": -0.5,
+      "mean": -0.16666666666666666,
+      "scenarios": 6
+    },
+    "D-minus-C/budget-4": {
+      "high": 0.3333333333333333,
+      "low": -0.6666666666666666,
+      "mean": -0.16666666666666666,
+      "scenarios": 6
+    },
+    "D-minus-E/budget-4": {
+      "high": 0.5,
+      "low": -0.5,
+      "mean": 0,
+      "scenarios": 6
+    }
+  },
+  "statuses": {
+    "succeeded": 30
+  },
+  "subscription_charge": null
+}

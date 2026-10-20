@@ -1,0 +1,395 @@
+{
+  "attempted_episodes": 30,
+  "by_family": {
+    "changed_instructions": {
+      "A": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "B": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "C": {
+        "completion": 1,
+        "episodes": 1
+      },
+      "D": {
+        "completion": 1,
+        "episodes": 1
+      },
+      "E": {
+        "completion": 1,
+        "episodes": 1
+      }
+    },
+    "deadline_followup": {
+      "A": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "B": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "C": {
+        "completion": 1,
+        "episodes": 1
+      },
+      "D": {
+        "completion": 1,
+        "episodes": 1
+      },
+      "E": {
+        "completion": 1,
+        "episodes": 1
+      }
+    },
+    "delayed_dependencies": {
+      "A": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "B": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "C": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "D": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "E": {
+        "completion": 0,
+        "episodes": 1
+      }
+    },
+    "document_update": {
+      "A": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "B": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "C": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "D": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "E": {
+        "completion": 0,
+        "episodes": 1
+      }
+    },
+    "interrupted_work": {
+      "A": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "B": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "C": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "D": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "E": {
+        "completion": 1,
+        "episodes": 1
+      }
+    },
+    "memory_revision": {
+      "A": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "B": {
+        "completion": 1,
+        "episodes": 1
+      },
+      "C": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "D": {
+        "completion": 0,
+        "episodes": 1
+      },
+      "E": {
+        "completion": 1,
+        "episodes": 1
+      }
+    }
+  },
+  "charge_reason": "not observed; CLI API-equivalent estimates are not invoices",
+  "means": {
+    "A/budget-6": {
+      "api_equivalent_usd": 0.015831833333333333,
+      "api_equivalent_usd_n": 6,
+      "appropriate_clarification": 0,
+      "appropriate_clarification_n": 2,
+      "appropriate_inaction": null,
+      "appropriate_inaction_n": 0,
+      "conditional_valid_completion": 0,
+      "contradiction_handled": 0,
+      "contradiction_handled_n": 1,
+      "cost_per_verified_outcome_all_attempts": null,
+      "cost_unknown_reason": null,
+      "duplicate_effects": 0,
+      "duplicate_effects_n": 6,
+      "episodes": 6,
+      "goal_completion": 0,
+      "goal_completion_n": 6,
+      "interruptions": 0.3333333333333333,
+      "interruptions_n": 6,
+      "interruptions_per_simulated_hour": 10.0,
+      "intervention_precision": null,
+      "intervention_precision_n": 0,
+      "intervention_recall": 0.0,
+      "intervention_recall_n": 6,
+      "known_api_estimate_usd_subtotal": 0.094991,
+      "latency": null,
+      "latency_n": 0,
+      "pooled_intervention_precision": null,
+      "pooled_intervention_recall": 0.0,
+      "provider_calls": 1.5,
+      "provider_calls_n": 6,
+      "provider_failures": 0,
+      "provider_failures_n": 6,
+      "recovery_success": 0,
+      "recovery_success_n": 1,
+      "stale_fact_uses": 0,
+      "stale_fact_uses_n": 6,
+      "supported_fact_accuracy": null,
+      "supported_fact_accuracy_n": 0,
+      "token_totals": {
+        "cache_creation": 4988,
+        "cached_read": 0,
+        "output": 7065,
+        "uncached_input": 49690
+      },
+      "total_api_equivalent_usd": 0.094991,
+      "valid_executions": 6
+    },
+    "B/budget-6": {
+      "api_equivalent_usd": 0.030264466666666667,
+      "api_equivalent_usd_n": 6,
+      "appropriate_clarification": 0.5,
+      "appropriate_clarification_n": 2,
+      "appropriate_inaction": null,
+      "appropriate_inaction_n": 0,
+      "conditional_valid_completion": 0.16666666666666666,
+      "contradiction_handled": 1,
+      "contradiction_handled_n": 1,
+      "cost_per_verified_outcome_all_attempts": 0.1815868,
+      "cost_unknown_reason": null,
+      "duplicate_effects": 0,
+      "duplicate_effects_n": 6,
+      "episodes": 6,
+      "goal_completion": 0.16666666666666666,
+      "goal_completion_n": 6,
+      "interruptions": 0.5,
+      "interruptions_n": 6,
+      "interruptions_per_simulated_hour": 15.0,
+      "intervention_precision": 0.5,
+      "intervention_precision_n": 2,
+      "intervention_recall": 0.16666666666666666,
+      "intervention_recall_n": 6,
+      "known_api_estimate_usd_subtotal": 0.1815868,
+      "latency": 6.0,
+      "latency_n": 1,
+      "pooled_intervention_precision": 0.5,
+      "pooled_intervention_recall": 0.16666666666666666,
+      "provider_calls": 2.1666666666666665,
+      "provider_calls_n": 6,
+      "provider_failures": 0,
+      "provider_failures_n": 6,
+      "recovery_success": 0,
+      "recovery_success_n": 1,
+      "stale_fact_uses": 0,
+      "stale_fact_uses_n": 6,
+      "supported_fact_accuracy": 1.0,
+      "supported_fact_accuracy_n": 1,
+      "token_totals": {
+        "cache_creation": 27686,
+        "cached_read": 9208,
+        "output": 11549,
+        "uncached_input": 67549
+      },
+      "total_api_equivalent_usd": 0.1815868,
+      "valid_executions": 6
+    },
+    "C/budget-6": {
+      "api_equivalent_usd": 0.0476395,
+      "api_equivalent_usd_n": 4,
+      "appropriate_clarification": 0.5,
+      "appropriate_clarification_n": 2,
+      "appropriate_inaction": null,
+      "appropriate_inaction_n": 0,
+      "conditional_valid_completion": 0.5,
+      "contradiction_handled": 0,
+      "contradiction_handled_n": 1,
+      "cost_per_verified_outcome_all_attempts": null,
+      "cost_unknown_reason": "one or more attempted episodes lack complete cost telemetry; subtotal is not total cost",
+      "duplicate_effects": 0,
+      "duplicate_effects_n": 6,
+      "episodes": 6,
+      "goal_completion": 0.3333333333333333,
+      "goal_completion_n": 6,
+      "interruptions": 1,
+      "interruptions_n": 6,
+      "interruptions_per_simulated_hour": 30.0,
+      "intervention_precision": 0.5,
+      "intervention_precision_n": 4,
+      "intervention_recall": 0.3333333333333333,
+      "intervention_recall_n": 6,
+      "known_api_estimate_usd_subtotal": 0.190558,
+      "latency": 3.0,
+      "latency_n": 2,
+      "pooled_intervention_precision": 0.5,
+      "pooled_intervention_recall": 0.3333333333333333,
+      "provider_calls": 4.166666666666667,
+      "provider_calls_n": 6,
+      "provider_failures": 0.3333333333333333,
+      "provider_failures_n": 6,
+      "recovery_success": 0,
+      "recovery_success_n": 1,
+      "stale_fact_uses": 0,
+      "stale_fact_uses_n": 6,
+      "supported_fact_accuracy": 1.0,
+      "supported_fact_accuracy_n": 1,
+      "token_totals": null,
+      "total_api_equivalent_usd": null,
+      "valid_executions": 4
+    },
+    "D/budget-6": {
+      "api_equivalent_usd": 0.0478034,
+      "api_equivalent_usd_n": 5,
+      "appropriate_clarification": 0.5,
+      "appropriate_clarification_n": 2,
+      "appropriate_inaction": null,
+      "appropriate_inaction_n": 0,
+      "conditional_valid_completion": 0.4,
+      "contradiction_handled": 0,
+      "contradiction_handled_n": 1,
+      "cost_per_verified_outcome_all_attempts": null,
+      "cost_unknown_reason": "one or more attempted episodes lack complete cost telemetry; subtotal is not total cost",
+      "duplicate_effects": 0,
+      "duplicate_effects_n": 6,
+      "episodes": 6,
+      "goal_completion": 0.3333333333333333,
+      "goal_completion_n": 6,
+      "interruptions": 0.8333333333333334,
+      "interruptions_n": 6,
+      "interruptions_per_simulated_hour": 25.0,
+      "intervention_precision": 0.3333333333333333,
+      "intervention_precision_n": 6,
+      "intervention_recall": 0.3333333333333333,
+      "intervention_recall_n": 6,
+      "known_api_estimate_usd_subtotal": 0.239017,
+      "latency": 3.0,
+      "latency_n": 2,
+      "pooled_intervention_precision": 0.3333333333333333,
+      "pooled_intervention_recall": 0.3333333333333333,
+      "provider_calls": 4.166666666666667,
+      "provider_calls_n": 6,
+      "provider_failures": 0.3333333333333333,
+      "provider_failures_n": 6,
+      "recovery_success": 0,
+      "recovery_success_n": 1,
+      "stale_fact_uses": 0,
+      "stale_fact_uses_n": 6,
+      "supported_fact_accuracy": 1.0,
+      "supported_fact_accuracy_n": 1,
+      "token_totals": null,
+      "total_api_equivalent_usd": null,
+      "valid_executions": 5
+    },
+    "E/budget-6": {
+      "api_equivalent_usd": 0.045970199999999996,
+      "api_equivalent_usd_n": 5,
+      "appropriate_clarification": 1,
+      "appropriate_clarification_n": 2,
+      "appropriate_inaction": null,
+      "appropriate_inaction_n": 0,
+      "conditional_valid_completion": 0.8,
+      "contradiction_handled": 1,
+      "contradiction_handled_n": 1,
+      "cost_per_verified_outcome_all_attempts": null,
+      "cost_unknown_reason": "one or more attempted episodes lack complete cost telemetry; subtotal is not total cost",
+      "duplicate_effects": 0,
+      "duplicate_effects_n": 6,
+      "episodes": 6,
+      "goal_completion": 0.6666666666666666,
+      "goal_completion_n": 6,
+      "interruptions": 0.6666666666666666,
+      "interruptions_n": 6,
+      "interruptions_per_simulated_hour": 20.0,
+      "intervention_precision": 0.6666666666666666,
+      "intervention_precision_n": 6,
+      "intervention_recall": 0.6666666666666666,
+      "intervention_recall_n": 6,
+      "known_api_estimate_usd_subtotal": 0.229851,
+      "latency": 3.0,
+      "latency_n": 4,
+      "pooled_intervention_precision": 0.6666666666666666,
+      "pooled_intervention_recall": 0.6666666666666666,
+      "provider_calls": 3.8333333333333335,
+      "provider_calls_n": 6,
+      "provider_failures": 0.16666666666666666,
+      "provider_failures_n": 6,
+      "recovery_success": 1,
+      "recovery_success_n": 1,
+      "stale_fact_uses": 0,
+      "stale_fact_uses_n": 6,
+      "supported_fact_accuracy": 1.0,
+      "supported_fact_accuracy_n": 2,
+      "token_totals": null,
+      "total_api_equivalent_usd": null,
+      "valid_executions": 5
+    }
+  },
+  "paired_scenario_bootstrap_95": {
+    "D-minus-A/budget-6": {
+      "high": 0.6666666666666666,
+      "low": 0,
+      "mean": 0.3333333333333333,
+      "scenarios": 6
+    },
+    "D-minus-B/budget-6": {
+      "high": 0.6666666666666666,
+      "low": -0.3333333333333333,
+      "mean": 0.16666666666666666,
+      "scenarios": 6
+    },
+    "D-minus-C/budget-6": {
+      "high": 0,
+      "low": 0,
+      "mean": 0,
+      "scenarios": 6
+    },
+    "D-minus-E/budget-6": {
+      "high": 0,
+      "low": -0.6666666666666666,
+      "mean": -0.3333333333333333,
+      "scenarios": 6
+    }
+  },
+  "statuses": {
+    "succeeded": 30
+  },
+  "subscription_charge": null
+}

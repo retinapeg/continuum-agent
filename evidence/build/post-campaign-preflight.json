@@ -1,0 +1,61 @@
+{
+  "kind": "development-adapter-preflight",
+  "utc": "2026-10-20T01:56:35.256Z",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "provider": "claude",
+  "purpose": "Verify unchanged live command path after telemetry-only repair; not a scored trial or backfill",
+  "source_sha256": "5a23f9a8f41d2ae6f21aba9a278ce0895928ed3d5b2eb3c38ed89654c5e42735",
+  "auth": {
+    "authenticated": true,
+    "auth_method": "claude.ai",
+    "subscription_type": "max"
+  },
+  "status": "LIVE_VERIFIED",
+  "reported_model": "claude-haiku-4-5-20251001",
+  "usage": {
+    "uncached_input": 3916,
+    "cached_read": 0,
+    "cache_creation": 0,
+    "output": 459,
+    "other": null,
+    "source": "modelUsage_aggregate",
+    "currency": null,
+    "charge": null,
+    "charge_reason": "subscription invoice not observed",
+    "calculation_version": 2,
+    "primary_usage": {
+      "uncached_input": 2763,
+      "cached_read": 0,
+      "cache_creation": 0,
+      "output": 446
+    },
+    "per_model_reported": {
+      "claude-haiku-4-5-20251001": {
+        "inputTokens": 3916,
+        "outputTokens": 459,
+        "cacheReadInputTokens": 0,
+        "cacheCreationInputTokens": 0,
+        "webSearchRequests": 0,
+        "costUSD": 0.0062109999999999995,
+        "contextWindow": 200000,
+        "maxOutputTokens": 32000,
+        "canonicalModel": "claude-haiku-4-5",
+        "provider": "firstParty"
+      }
+    },
+    "api_equivalent_usd": 0.0062109999999999995,
+    "estimate_source": "modelUsage",
+    "terminal_cost_usd_reported": 0.0062109999999999995,
+    "rate_source": "CLI-reported estimates; underlying rates not independently supplied",
+    "rate_date": null,
+    "estimate_currency": "USD",
+    "accounting_note": "Aggregate per-model rows once, including auxiliaries; never add final usage or terminal cost again.",
+    "cli_num_turns": 2,
+    "cli_duration_api_ms": 5481
+  },
+  "elapsed": 5.726694707998831,
+  "output_bytes": 66692,
+  "proposal_sha256": "d434ecd5ab9b4cd35e54c87e4c7bc253e28ecfe6946b127b8e533261da0e1fe9",
+  "progress_event_count": 40,
+  "cleanup_warnings": []
+}

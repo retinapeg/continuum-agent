@@ -1,0 +1,45 @@
+"""Real Chromium smoke; requires a locally running fixture dashboard."""
+import argparse,json,sys,os
+from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from playwright.sync_api import sync_playwright,expect
+from continuum.runtime.common import ROOT,utc
+os.environ['TMPDIR']=str(ROOT/'.cache/tmp')
+p=argparse.ArgumentParser();p.add_argument('--port',type=int,default=8788);p.add_argument('--directory',type=Path,default=ROOT/'.runtime/browser-smoke');a=p.parse_args()
+with sync_playwright() as pw:
+    browser=pw.chromium.launch(headless=True)
+    page=browser.new_page(viewport={'width':1380,'height':1000})
+    errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
+    page.goto(f'http://127.0.0.1:{a.port}')
+    page.get_by_label('Control token').fill((a.directory/'control-token').read_text())
+    page.get_by_role('button',name='Connect',exact=True).click()
+    page.locator('#workspace').wait_for(state='visible')
+    page.get_by_label('New goal').fill('Monitor fictional Lantern project and create an evidence-backed brief')
+    page.get_by_role('button',name='Add goal',exact=True).click()
+    page.get_by_label('Message',exact=True).fill('Please retain this goal and use only the approved fictional sources.')
+    page.get_by_role('button',name='Send message',exact=True).click()
+    expect(page.locator('#messages')).to_contain_text('Please retain this goal')
+    page.get_by_role('button',name='Read artifact',exact=True).first.click(timeout=10000)
+    expect(page.locator('#artifacts')).to_contain_text('Sources:')
+    page.get_by_role('button',name='Memory & goals',exact=True).click()
+    page.get_by_label('Fact subject').fill('format');page.get_by_label('Fact content').fill('Prefer concise tables')
+    page.get_by_role('button',name='Save confirmed fact',exact=True).click()
+    expect(page.locator('#memories')).to_contain_text('Prefer concise tables')
+    page.get_by_role('button',name='Correct',exact=True).first.click()
+    page.get_by_label('Fact content').fill('Prefer narrative format now')
+    page.get_by_role('button',name='Save confirmed fact',exact=True).click()
+    expect(page.locator('#memories')).to_contain_text('superseded')
+    expect(page.locator('#memories')).to_contain_text('Prefer narrative format now')
+    page.get_by_role('button',name='Pause now',exact=True).click()
+    expect(page.locator('#activity')).to_have_text('paused')
+    page.screenshot(path=str(ROOT/'evidence/build/dashboard-desktop.png'),full_page=True)
+    page.get_by_role('button',name='Resume',exact=True).click()
+    expect(page.locator('#activity')).not_to_have_text('paused')
+    page.get_by_role('button',name='Conversation',exact=True).click()
+    page.set_viewport_size({'width':390,'height':844})
+    page.screenshot(path=str(ROOT/'evidence/build/dashboard-mobile.png'),full_page=True)
+    assert page.locator('body').bounding_box()['width'] <= 390, 'mobile overflow'
+    assert not errors, errors
+    browser.close()
+(ROOT/'evidence/build/browser-smoke.json').write_text(json.dumps({'utc':utc(),'browser':'Playwright Chromium','checks':['authenticated connect','goal creation','chat with owner history','artifact read','confirmed memory','memory correction history','pause','resume','mobile no horizontal overflow'],'page_errors':errors,'result':'passed'},indent=2)+'\n')
+print('PASS: real browser smoke, desktop/mobile screenshots saved')

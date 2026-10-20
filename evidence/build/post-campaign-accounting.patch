@@ -1,0 +1,369 @@
+--- a/continuum/runtime/providers.py
++++ b/continuum/runtime/providers.py
+@@ -1,6 +1,7 @@
+ from __future__ import annotations
+ from dataclasses import dataclass
+ import json
++import math
+ import os
+ from pathlib import Path
+ import selectors
+@@ -34,12 +35,16 @@
+     usage: dict | None
+     elapsed: float
+     output_bytes: int
++    terminal_subtype: str | None = None
+ 
+ 
+ class ProviderError(RuntimeError):
+-    def __init__(self, message, status='failed', known_unsent=False):
++    def __init__(self, message, status='failed', known_unsent=False, *, usage=None,
++                 reported_model=None, elapsed=None, output_bytes=None, terminal_subtype=None):
+         super().__init__(message)
+         self.status, self.known_unsent = status, known_unsent
++        self.usage, self.reported_model, self.elapsed = usage, reported_model, elapsed
++        self.output_bytes, self.terminal_subtype = output_bytes, terminal_subtype
+ 
+ 
+ class Provider(Protocol):
+@@ -61,6 +66,41 @@
+             'cached_read': cached, 'cache_creation': None, 'output': raw.get('output_tokens'), 'other': None,
+             'source': 'turn.completed.usage', 'currency': None, 'charge': None,
+             'charge_reason': 'subscription invoice not observed', 'calculation_version': 1}
++
++
++def claude_result_usage(event):
++    """Normalize terminal accounting once, for both successful and failed requests."""
++    raw, per_model = event.get('usage'), event.get('modelUsage') or {}
++    total_cost = event.get('total_cost_usd')
++    def number(value):
++        return type(value) in (int, float) and math.isfinite(value) and value >= 0
++    usage = normalized_usage('claude', raw)
++    if usage is None and not per_model and not number(total_cost):
++        return None
++    if usage is None:
++        usage = normalized_usage('claude', {'input_tokens': None, 'output_tokens': None})
++        usage['primary_usage_reason'] = 'final usage missing; aggregate telemetry may remain available'
++    usage['primary_usage'] = {k: usage[k] for k in ('uncached_input', 'cached_read', 'cache_creation', 'output')}
++    usage['per_model_reported'] = per_model
++    estimate, estimate_source = None, None
++    if per_model:
++        usage['source'] = 'modelUsage_aggregate'
++        for target, source in [('uncached_input', 'inputTokens'), ('cached_read', 'cacheReadInputTokens'),
++                               ('cache_creation', 'cacheCreationInputTokens'), ('output', 'outputTokens')]:
++            values = [row.get(source) for row in per_model.values()]
++            usage[target] = sum(values) if all(number(v) for v in values) else None
++        costs = [row.get('costUSD') for row in per_model.values()]
++        if all(number(v) for v in costs):
++            estimate, estimate_source = sum(costs), 'modelUsage'
++    if estimate is None and number(total_cost):
++        estimate, estimate_source = total_cost, 'total_cost_usd'
++    usage.update({'api_equivalent_usd': estimate, 'estimate_source': estimate_source,
++                  'terminal_cost_usd_reported': total_cost if number(total_cost) else None,
++                  'rate_source': 'CLI-reported estimates; underlying rates not independently supplied',
++                  'rate_date': None, 'estimate_currency': 'USD', 'calculation_version': 2,
++                  'accounting_note': 'Aggregate per-model rows once, including auxiliaries; never add final usage or terminal cost again.',
++                  'cli_num_turns': event.get('num_turns'), 'cli_duration_api_ms': event.get('duration_api_ms')})
++    return usage
+ 
+ 
+ class CLIProvider:
+@@ -224,9 +264,9 @@
+                                     stdout=subprocess.PIPE, stderr=subprocess.PIPE, start_new_session=True)
+         except OSError as exc:
+             raise ProviderError(str(exc), known_unsent=True) from exc
+-        final, model, raw_usage = None, None, None
++        final, model, usage, terminal_subtype = None, None, None, None
+         texts, errors, primary_models = [], [], set()
+-        per_model_usage, initialized = {}, False
++        initialized = False
+         try:
+             for channel, line in self.lines(proc, prompt, cancel):
+                 if channel == 'stderr':
+@@ -264,13 +304,14 @@
+                         elif block.get('type') == 'tool_use' and block.get('name') != 'StructuredOutput':
+                             raise ProviderError('unexpected ambient tool request')
+                 elif kind == 'result':
++                    # Error results can carry nonzero usage and cost; collect before raising.
++                    usage = claude_result_usage(event)
++                    terminal_subtype = event.get('subtype')
+                     if event.get('is_error'):
+                         raise ProviderError(redact(str(event.get('result', event.get('errors', 'provider error'))))[:500])
+                     final = event.get('structured_output')
+                     if final is None and event.get('result'):
+                         texts.append(event['result'])
+-                    raw_usage = event.get('usage')
+-                    per_model_usage = event.get('modelUsage', {})
+                 elif kind in ('error', 'turn.failed'):
+                     raise ProviderError(redact(str(event.get('message', event.get('error'))))[:500])
+                 # Hidden reasoning is deliberately ignored.
+@@ -287,25 +328,16 @@
+                 except (ValueError, IndexError):
+                     raise ProviderError('missing valid structured proposal') from None
+             validate(PROPOSAL, final)
+-            usage = normalized_usage(self.name, raw_usage)
+-            if usage is None and per_model_usage:
+-                usage = normalized_usage(self.name, {'input_tokens':None,'output_tokens':None})
+-                usage['primary_usage_reason']='final usage missing; aggregate per-model telemetry remains available'
+-            if usage is not None:
+-                usage['primary_usage'] = {k: usage[k] for k in ('uncached_input','cached_read','cache_creation','output')}
+-                usage['per_model_reported'] = per_model_usage
+-                if per_model_usage:
+-                    usage['source']='modelUsage_aggregate'
+-                    for target, source in [('uncached_input','inputTokens'),('cached_read','cacheReadInputTokens'),
+-                                           ('cache_creation','cacheCreationInputTokens'),('output','outputTokens')]:
+-                        values = [row.get(source) for row in per_model_usage.values()]
+-                        usage[target] = sum(values) if all(isinstance(v,(int,float)) for v in values) else None
+-                    costs = [row.get('costUSD') for row in per_model_usage.values()]
+-                    usage['api_equivalent_usd'] = sum(costs) if all(isinstance(v,(int,float)) for v in costs) else None
+-                usage.update({'rate_source':'CLI-reported modelUsage estimates; underlying rates not independently supplied',
+-                              'rate_date':None,'estimate_currency':'USD','accounting_note':'Aggregate per-model rows once, including auxiliaries; never add final usage again.'})
+             progress({'type':'provider.proposal','proposal':redact(final)})
+-            return Response(final, model, usage, time.monotonic() - start, self.output_bytes)
++            return Response(final, model, usage, time.monotonic() - start, self.output_bytes, terminal_subtype)
++        except Exception as exc:
++            error = exc if isinstance(exc, ProviderError) else ProviderError('invalid provider response: ' + type(exc).__name__)
++            error.usage, error.reported_model = usage, model
++            error.elapsed, error.output_bytes = time.monotonic() - start, getattr(self, 'output_bytes', None)
++            error.terminal_subtype = terminal_subtype
++            if error is exc:
++                raise
++            raise error from exc
+         finally:
+             warnings=self.terminate(proc)
+             if warnings:
+--- a/continuum/runtime/engine.py
++++ b/continuum/runtime/engine.py
+@@ -206,6 +206,9 @@
+                     if epoch == self.db.get('epoch') and not self.cancel.is_set():
+                         self.db.event('provider.progress', event, trace=trace, provider=self.provider.name, requested=self.provider.model, status='running',tx=tx)
+             response = self.provider.propose(context, self.cancel, progress)
++            # Accounting is independent of accepting or executing the returned proposal.
++            with self.db.transaction() as tx:
++                self._record_provider_receipt(tx, call_id, trace, response)
+             validate(PROPOSAL, response.proposal)
+             response.proposal=redact(response.proposal)
+             if self.cancel.is_set() or epoch != self.db.get('epoch') or self.db.get('control') != 'running':
+@@ -228,6 +231,7 @@
+                 raise
+             status = exc.status if isinstance(exc, ProviderError) else 'failed'
+             with self.db.transaction() as tx:
++                self._record_provider_receipt(tx, call_id, trace, exc)
+                 tx.execute('UPDATE calls SET status=?,error=? WHERE id=?', (status, redact(str(exc))[:800], call_id))
+                 self.db.event('deliberation.failed', {'call_id': call_id, 'error': str(exc)[:800],
+                               'known_unsent': getattr(exc, 'known_unsent', False)}, trace=trace,
+@@ -238,6 +242,20 @@
+         finally:
+             self.activity = 'idle' if self.db.get('control') == 'running' else self.db.get('control')
+         return True
++
++    def _record_provider_receipt(self, tx, call_id, trace, receipt):
++        usage = getattr(receipt, 'usage', None)
++        model = getattr(receipt, 'reported_model', None)
++        elapsed = getattr(receipt, 'elapsed', None)
++        output_bytes = getattr(receipt, 'output_bytes', None)
++        if all(value is None for value in (usage, model, elapsed, output_bytes)):
++            return
++        tx.execute('UPDATE calls SET reported_model=COALESCE(?,reported_model),usage=COALESCE(?,usage),elapsed=COALESCE(?,elapsed) WHERE id=?',
++                   (model, canonical(redact(usage)) if usage is not None else None, elapsed, call_id))
++        self.db.event('provider.receipt', {'call_id': call_id, 'usage': usage, 'elapsed': elapsed,
++                      'output_bytes': output_bytes, 'terminal_subtype': getattr(receipt, 'terminal_subtype', None)},
++                      trace=trace, provider=self.provider.name, requested=self.provider.model,
++                      reported=model, status=getattr(receipt, 'status', 'succeeded'), tx=tx)
+ 
+     def apply_pending(self):
+         with self.db.lock:
+--- a/continuum/research/campaign.py
++++ b/continuum/research/campaign.py
+@@ -1,6 +1,7 @@
+ from __future__ import annotations
+ import argparse
+ from concurrent.futures import ThreadPoolExecutor,as_completed
++from contextlib import closing,contextmanager
+ import hashlib
+ import json
+ from pathlib import Path
+@@ -62,7 +63,11 @@
+         self.path=directory/'campaign.sqlite';self.maximum=maximum;self.lock=threading.Lock()
+         with self.connect() as db:
+             db.executescript('CREATE TABLE IF NOT EXISTS calls(id INTEGER PRIMARY KEY, unit TEXT, started TEXT); CREATE TABLE IF NOT EXISTS units(id TEXT PRIMARY KEY,status TEXT NOT NULL,result TEXT,error TEXT);')
+-    def connect(self):return sqlite3.connect(self.path,timeout=10)
++    @contextmanager
++    def connect(self):
++        with closing(sqlite3.connect(self.path,timeout=10)) as db:
++            with db:
++                yield db
+     def take(self,unit):
+         with self.lock,self.connect() as db:
+             db.execute('BEGIN IMMEDIATE')
+@@ -139,12 +144,14 @@
+ def _run_campaign(directory,resume=False):
+     protocol=json.loads((directory/'protocol.json').read_text())
+     if hashlib.sha256((directory/'protocol.json').read_bytes()).hexdigest()!=(directory/'protocol.sha256').read_text().strip():raise ValueError('protocol tampered')
+-    if protocol['source_manifest']!=source_manifest():raise ValueError('source changed since freeze; use a new versioned campaign')
+     budget=Budget(directory,protocol['limits']['provider_calls']);started=time.monotonic()
+     with budget.connect() as db:
+         for unit in protocol['units']:db.execute("INSERT OR IGNORE INTO units VALUES (?,'queued',NULL,NULL)",(unit['id'],))
+         completed={r[0] for r in db.execute("SELECT id FROM units WHERE status IN ('succeeded','failed')")}
+     pending=[u for u in protocol['units'] if u['id'] not in completed]
++    if not pending:
++        return report(directory)
++    if protocol['source_manifest']!=source_manifest():raise ValueError('source changed since freeze; use a new versioned campaign')
+     def worker(unit):
+         if time.monotonic()-started>protocol['limits']['campaign_seconds']:return
+         with budget.connect() as db:db.execute("UPDATE units SET status='running' WHERE id=?",(unit['id'],))
+@@ -165,7 +172,7 @@
+ 
+ 
+ def report(directory):
+-    with sqlite3.connect(directory/'campaign.sqlite') as db:
++    with closing(sqlite3.connect(directory/'campaign.sqlite')) as db:
+         rows=[json.loads(r[0]) for r in db.execute('SELECT result FROM units WHERE result IS NOT NULL ORDER BY id')]
+         statuses=dict(db.execute('SELECT status,COUNT(*) FROM units GROUP BY status'))
+     (directory/'results.jsonl').write_text(''.join(canonical(row)+'\n' for row in rows))
+--- a/tests_runtime/test_accounting.py
++++ b/tests_runtime/test_accounting.py
+@@ -0,0 +1,143 @@
++"""Terminal-error and discarded-response accounting; no network/model requests."""
++import hashlib
++import json
++import sys
++import threading
++from unittest.mock import patch
++
++from test_core import Base
++from continuum.runtime.common import canonical
++from continuum.runtime.contracts import empty_proposal
++from continuum.runtime.providers import CLIProvider, FixtureProvider, ProviderError, Response
++from continuum.research.campaign import Budget, _run_campaign, source_manifest
++
++
++class TerminalAccountingTests(Base):
++    def fake_cli(self, terminal):
++        provider = CLIProvider('claude', 'test-model', self.path / 'provider')
++        events = [
++            {'type': 'system', 'subtype': 'init', 'model': 'test-model', 'tools': ['StructuredOutput']},
++            {'type': 'assistant', 'message': {'model': 'test-model', 'content': []}},
++            {'type': 'result', 'is_error': True, 'subtype': 'error_max_structured_output_retries',
++             'errors': ['Controlled fixture failure'], **terminal},
++        ]
++        output = '\n'.join(json.dumps(e) for e in events) + '\n'
++        with patch.object(provider, 'command', return_value=[sys.executable, '-c', f'print({output!r})']):
++            with self.assertRaises(ProviderError) as caught:
++                provider._propose({}, threading.Event(), lambda event: None)
++        return caught.exception
++
++    def test_error_usage_aggregates_auxiliary_once(self):
++        err = self.fake_cli({
++            'usage': {'input_tokens': 10, 'output_tokens': 20, 'cache_read_input_tokens': 3, 'cache_creation_input_tokens': 4},
++            'modelUsage': {
++                'test-model': {'inputTokens': 10, 'outputTokens': 20, 'cacheReadInputTokens': 3, 'cacheCreationInputTokens': 4, 'costUSD': .02},
++                'auxiliary': {'inputTokens': 2, 'outputTokens': 5, 'cacheReadInputTokens': 0, 'cacheCreationInputTokens': 0, 'costUSD': .01},
++            }, 'total_cost_usd': .03, 'num_turns': 5, 'duration_api_ms': 200,
++        })
++        self.assertEqual(err.status, 'failed')
++        self.assertEqual(err.reported_model, 'test-model')
++        self.assertEqual(err.usage['uncached_input'], 12)
++        self.assertEqual(err.usage['output'], 25)
++        self.assertEqual(err.usage['primary_usage']['output'], 20)
++        self.assertAlmostEqual(err.usage['api_equivalent_usd'], .03)
++        self.assertEqual(err.usage['cli_num_turns'], 5)
++        self.assertIsNone(err.usage['charge'])
++        self.assertGreater(err.output_bytes, 0)
++        self.assertGreaterEqual(err.elapsed, 0)
++        self.assertEqual(err.terminal_subtype, 'error_max_structured_output_retries')
++
++    def test_error_aggregate_without_primary_usage(self):
++        err = self.fake_cli({'modelUsage': {'test-model': {
++            'inputTokens': 2, 'outputTokens': 3, 'cacheReadInputTokens': 4, 'cacheCreationInputTokens': 5, 'costUSD': .01}}})
++        self.assertEqual(err.usage['output'], 3)
++        self.assertIsNone(err.usage['primary_usage']['output'])
++
++    def test_missing_telemetry_unknown_and_terminal_cost_fallback(self):
++        self.assertIsNone(self.fake_cli({}).usage)
++        err = self.fake_cli({'total_cost_usd': .05})
++        self.assertEqual(err.usage['api_equivalent_usd'], .05)
++        self.assertIsNone(err.usage['output'])
++        self.assertEqual(err.usage['estimate_source'], 'total_cost_usd')
++
++    def test_failed_runtime_call_persists_available_receipt(self):
++        class Failed(FixtureProvider):
++            def propose(inner, *args):
++                raise ProviderError('Controlled failure', usage={'output': 7, 'api_equivalent_usd': .02},
++                                    reported_model='test-model', elapsed=.25, output_bytes=500,
++                                    terminal_subtype='error_max_structured_output_retries')
++        runtime = self.runtime(Failed()); runtime.goal('Goal'); runtime.tick()
++        call = runtime.db.rows('SELECT * FROM calls')[0]
++        self.assertEqual(call['status'], 'failed')
++        self.assertEqual(json.loads(call['usage'])['output'], 7)
++        self.assertEqual(call['reported_model'], 'test-model')
++        self.assertEqual(call['elapsed'], .25)
++        self.assertEqual(runtime.db.rows('SELECT * FROM operations'), [])
++        receipt = runtime.db.rows("SELECT data FROM events WHERE kind='provider.receipt'")[0]
++        self.assertEqual(json.loads(receipt['data'])['payload']['output_bytes'], 500)
++
++    def test_pause_discards_proposal_but_keeps_accounting(self):
++        class Paused(FixtureProvider):
++            def propose(inner, *args):
++                runtime.control('paused')
++                proposal = empty_proposal('DO_NOT_RETAIN_DISCARDED_CONTENT')
++                return Response(proposal, inner.model, {'output': 9}, .5, 120)
++        runtime = self.runtime(Paused()); runtime.goal('Goal'); runtime.tick()
++        call = runtime.db.rows('SELECT * FROM calls')[0]
++        self.assertEqual(call['status'], 'cancelled')
++        self.assertEqual(json.loads(call['usage'])['output'], 9)
++        self.assertEqual(call['elapsed'], .5)
++        self.assertIsNone(runtime.db.get('pending_proposal'))
++        self.assertNotIn('DO_NOT_RETAIN_DISCARDED_CONTENT', '\n'.join(runtime.db.db.iterdump()))
++        self.assertEqual(runtime.db.rows('SELECT * FROM operations'), [])
++
++    def test_invalid_proposal_keeps_accounting_without_effect(self):
++        class Invalid(FixtureProvider):
++            def propose(inner, *args):
++                return Response({'invalid': True}, inner.model, {'output': 11}, .6, 100)
++        runtime = self.runtime(Invalid()); runtime.goal('Goal'); runtime.tick()
++        call = runtime.db.rows('SELECT * FROM calls')[0]
++        self.assertEqual(call['status'], 'failed')
++        self.assertEqual(json.loads(call['usage'])['output'], 11)
++        self.assertEqual(runtime.db.rows('SELECT * FROM operations'), [])
++
++
++class CompletedResumeTests(Base):
++    def campaign(self, completed):
++        directory = self.path / 'campaign'; directory.mkdir()
++        unit = {'id': 'fixture-1', 'family': 'delayed_dependencies', 'scenario': 'fixture-1',
++                'seed': 1, 'repetition': 0, 'condition': 'D', 'budget': 2}
++        protocol = {'units': [unit], 'source_manifest': source_manifest(),
++                    'limits': {'provider_calls': 5, 'campaign_seconds': 10, 'concurrency': 1}}
++        raw = canonical(protocol).encode()
++        (directory / 'protocol.json').write_bytes(raw)
++        (directory / 'protocol.sha256').write_text(hashlib.sha256(raw).hexdigest())
++        budget = Budget(directory, 5)
++        with budget.connect() as db:
++            result = canonical({**unit, 'goal_completion': 0, 'valid_execution': 0}) if completed else None
++            db.execute('INSERT INTO units VALUES (?,?,?,NULL)', (unit['id'], 'succeeded' if completed else 'queued', result))
++        return directory
++
++    def test_completed_resume_with_source_drift_makes_no_calls(self):
++        directory = self.campaign(True)
++        with patch('continuum.research.campaign.source_manifest', return_value={'changed': 'hash'}), \
++             patch('continuum.research.campaign.execute') as execute:
++            self.assertEqual(_run_campaign(directory, resume=True)['attempted_episodes'], 1)
++            execute.assert_not_called()
++        with Budget(directory, 5).connect() as db:
++            self.assertEqual(db.execute('SELECT COUNT(*) FROM calls').fetchone()[0], 0)
++
++    def test_unfinished_resume_rejects_source_drift(self):
++        directory = self.campaign(False)
++        with patch('continuum.research.campaign.source_manifest', return_value={'changed': 'hash'}), \
++             patch('continuum.research.campaign.execute') as execute:
++            with self.assertRaisesRegex(ValueError, 'source changed'):
++                _run_campaign(directory, resume=True)
++            execute.assert_not_called()
++
++    def test_completed_resume_still_rejects_protocol_tampering(self):
++        directory = self.campaign(True)
++        with (directory / 'protocol.json').open('a') as file:
++            file.write(' ')
++        with self.assertRaisesRegex(ValueError, 'protocol tampered'):
++            _run_campaign(directory, resume=True)

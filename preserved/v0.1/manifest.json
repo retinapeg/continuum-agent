@@ -1,0 +1,29 @@
+{
+  "archive_sha256": "1a6e319c1ba0cd056858ad3e18c0c28859f04ed9ca48241b6cd6d3056998eb84",
+  "created_at": "2026-10-20T00:15:48.355390+00:00",
+  "files": {
+    ".gitignore": "78f6fb37afa6b7de1fe2fed5a7beeb068dbd54f293e8c86a20e7ebc568b2537a",
+    "FUTURE_RESEARCH.md": "8afb423e5341b0260f6a69c4a7929dc24324936963f726948056f424531fcf8f",
+    "OVERNIGHT_REPORT.md": "ea281c1b13028f5ea14f32abb06969ee675c0b0d79fb87fa92df3717fb9ff34f",
+    "README.md": "9d95955f78e8cb5bb5f26641b031f63fd61676e2d15bfb09f934a2fa8ce0c1eb",
+    "continuum/__init__.py": "20e7d94699c558e7297ba7574f7d1eb2ccc9ad9d0d3f020cb0125b9faa42fbb9",
+    "continuum/__main__.py": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279",
+    "continuum/agents.py": "602c28042d783844e3ea17ec1949d378dcb5883f248113a74ac94aeae2da47bb",
+    "continuum/benchmark.py": "81b68b4e757eb13940e7173c679c161c8aba5b65a19ed89068956e605fdc1226",
+    "continuum/cli.py": "98b639d2a5bfbab199c6705e27c5671f4e07d15fed5ab4a48edc98b575c2dbe2",
+    "continuum/model.py": "b39c10bee597173eaa533d6d87656784dc661d88220faa4a05166a7cc45fdaec",
+    "continuum/scenarios.py": "fe978e80d95b3cf6c39420a1beee492d1a7346e9631ea83d72cd02e795ca95c7",
+    "continuum/simulation.py": "b58b65b59afc9be8a618914ce7446f385fef3293b6903beecbf2bd90f8e794c9",
+    "continuum/storage.py": "f450045fa74deb7dda9dc86d87388e489a041dcb5b90226bda514e43d26cef1c",
+    "pyproject.toml": "93185cd65bbbd48e292b62c36a727a527d484dba040e6636855b8604bdb706ef",
+    "results/demo.json": "6893f420bf6fc5f2b13d3be208c6411934718371a22f7e6955f751408506d021",
+    "results/demo.sqlite": "41fc6c2973f358132aa00367da9cc42df0b595edd5938ed2efb1747c1d710d7a",
+    "results/manifest.json": "5841720f88c64398fd2138c75889b5e6f73f8b5cd2084d1abc197b981a6b9723",
+    "results/runs.csv": "4d218c423f8d434a00d4baad67f52e6a02936bb879ce701d8334f951b33c1eeb",
+    "results/summary.json": "685cc4e07fe198d34e10bbd7666259e7c0bf954b686490ae2a47ad3b1cc97692",
+    "results/tests.txt": "cf6f74934042b38e92ce2890efb3dd44997b6850b4478fd490d6d89038790cb8",
+    "tests/test_continuum.py": "774025c21e953bdd347ddd361a6d20fc9912ea2f8c1ab3dbc05a8f1be03a077c"
+  },
+  "git_head": null,
+  "git_status": "?? .build.lock\n?? .gitignore\n?? FUTURE_RESEARCH.md\n?? OVERNIGHT_REPORT.md\n?? README.md\n?? continuum/\n?? pyproject.toml\n?? results/\n?? tests/\n"
+}

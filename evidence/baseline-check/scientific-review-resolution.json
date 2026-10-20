@@ -1,0 +1,24 @@
+{
+  "elapsed_seconds": 0.011728666999260895,
+  "errors": 0,
+  "failures": 0,
+  "limitations": "Prior review limitations remain; approval is bounded to the declared synthetic protocol, not real-world generalization or production readiness.",
+  "live_calls": 0,
+  "prior_review_preserved": "evidence/baseline-check/scientific-review.json",
+  "remaining_material_blockers": [],
+  "review": "scientific-method denominator blocker resolution",
+  "source_edits": false,
+  "source_sha256": {
+    "continuum/research/campaign.py": "d3f831d07b501e8b35e5cd015d699082c895450365a45a2ce708d58fe9fc2966",
+    "tests_runtime/test_research.py": "1abb3dc44b0007fcd95b70a33ddfee256fad9f716e483b2521b204cc396e990b"
+  },
+  "status": "resolved",
+  "test_output": "test_failure_opportunity_remains_in_pooled_recall (test_research.FailedEpisodeDenominatorTests.test_failure_opportunity_remains_in_pooled_recall) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.011s\n\nOK\n",
+  "tests_run": 1,
+  "verified_behavior": [
+    "Fallback failed units retain their predeclared opportunity and false-negative denominators.",
+    "Pooled recall is 0.5 for one successful one-opportunity episode and one failed one-opportunity episode.",
+    "Pooled precision remains null when any episode action count is unknown.",
+    "All-attempt cost per verified outcome remains null when required cost telemetry is missing."
+  ]
+}

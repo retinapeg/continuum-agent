@@ -1,0 +1,24 @@
+{
+  "baseline_regenerated_identical": {
+    "manifest.json": true,
+    "runs.csv": true,
+    "summary.json": true
+  },
+  "baseline_rows": 450,
+  "counterfactual": {
+    "adaptive_decisions": 7969,
+    "adaptive_total_cost": 2494.2,
+    "outcome_differences": 0,
+    "readiness_only_decisions": 7402,
+    "readiness_only_total_cost": 2437.5,
+    "scenarios": 150
+  },
+  "counterfactual_interpretation": "Exploratory audit, not preregistered. Replacing only adaptive idle_interval with 10000 preserves all 150 action-level outcomes while reducing idle decisions. Readiness/retry arithmetic accounts for measured baseline completion gains; no demonstrated gain from decaying activation.",
+  "out_of_horizon_denominator_defect": "General Scenario allows goals ready after horizon to count as feasible. Stock generator has all action windows within horizon, so original benchmark is unaffected.",
+  "tests": {
+    "command": "TMPDIR=$PWD/.cache/tmp python3 -B -m unittest discover -s tests -v",
+    "passed": 28,
+    "seconds": 0.357,
+    "warning": "ResourceWarning: an unclosed SQLite connection in test database trace inspection; sqlite3 connection context manager commits/rolls back but does not close."
+  }
+}

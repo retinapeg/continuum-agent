@@ -1,0 +1,959 @@
+{
+  "call_failures": [
+    {
+      "unit": "delayed_dependencies-1001-r0-B-b6",
+      "created": 60.0,
+      "status": "failed",
+      "error": "unexpected ambient tool request"
+    },
+    {
+      "unit": "delayed_dependencies-1001-r1-D-b6",
+      "created": 36.0,
+      "status": "failed",
+      "error": "unexpected ambient tool request"
+    },
+    {
+      "unit": "changed_instructions-1001-r1-B-b6",
+      "created": 30.0,
+      "status": "failed",
+      "error": "unexpected ambient tool request"
+    },
+    {
+      "unit": "changed_instructions-1001-r1-D-b6",
+      "created": 30.0,
+      "status": "failed",
+      "error": "unexpected ambient tool request"
+    },
+    {
+      "unit": "changed_instructions-1001-r1-E-b6",
+      "created": 30.0,
+      "status": "failed",
+      "error": "unexpected ambient tool request"
+    },
+    {
+      "unit": "changed_instructions-1001-r1-E-b6",
+      "created": 36.0,
+      "status": "failed",
+      "error": "unexpected ambient tool request"
+    },
+    {
+      "unit": "document_update-1001-r0-B-b6",
+      "created": 30.0,
+      "status": "failed",
+      "error": "unexpected ambient tool request"
+    },
+    {
+      "unit": "interrupted_work-1001-r0-C-b6",
+      "created": 48.0,
+      "status": "failed",
+      "error": "['Failed to provide valid structured output after 5 attempts']"
+    },
+    {
+      "unit": "interrupted_work-1001-r0-D-b6",
+      "created": 48.0,
+      "status": "failed",
+      "error": "['Failed to provide valid structured output after 5 attempts']"
+    },
+    {
+      "unit": "interrupted_work-1001-r0-D-b6",
+      "created": 84.0,
+      "status": "failed",
+      "error": "unsupported goal update"
+    },
+    {
+      "unit": "interrupted_work-1001-r0-A-b6",
+      "created": 42.0,
+      "status": "failed",
+      "error": "unexpected ambient tool request"
+    },
+    {
+      "unit": "interrupted_work-1001-r1-E-b6",
+      "created": 42.0,
+      "status": "failed",
+      "error": "unexpected ambient tool request"
+    },
+    {
+      "unit": "interrupted_work-1001-r1-E-b6",
+      "created": 48.0,
+      "status": "failed",
+      "error": "unexpected ambient tool request"
+    },
+    {
+      "unit": "deadline_followup-1002-r0-D-b6",
+      "created": 96.0,
+      "status": "failed",
+      "error": "unsupported goal update"
+    },
+    {
+      "unit": "document_update-1002-r1-D-b6",
+      "created": 12.0,
+      "status": "failed",
+      "error": "unexpected ambient tool request"
+    },
+    {
+      "unit": "document_update-1002-r1-B-b6",
+      "created": 0.0,
+      "status": "failed",
+      "error": "unexpected ambient tool request"
+    },
+    {
+      "unit": "interrupted_work-1002-r0-A-b6",
+      "created": 42.0,
+      "status": "failed",
+      "error": "unexpected ambient tool request"
+    },
+    {
+      "unit": "memory_revision-1002-r0-B-b6",
+      "created": 90.0,
+      "status": "failed",
+      "error": "['Failed to provide valid structured output after 5 attempts']"
+    },
+    {
+      "unit": "changed_instructions-1003-r0-B-b6",
+      "created": 30.0,
+      "status": "failed",
+      "error": "unexpected ambient tool request"
+    },
+    {
+      "unit": "changed_instructions-1003-r0-B-b6",
+      "created": 60.0,
+      "status": "failed",
+      "error": "unexpected ambient tool request"
+    },
+    {
+      "unit": "changed_instructions-1003-r1-E-b6",
+      "created": 30.0,
+      "status": "failed",
+      "error": "unexpected ambient tool request"
+    },
+    {
+      "unit": "document_update-1003-r0-C-b6",
+      "created": 36.0,
+      "status": "failed",
+      "error": "unexpected ambient tool request"
+    },
+    {
+      "unit": "document_update-1003-r0-B-b6",
+      "created": 90.0,
+      "status": "failed",
+      "error": "['Failed to provide valid structured output after 5 attempts']"
+    },
+    {
+      "unit": "document_update-1003-r1-B-b6",
+      "created": 30.0,
+      "status": "failed",
+      "error": "unexpected ambient tool request"
+    },
+    {
+      "unit": "document_update-1003-r1-E-b6",
+      "created": 12.0,
+      "status": "failed",
+      "error": "unexpected ambient tool request"
+    },
+    {
+      "unit": "interrupted_work-1003-r1-E-b6",
+      "created": 42.0,
+      "status": "failed",
+      "error": "unexpected ambient tool request"
+    }
+  ],
+  "taxonomy": {
+    "unexpected ambient tool request": 20,
+    "['Failed to provide valid structured output after 5 attempts']": 4,
+    "unsupported goal update": 2
+  },
+  "realized_D_E_schedules": [
+    {
+      "scenario": "changed_instructions-1001",
+      "repetition": 0,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-1001",
+      "repetition": 1,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-1002",
+      "repetition": 0,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-1002",
+      "repetition": 1,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-1003",
+      "repetition": 0,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-1003",
+      "repetition": 1,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-1001",
+      "repetition": 0,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-1001",
+      "repetition": 1,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-1002",
+      "repetition": 0,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-1002",
+      "repetition": 1,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-1003",
+      "repetition": 0,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        48.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        48.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-1003",
+      "repetition": 1,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        48.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        48.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-1001",
+      "repetition": 0,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-1001",
+      "repetition": 1,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-1002",
+      "repetition": 0,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-1002",
+      "repetition": 1,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-1003",
+      "repetition": 0,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-1003",
+      "repetition": 1,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0
+      ]
+    },
+    {
+      "scenario": "document_update-1001",
+      "repetition": 0,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0
+      ]
+    },
+    {
+      "scenario": "document_update-1001",
+      "repetition": 1,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0
+      ]
+    },
+    {
+      "scenario": "document_update-1002",
+      "repetition": 0,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0
+      ]
+    },
+    {
+      "scenario": "document_update-1002",
+      "repetition": 1,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0
+      ]
+    },
+    {
+      "scenario": "document_update-1003",
+      "repetition": 0,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0
+      ]
+    },
+    {
+      "scenario": "document_update-1003",
+      "repetition": 1,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-1001",
+      "repetition": 0,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-1001",
+      "repetition": 1,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-1002",
+      "repetition": 0,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-1002",
+      "repetition": 1,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-1003",
+      "repetition": 0,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-1003",
+      "repetition": 1,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-1001",
+      "repetition": 0,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-1001",
+      "repetition": 1,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-1002",
+      "repetition": 0,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-1002",
+      "repetition": 1,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-1003",
+      "repetition": 0,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-1003",
+      "repetition": 1,
+      "budget": 6,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0
+      ]
+    }
+  ]
+}

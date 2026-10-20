@@ -1,0 +1,250 @@
+{
+  "adaptive_minus_baseline_95pct_seed_bootstrap": {
+    "periodic": {
+      "completion_rate": {
+        "high": 0.23085449735449734,
+        "low": 0.18217195767195768,
+        "mean": 0.2062857142857143
+      },
+      "cost_units": {
+        "high": 6.4206666666666665,
+        "low": 5.868666666666666,
+        "mean": 6.132666666666666
+      },
+      "interruptions": {
+        "high": 3.106666666666667,
+        "low": 2.56,
+        "mean": 2.82
+      }
+    },
+    "reactive": {
+      "completion_rate": {
+        "high": 0.12837037037037036,
+        "low": 0.0957962962962963,
+        "mean": 0.11278571428571428
+      },
+      "cost_units": {
+        "high": 3.2239999999999993,
+        "low": 2.9219999999999993,
+        "mean": 3.0726666666666658
+      },
+      "interruptions": {
+        "high": 2.1666666666666665,
+        "low": 1.8666666666666667,
+        "mean": 2.02
+      }
+    }
+  },
+  "means": {
+    "all": {
+      "adaptive": {
+        "attempts": 10.853333333333333,
+        "completion_rate": 0.9420502645502645,
+        "cost_units": 16.628,
+        "decisions": 53.126666666666665,
+        "interruptions": 10.853333333333333,
+        "intervention_precision": 0.8822864635364636,
+        "intervention_recall": 0.9420502645502645,
+        "latency_mean": 0.2274179894179894,
+        "memory_accuracy": 1.0
+      },
+      "periodic": {
+        "attempts": 8.033333333333333,
+        "completion_rate": 0.7357645502645502,
+        "cost_units": 10.495333333333333,
+        "decisions": 20,
+        "interruptions": 8.033333333333333,
+        "intervention_precision": 0.902005291005291,
+        "intervention_recall": 0.7357645502645502,
+        "latency_mean": 1.7894482924482924,
+        "memory_accuracy": 1.0
+      },
+      "reactive": {
+        "attempts": 8.833333333333334,
+        "completion_rate": 0.8292645502645503,
+        "cost_units": 13.555333333333333,
+        "decisions": 42.6,
+        "interruptions": 8.833333333333334,
+        "intervention_precision": 0.9235846560846561,
+        "intervention_recall": 0.8292645502645503,
+        "latency_mean": 1.4146666666666667,
+        "memory_accuracy": 1.0
+      }
+    },
+    "event_aligned": {
+      "adaptive": {
+        "attempts": 12,
+        "completion_rate": 1.0,
+        "cost_units": 15.43,
+        "decisions": 32,
+        "interruptions": 12,
+        "intervention_precision": 1.0,
+        "intervention_recall": 1.0,
+        "latency_mean": 0.0,
+        "memory_accuracy": 1.0
+      },
+      "periodic": {
+        "attempts": 9.266666666666667,
+        "completion_rate": 0.7722222222222223,
+        "cost_units": 11.496666666666668,
+        "decisions": 20,
+        "interruptions": 9.266666666666667,
+        "intervention_precision": 1.0,
+        "intervention_recall": 0.7722222222222223,
+        "latency_mean": 1.384040404040404,
+        "memory_accuracy": 1.0
+      },
+      "reactive": {
+        "attempts": 12,
+        "completion_rate": 1.0,
+        "cost_units": 14.43,
+        "decisions": 22,
+        "interruptions": 12,
+        "intervention_precision": 1.0,
+        "intervention_recall": 1.0,
+        "latency_mean": 0.0,
+        "memory_accuracy": 1.0
+      }
+    },
+    "misleading_estimates": {
+      "adaptive": {
+        "attempts": 12.266666666666667,
+        "completion_rate": 0.7102513227513227,
+        "cost_units": 16.373333333333335,
+        "decisions": 38.56666666666667,
+        "interruptions": 12.266666666666667,
+        "intervention_precision": 0.4114323176823177,
+        "intervention_recall": 0.7102513227513227,
+        "latency_mean": 1.1370899470899472,
+        "memory_accuracy": 1.0
+      },
+      "periodic": {
+        "attempts": 6.766666666666667,
+        "completion_rate": 0.49326719576719574,
+        "cost_units": 9.016666666666667,
+        "decisions": 20,
+        "interruptions": 6.766666666666667,
+        "intervention_precision": 0.510026455026455,
+        "intervention_recall": 0.49326719576719574,
+        "latency_mean": 1.93,
+        "memory_accuracy": 1.0
+      },
+      "reactive": {
+        "attempts": 6.1,
+        "completion_rate": 0.5396560846560846,
+        "cost_units": 8.75,
+        "decisions": 24,
+        "interruptions": 6.1,
+        "intervention_precision": 0.6179232804232804,
+        "intervention_recall": 0.5396560846560846,
+        "latency_mean": 2.003015873015873,
+        "memory_accuracy": 1.0
+      }
+    },
+    "noisy_stream": {
+      "adaptive": {
+        "attempts": 10,
+        "completion_rate": 1.0,
+        "cost_units": 23.33,
+        "decisions": 120,
+        "interruptions": 10,
+        "intervention_precision": 1.0,
+        "intervention_recall": 1.0,
+        "latency_mean": 0.0,
+        "memory_accuracy": 1.0
+      },
+      "periodic": {
+        "attempts": 7.066666666666666,
+        "completion_rate": 0.7066666666666667,
+        "cost_units": 10.396666666666667,
+        "decisions": 20,
+        "interruptions": 7.066666666666666,
+        "intervention_precision": 1.0,
+        "intervention_recall": 0.7066666666666667,
+        "latency_mean": 1.5882671957671957,
+        "memory_accuracy": 1.0
+      },
+      "reactive": {
+        "attempts": 10,
+        "completion_rate": 1.0,
+        "cost_units": 23.23,
+        "decisions": 119,
+        "interruptions": 10,
+        "intervention_precision": 1.0,
+        "intervention_recall": 1.0,
+        "latency_mean": 0.0,
+        "memory_accuracy": 1.0
+      }
+    },
+    "quiet_deadlines": {
+      "adaptive": {
+        "attempts": 10,
+        "completion_rate": 1.0,
+        "cost_units": 14.016666666666667,
+        "decisions": 37.666666666666664,
+        "interruptions": 10,
+        "intervention_precision": 1.0,
+        "intervention_recall": 1.0,
+        "latency_mean": 0.0,
+        "memory_accuracy": 1.0
+      },
+      "periodic": {
+        "attempts": 7.066666666666666,
+        "completion_rate": 0.7066666666666667,
+        "cost_units": 9.316666666666666,
+        "decisions": 20,
+        "interruptions": 7.066666666666666,
+        "intervention_precision": 1.0,
+        "intervention_recall": 0.7066666666666667,
+        "latency_mean": 1.5882671957671957,
+        "memory_accuracy": 1.0
+      },
+      "reactive": {
+        "attempts": 6.066666666666666,
+        "completion_rate": 0.6066666666666667,
+        "cost_units": 8.716666666666667,
+        "decisions": 24,
+        "interruptions": 6.066666666666666,
+        "intervention_precision": 1.0,
+        "intervention_recall": 0.6066666666666667,
+        "latency_mean": 2.0936507936507938,
+        "memory_accuracy": 1.0
+      }
+    },
+    "wide_windows": {
+      "adaptive": {
+        "attempts": 10,
+        "completion_rate": 1.0,
+        "cost_units": 13.99,
+        "decisions": 37.4,
+        "interruptions": 10,
+        "intervention_precision": 1.0,
+        "intervention_recall": 1.0,
+        "latency_mean": 0.0,
+        "memory_accuracy": 1.0
+      },
+      "periodic": {
+        "attempts": 10,
+        "completion_rate": 1.0,
+        "cost_units": 12.25,
+        "decisions": 20,
+        "interruptions": 10,
+        "intervention_precision": 1.0,
+        "intervention_recall": 1.0,
+        "latency_mean": 2.4566666666666666,
+        "memory_accuracy": 1.0
+      },
+      "reactive": {
+        "attempts": 10,
+        "completion_rate": 1.0,
+        "cost_units": 12.65,
+        "decisions": 24,
+        "interruptions": 10,
+        "intervention_precision": 1.0,
+        "intervention_recall": 1.0,
+        "latency_mean": 2.9766666666666666,
+        "memory_accuracy": 1.0
+      }
+    }
+  }
+}

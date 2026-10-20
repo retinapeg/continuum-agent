@@ -1,0 +1,8 @@
+{
+  "allow_known_unsent_fallback": false,
+  "measurement_source": "evidence/build/claude-preflight-2.json and haiku-preflight.json; one verified primary response each, insufficient for quality ranking",
+  "models": [
+    {"provider": "claude", "model": "claude-haiku-4-5-20251001", "task_classes": ["document", "conversation"], "measured_attempts": 1, "measured_valid_responses": 1, "live_verified": true},
+    {"provider": "claude", "model": "claude-sonnet-4-6", "task_classes": ["document", "conversation"], "measured_attempts": 1, "measured_valid_responses": 1, "live_verified": true}
+  ]
+}

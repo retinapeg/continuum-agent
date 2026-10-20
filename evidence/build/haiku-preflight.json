@@ -1,0 +1,65 @@
+{
+  "kind": "development-preflight",
+  "provider": "claude",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "auth": {
+    "authenticated": true,
+    "auth_method": "claude.ai",
+    "subscription_type": "max"
+  },
+  "status": "verified",
+  "reported_model": "claude-haiku-4-5-20251001",
+  "usage": {
+    "uncached_input": 3980,
+    "cached_read": 0,
+    "cache_creation": 0,
+    "output": 362,
+    "other": null,
+    "source": "final_result_usage",
+    "currency": null,
+    "charge": null,
+    "charge_reason": "subscription invoice not observed",
+    "calculation_version": 1,
+    "primary_usage": {
+      "uncached_input": 2795,
+      "cached_read": 0,
+      "cache_creation": 0,
+      "output": 348
+    },
+    "per_model_reported": {
+      "claude-haiku-4-5-20251001": {
+        "inputTokens": 3980,
+        "outputTokens": 362,
+        "cacheReadInputTokens": 0,
+        "cacheCreationInputTokens": 0,
+        "webSearchRequests": 0,
+        "costUSD": 0.00579,
+        "contextWindow": 200000,
+        "maxOutputTokens": 32000,
+        "canonicalModel": "claude-haiku-4-5",
+        "provider": "firstParty"
+      }
+    },
+    "api_equivalent_usd": 0.00579,
+    "rate_source": "CLI-reported modelUsage estimates; underlying rates not independently supplied",
+    "rate_date": null,
+    "estimate_currency": "USD",
+    "accounting_note": "Aggregate per-model rows once, including auxiliaries; never add final usage again."
+  },
+  "proposal": {
+    "summary": "Integration test preflight: acknowledged with brief greeting. No substantive goals or memory work initiated.",
+    "actions": [],
+    "memory_updates": [],
+    "goal_updates": [],
+    "message": {
+      "text": "Hello! I'm ready.",
+      "reason": "reply",
+      "topic": "greeting",
+      "evidence_ids": [
+        "fictional-preflight"
+      ]
+    },
+    "next_delay": 300
+  },
+  "elapsed": 4.825952500003041
+}

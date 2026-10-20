@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "continuum-research"
+version = "0.2.0"
+description = "Reproducible experiments in persistent agent scheduling"
+requires-python = ">=3.11"
+dependencies = ["jsonschema==4.26.0"]
+
+[project.scripts]
+continuum = "continuum.cli:main"
+continuum-runtime = "continuum.runtime.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["continuum*"]
+
+[tool.setuptools.package-data]
+"continuum.runtime" = ["ui/*.html", "ui/*.js", "ui/*.css"]

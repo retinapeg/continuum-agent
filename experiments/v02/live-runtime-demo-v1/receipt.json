@@ -1,0 +1,162 @@
+{
+  "kind": "development-live-wall-clock-demo",
+  "utc": "2026-10-20T00:37:57.482Z",
+  "elapsed_seconds": 40.21507887500047,
+  "provider": "claude",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "thread_joined": true,
+  "announced_without_second_user_message": true,
+  "status": {
+    "run_id": "df8ff2f5-8643-476c-bcee-e7d363aa90d4",
+    "control": "stopped",
+    "activity": "idle",
+    "policy": "D",
+    "provider": "claude",
+    "requested_model": "claude-haiku-4-5-20251001",
+    "last_real_activity": "2026-10-20T00:37:57.481Z",
+    "next_at": 1792456725.5866241,
+    "checkpoint_version": 4,
+    "retention_generation": 0,
+    "state": {
+      "at": 1792456665.5866241,
+      "cooldown": 0.8332023196990922,
+      "pressure": 0.2,
+      "staleness": 0.029956881236442134,
+      "uncertainty": 0.0,
+      "urgency": 0.09007604231144695
+    },
+    "goals": [
+      {
+        "id": "juniper",
+        "title": "Monitor the fictional Juniper project. When a review arrives, create a concise Markdown readiness brief with exact Status and Risk fields, source references and an evidence-limited recommendation. Notify me locally about the artifact. If the review leaves an owner decision unresolved, ask one necessary clarification. Do not claim field readiness from lab-only results.",
+        "status": "waiting-for-input",
+        "deadline": null,
+        "plan": "",
+        "updated": 1792456665.5866241
+      }
+    ],
+    "operations": [
+      {
+        "id": "9b8c7755c7acec3806bd307144137e6cc507fd3bd5e4c729e14a8eae469d63d2",
+        "kind": "create_artifact",
+        "status": "succeeded",
+        "result": "{\"checksum\":\"e83fdc90add100599c7a8ab5815beb550c04a31f68b67f41e96460c46cb4ba01\",\"path\":\"juniper_readiness_brief.md\",\"sources\":[\"doc-9e9dbe6b3dbc47ece4baf736c1b5f031c60b62bf05e592306d524d454d07d3f5\"]}"
+      },
+      {
+        "id": "bf829f37b8ba7c21b036a18d330863d0e76abf1472e6ef3cb9d35bc7da8261bf",
+        "kind": "request_clarification",
+        "status": "succeeded",
+        "result": "{\"channel\":\"local\",\"notification_id\":\"fe64a4d6-5882-44c5-a619-a376b32f5e2f\"}"
+      },
+      {
+        "id": "c0237178fd6fae3ba87f55b7e4256dd8427e5bde19fbaca384ea9facee6f1f16",
+        "kind": "read_document",
+        "status": "succeeded",
+        "result": "{\"checksum\":\"393b5158a585a3e861cf23df9a86448f814a06b5385ff97cce8bf3e677f3f23d\",\"content\":\"# Juniper review\\nStatus: calibration ready\\nRisk: accessibility review pending\\nThe laboratory calibration suite passed. Field performance has not been tested.\\nAn owner must decide whether to schedule the accessibility review this week or next week.\\n\",\"id\":\"doc-9e9dbe6b3dbc47ece4baf736c1b5f031c60b62bf05e592306d524d454d07d3f5\",\"path\":\"review.md\"}"
+      }
+    ],
+    "notifications": [
+      {
+        "id": "fe64a4d6-5882-44c5-a619-a376b32f5e2f",
+        "topic": "juniper",
+        "content": "To proceed with scheduling, should the accessibility review be conducted this week or next week?",
+        "reason": "blocked",
+        "evidence": "[\"doc-9e9dbe6b3dbc47ece4baf736c1b5f031c60b62bf05e592306d524d454d07d3f5\"]",
+        "status": "available-locally",
+        "suppressed_reason": null,
+        "created": 1792456665.5866241,
+        "delivered": 1792456665.5866241
+      },
+      {
+        "id": "bf1f64e3-2fbf-48d3-b4c9-9eb471b4eef2",
+        "topic": "juniper",
+        "content": "Juniper readiness brief created. The project shows calibration success but field readiness cannot be confirmed yet\u2014lab results alone don't validate field performance. The accessibility review is the critical blocker. I need your decision: should this review be scheduled this week or next week?",
+        "reason": "new_evidence",
+        "evidence": "[\"doc-9e9dbe6b3dbc47ece4baf736c1b5f031c60b62bf05e592306d524d454d07d3f5\"]",
+        "status": "suppressed",
+        "suppressed_reason": "cooldown",
+        "created": 1792456665.5866241,
+        "delivered": null
+      },
+      {
+        "id": "930387c4-3aed-4e8a-8168-4926632a423b",
+        "topic": "juniper",
+        "content": "Reading the Juniper project review now.",
+        "reason": "none",
+        "evidence": "[\"doc-9e9dbe6b3dbc47ece4baf736c1b5f031c60b62bf05e592306d524d454d07d3f5\"]",
+        "status": "suppressed",
+        "suppressed_reason": "no_usefulness_criterion",
+        "created": 1792456660.1122606,
+        "delivered": null
+      },
+      {
+        "id": "50a0673b-82e8-4a3d-befd-864dc7b4d280",
+        "topic": "juniper",
+        "content": "Got it. I'm monitoring the Juniper project and will create a readiness brief as soon as a review arrives. The brief will include Status and Risk fields with source references, plus a recommendation based only on available evidence. If the review leaves any owner decision unresolved, I'll ask for the clarification needed.",
+        "reason": "reply",
+        "evidence": "[\"64d56007-14a0-4417-ac72-bf39e1d2fed9\"]",
+        "status": "available-locally",
+        "suppressed_reason": null,
+        "created": 1792456637.2683504,
+        "delivered": 1792456637.2683504
+      }
+    ],
+    "calls": [
+      {
+        "id": "09687ebe-6ace-404b-bec6-bd6ab44f41d6",
+        "provider": "claude",
+        "requested_model": "claude-haiku-4-5-20251001",
+        "reported_model": "claude-haiku-4-5-20251001",
+        "status": "succeeded",
+        "input_hash": "8fbbca1cac2f6c8807b8e9676be93c6078c5fd115aa0f08bba862a6805bdeb30",
+        "output_hash": "d7fcf1318bd8da4096643cb76d4fa032796304a6228b0c67a202972664393a8a",
+        "usage": "{\"accounting_note\":\"Aggregate per-model rows once, including auxiliaries; never add final usage again.\",\"api_equivalent_usd\":0.019638,\"cache_creation\":4481,\"cached_read\":0,\"calculation_version\":1,\"charge\":null,\"charge_reason\":\"subscription invoice not observed\",\"currency\":null,\"estimate_currency\":\"USD\",\"other\":null,\"output\":1557,\"per_model_reported\":{\"claude-haiku-4-5-20251001\":{\"cacheCreationInputTokens\":4481,\"cacheReadInputTokens\":0,\"canonicalModel\":\"claude-haiku-4-5\",\"contextWindow\":200000,\"costUSD\":0.019638,\"inputTokens\":2891,\"maxOutputTokens\":32000,\"outputTokens\":1557,\"provider\":\"firstParty\",\"webSearchRequests\":0}},\"primary_usage\":{\"cache_creation\":4481,\"cached_read\":0,\"output\":1542,\"uncached_input\":10},\"rate_date\":null,\"rate_source\":\"CLI-reported modelUsage estimates; underlying rates not independently supplied\",\"source\":\"modelUsage_aggregate\",\"uncached_input\":2891}",
+        "error": null,
+        "elapsed": 11.763768333999906,
+        "created": 1792456665.5866241
+      },
+      {
+        "id": "fa7e160e-39ee-4bb7-8562-c2b10ad20bd0",
+        "provider": "claude",
+        "requested_model": "claude-haiku-4-5-20251001",
+        "reported_model": "claude-haiku-4-5-20251001",
+        "status": "succeeded",
+        "input_hash": "38c5cbe0ecd31a94854c96a8691517a42ef420d421d2f0560eb736ac4fe9ef50",
+        "output_hash": "488f789b114dc3cda8a1487bcea8fe9574b94367c78795141561411e1214e0ac",
+        "usage": "{\"accounting_note\":\"Aggregate per-model rows once, including auxiliaries; never add final usage again.\",\"api_equivalent_usd\":0.008792,\"cache_creation\":0,\"cached_read\":0,\"calculation_version\":1,\"charge\":null,\"charge_reason\":\"subscription invoice not observed\",\"currency\":null,\"estimate_currency\":\"USD\",\"other\":null,\"output\":454,\"per_model_reported\":{\"claude-haiku-4-5-20251001\":{\"cacheCreationInputTokens\":0,\"cacheReadInputTokens\":0,\"canonicalModel\":\"claude-haiku-4-5\",\"contextWindow\":200000,\"costUSD\":0.008792,\"inputTokens\":6522,\"maxOutputTokens\":32000,\"outputTokens\":454,\"provider\":\"firstParty\",\"webSearchRequests\":0}},\"primary_usage\":{\"cache_creation\":0,\"cached_read\":0,\"output\":439,\"uncached_input\":4066},\"rate_date\":null,\"rate_source\":\"CLI-reported modelUsage estimates; underlying rates not independently supplied\",\"source\":\"modelUsage_aggregate\",\"uncached_input\":6522}",
+        "error": null,
+        "elapsed": 5.4141347910044715,
+        "created": 1792456660.1122606
+      },
+      {
+        "id": "c9c238af-af4f-4ca9-964a-cee1e230ebdf",
+        "provider": "claude",
+        "requested_model": "claude-haiku-4-5-20251001",
+        "reported_model": "claude-haiku-4-5-20251001",
+        "status": "succeeded",
+        "input_hash": "80c3dd6b8d302193b0dbbd5701bb75de6dae4154f6acf2260a5efb2c957ee317",
+        "output_hash": "963bc607653de422fa23e63af27835f1ff3260cde353666ae8d22ee58cdc3e6c",
+        "usage": "{\"accounting_note\":\"Aggregate per-model rows once, including auxiliaries; never add final usage again.\",\"api_equivalent_usd\":0.009569000000000001,\"cache_creation\":0,\"cached_read\":0,\"calculation_version\":1,\"charge\":null,\"charge_reason\":\"subscription invoice not observed\",\"currency\":null,\"estimate_currency\":\"USD\",\"other\":null,\"output\":737,\"per_model_reported\":{\"claude-haiku-4-5-20251001\":{\"cacheCreationInputTokens\":0,\"cacheReadInputTokens\":0,\"canonicalModel\":\"claude-haiku-4-5\",\"contextWindow\":200000,\"costUSD\":0.009569000000000001,\"inputTokens\":5884,\"maxOutputTokens\":32000,\"outputTokens\":737,\"provider\":\"firstParty\",\"webSearchRequests\":0}},\"primary_usage\":{\"cache_creation\":0,\"cached_read\":0,\"output\":723,\"uncached_input\":3747},\"rate_date\":null,\"rate_source\":\"CLI-reported modelUsage estimates; underlying rates not independently supplied\",\"source\":\"modelUsage_aggregate\",\"uncached_input\":5884}",
+        "error": null,
+        "elapsed": 7.983647625005688,
+        "created": 1792456637.2683504
+      }
+    ],
+    "memories": [],
+    "artifacts": [
+      {
+        "id": "9b8c7755c7acec3806bd307144137e6cc507fd3bd5e4c729e14a8eae469d63d2",
+        "path": "juniper_readiness_brief.md",
+        "checksum": "e83fdc90add100599c7a8ab5815beb550c04a31f68b67f41e96460c46cb4ba01",
+        "sources": "[\"doc-9e9dbe6b3dbc47ece4baf736c1b5f031c60b62bf05e592306d524d454d07d3f5\"]",
+        "created": 1792456665.5866241
+      }
+    ]
+  },
+  "limits": {
+    "seconds": 180,
+    "calls": 6,
+    "output_bytes": 1000000
+  },
+  "charges": null
+}

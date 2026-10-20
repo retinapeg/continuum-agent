@@ -1,0 +1,1 @@
+PASS: offline per-unit metrics reproduce (elapsed wall time excluded)

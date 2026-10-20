@@ -1,0 +1,10198 @@
+{
+  "call_failures": [],
+  "taxonomy": {},
+  "realized_D_E_schedules": [
+    {
+      "scenario": "changed_instructions-0",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-0",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-0",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        90.0,
+        114.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        90.0,
+        114.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-1",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-1",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-1",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-10",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-10",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-10",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        90.0,
+        114.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        90.0,
+        114.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-11",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-11",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-11",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-12",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-12",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-12",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-13",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-13",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-13",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-14",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-14",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-14",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-15",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-15",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-15",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        90.0,
+        114.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        90.0,
+        114.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-16",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-16",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-16",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-17",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-17",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-17",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-18",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-18",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-18",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-19",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-19",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-19",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-2",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-2",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-2",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-20",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-20",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-20",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        90.0,
+        114.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        90.0,
+        114.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-21",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-21",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-21",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-22",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-22",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-22",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-23",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-23",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-23",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-24",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-24",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-24",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-25",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-25",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-25",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        90.0,
+        114.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        90.0,
+        114.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-26",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-26",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-26",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-27",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-27",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-27",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-28",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-28",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-28",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-29",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-29",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-29",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-3",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-3",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-3",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-4",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-4",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-4",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-5",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-5",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-5",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        90.0,
+        114.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        90.0,
+        114.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-6",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-6",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-6",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-7",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-7",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-7",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-8",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-8",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-8",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-9",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-9",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "changed_instructions-9",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-0",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-0",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-0",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-1",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-1",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        48.0,
+        72.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        48.0,
+        72.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-1",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        48.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        48.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-10",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-10",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        48.0,
+        72.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        48.0,
+        72.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-10",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        48.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        48.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-11",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-11",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-11",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-12",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-12",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-12",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-13",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-13",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        48.0,
+        72.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        48.0,
+        72.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-13",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        48.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        48.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-14",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-14",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-14",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-15",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-15",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-15",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-16",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-16",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        48.0,
+        72.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        48.0,
+        72.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-16",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        48.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        48.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-17",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-17",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-17",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-18",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-18",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-18",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-19",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-19",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        48.0,
+        72.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        48.0,
+        72.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-19",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        48.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        48.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-2",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-2",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-2",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-20",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-20",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-20",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-21",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-21",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-21",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-22",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-22",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        48.0,
+        72.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        48.0,
+        72.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-22",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        48.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        48.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-23",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-23",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-23",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-24",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-24",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-24",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-25",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-25",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        48.0,
+        72.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        48.0,
+        72.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-25",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        48.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        48.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-26",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-26",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-26",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-27",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-27",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-27",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-28",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-28",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        48.0,
+        72.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        48.0,
+        72.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-28",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        48.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        48.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-29",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-29",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-29",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-3",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-3",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-3",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-4",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-4",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        48.0,
+        72.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        48.0,
+        72.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-4",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        48.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        48.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-5",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-5",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-5",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-6",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-6",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-6",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-7",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-7",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        48.0,
+        72.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        48.0,
+        72.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-7",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        48.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        48.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-8",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-8",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-8",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-9",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0
+      ],
+      "E": [
+        0.0,
+        18.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-9",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0
+      ]
+    },
+    {
+      "scenario": "deadline_followup-9",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        18.0,
+        42.0,
+        66.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-0",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-0",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-0",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-1",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-1",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-1",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-10",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-10",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-10",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-11",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-11",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-11",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-12",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-12",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-12",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-13",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-13",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-13",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-14",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-14",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-14",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-15",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-15",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-15",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-16",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-16",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-16",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-17",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-17",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-17",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-18",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-18",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-18",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-19",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-19",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-19",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-2",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-2",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-2",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-20",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-20",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-20",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-21",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-21",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-21",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-22",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-22",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-22",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-23",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-23",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-23",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-24",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-24",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-24",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-25",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-25",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-25",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-26",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-26",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-26",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-27",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-27",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-27",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-28",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-28",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-28",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-29",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-29",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-29",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-3",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-3",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-3",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-4",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-4",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-4",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-5",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-5",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-5",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-6",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-6",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-6",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-7",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-7",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-7",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-8",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-8",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-8",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-9",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-9",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "delayed_dependencies-9",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "document_update-0",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "document_update-0",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "document_update-0",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "document_update-1",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "document_update-1",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "document_update-1",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "document_update-10",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "document_update-10",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "document_update-10",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "document_update-11",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "document_update-11",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "document_update-11",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "document_update-12",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "document_update-12",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "document_update-12",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "document_update-13",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "document_update-13",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "document_update-13",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "document_update-14",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "document_update-14",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "document_update-14",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "document_update-15",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "document_update-15",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "document_update-15",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "document_update-16",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "document_update-16",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "document_update-16",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "document_update-17",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "document_update-17",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "document_update-17",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "document_update-18",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "document_update-18",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "document_update-18",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "document_update-19",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "document_update-19",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "document_update-19",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "document_update-2",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "document_update-2",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "document_update-2",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "document_update-20",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "document_update-20",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "document_update-20",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "document_update-21",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "document_update-21",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "document_update-21",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "document_update-22",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "document_update-22",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "document_update-22",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "document_update-23",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "document_update-23",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "document_update-23",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "document_update-24",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "document_update-24",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "document_update-24",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "document_update-25",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "document_update-25",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "document_update-25",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "document_update-26",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "document_update-26",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "document_update-26",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "document_update-27",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "document_update-27",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "document_update-27",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "document_update-28",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "document_update-28",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "document_update-28",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "document_update-29",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "document_update-29",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "document_update-29",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "document_update-3",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "document_update-3",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "document_update-3",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "document_update-4",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "document_update-4",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "document_update-4",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "document_update-5",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "document_update-5",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "document_update-5",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        96.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        96.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "document_update-6",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "document_update-6",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "document_update-6",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "document_update-7",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "document_update-7",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "document_update-7",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "document_update-8",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "document_update-8",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "document_update-8",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "document_update-9",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "document_update-9",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "document_update-9",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        18.0,
+        36.0,
+        42.0,
+        72.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-0",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-0",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-0",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        102.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        102.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-1",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-1",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-1",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-10",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-10",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-10",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        102.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        102.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-11",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-11",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-11",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-12",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-12",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-12",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-13",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-13",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-13",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-14",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-14",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-14",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-15",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-15",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-15",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        102.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        102.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-16",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-16",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-16",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-17",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-17",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-17",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-18",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-18",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-18",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-19",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-19",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-19",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-2",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-2",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-2",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-20",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-20",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-20",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        102.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        102.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-21",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-21",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-21",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-22",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-22",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-22",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-23",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-23",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-23",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-24",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-24",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-24",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-25",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-25",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-25",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        102.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        102.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-26",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-26",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-26",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-27",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-27",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-27",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-28",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-28",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-28",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-29",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-29",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-29",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-3",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-3",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-3",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-4",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-4",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-4",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-5",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-5",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-5",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        102.0,
+        120.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        102.0,
+        120.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-6",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-6",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-6",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-7",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-7",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-7",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-8",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-8",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-8",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-9",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0
+      ],
+      "E": [
+        0.0,
+        12.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-9",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0
+      ]
+    },
+    {
+      "scenario": "interrupted_work-9",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        12.0,
+        42.0,
+        48.0,
+        78.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-0",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-0",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-0",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-1",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-1",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-1",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-10",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-10",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-10",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-11",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-11",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-11",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-12",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-12",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-12",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-13",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-13",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-13",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-14",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-14",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-14",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-15",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-15",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-15",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-16",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-16",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-16",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-17",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-17",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-17",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-18",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-18",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-18",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-19",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-19",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-19",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-2",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-2",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-2",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-20",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-20",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-20",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-21",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-21",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-21",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-22",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-22",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-22",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-23",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-23",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-23",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-24",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-24",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-24",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-25",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-25",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-25",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-26",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-26",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-26",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-27",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-27",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-27",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-28",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-28",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-28",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-29",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-29",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-29",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-3",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-3",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-3",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-4",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-4",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-4",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-5",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-5",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-5",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-6",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-6",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-6",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-7",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-7",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-7",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-8",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-8",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-8",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-9",
+      "repetition": 0,
+      "budget": 2,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0
+      ],
+      "E": [
+        0.0,
+        24.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-9",
+      "repetition": 0,
+      "budget": 4,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0
+      ]
+    },
+    {
+      "scenario": "memory_revision-9",
+      "repetition": 0,
+      "budget": 8,
+      "equal": true,
+      "D": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ],
+      "E": [
+        0.0,
+        24.0,
+        30.0,
+        36.0,
+        66.0,
+        84.0,
+        108.0
+      ]
+    }
+  ]
+}

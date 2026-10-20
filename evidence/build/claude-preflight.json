@@ -1,0 +1,11 @@
+{
+  "provider": "claude",
+  "requested_model": "claude-sonnet-4-6",
+  "auth": {
+    "authenticated": true,
+    "auth_method": "claude.ai",
+    "subscription_type": "max"
+  },
+  "status": "NOT VERIFIED",
+  "error": "model switch detected: claude-haiku-4-5-20251001,claude-sonnet-4-6"
+}
