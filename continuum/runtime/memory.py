@@ -47,13 +47,31 @@ class Memory:
             self.db.event('memory.updated', {'id': mid, 'kind': kind, 'status': status, 'supersedes': supersedes}, refs=provenance, tx=tx)
         return mid
 
-    def retrieve(self, query, at, budget=5000, include_private=False):
+    def confirm(self, mid, at, decision_ref):
+        """Promote the exact proposal using the existing conflict/correction rules."""
+        with self.db.transaction() as tx:
+            row = tx.execute('SELECT * FROM memories WHERE id=?', (mid,)).fetchone()
+            if not row or row['status'] != 'proposed':
+                raise ValueError('pending proposal required')
+            confirmed = self.add(row['kind'], row['subject'], row['content'], at,
+                                 json.loads(row['provenance']) + [decision_ref], confirmed=True,
+                                 supersedes=row['supersedes'], confidence=1,
+                                 applicable=row['applicable'], private=bool(row['private']))
+            tx.execute("UPDATE memories SET status='accepted' WHERE id=?", (mid,))
+            self.db.event('memory.confirmed', {'proposal_id': mid, 'memory_id': confirmed},
+                          refs=[mid, decision_ref], tx=tx)
+            return confirmed
+
+    def retrieve(self, query, at, budget=5000, include_private=False, confirmed_only=False):
         if budget < 0 or budget > 32000:
             raise ValueError('invalid retrieval budget')
         rows = self.db.rows("SELECT * FROM memories WHERE status IN ('confirmed','conflicted','proposed') ORDER BY observed DESC,id")
         q = terms(query)
         ranked, excluded = [], []
         for row in rows:
+            if confirmed_only and row['status'] != 'confirmed':
+                excluded.append({'id': row['id'], 'reason': 'not_confirmed'})
+                continue
             if row['private'] and not include_private:
                 excluded.append({'id': row['id'], 'reason': 'private'})
                 continue

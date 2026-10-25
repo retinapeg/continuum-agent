@@ -59,12 +59,19 @@ class Database:
     @contextmanager
     def transaction(self):
         with self.lock:
-            self.db.execute('BEGIN IMMEDIATE')
+            # Facades may compose existing operations into one atomic request.
+            nested = self.db.in_transaction
+            savepoint = 'nested_' + uid().replace('-', '')
+            self.db.execute('SAVEPOINT ' + savepoint if nested else 'BEGIN IMMEDIATE')
             try:
                 yield self.db
-                self.db.execute('COMMIT')
+                self.db.execute('RELEASE ' + savepoint if nested else 'COMMIT')
             except BaseException:
-                self.db.execute('ROLLBACK')
+                if nested:
+                    self.db.execute('ROLLBACK TO ' + savepoint)
+                    self.db.execute('RELEASE ' + savepoint)
+                else:
+                    self.db.execute('ROLLBACK')
                 raise
 
     def rows(self, sql, args=()):
