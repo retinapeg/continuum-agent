@@ -1,0 +1,56 @@
+{
+  "CD_unsuccessful": {
+    "C": 16,
+    "D": 16
+  },
+  "CD_unsuccessful_without_call_errors": 29,
+  "calls": 844,
+  "completion_by_policy": {
+    "A": 5,
+    "B": 11,
+    "C": 20,
+    "D": 20,
+    "E": 19
+  },
+  "episodes": 180,
+  "episodes_with_call_error": 22,
+  "error_calls": 26,
+  "error_taxonomy": {
+    "['Failed to provide valid structured output after 5 attempts']": 4,
+    "unexpected ambient tool request": 20,
+    "unsupported goal update": 2
+  },
+  "fresh_checks": "read-only databases, frozen scorer and independent counts; no software suite rerun",
+  "paired_outcomes": {
+    "C=0,D=0": 13,
+    "C=0,D=1": 3,
+    "C=1,D=0": 3,
+    "C=1,D=1": 17
+  },
+  "persistence_statuses": {
+    "succeeded": 180
+  },
+  "unsuccessful_episodes_with_call_error": 15,
+  "usage_coverage": {
+    "A": {
+      "calls": 54,
+      "missing_usage": 2
+    },
+    "B": {
+      "calls": 174,
+      "missing_usage": 9
+    },
+    "C": {
+      "calls": 184,
+      "missing_usage": 2
+    },
+    "D": {
+      "calls": 216,
+      "missing_usage": 4
+    },
+    "E": {
+      "calls": 216,
+      "missing_usage": 7
+    }
+  }
+}

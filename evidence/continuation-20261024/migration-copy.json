@@ -1,0 +1,13 @@
+{
+  "source": "experiments/v02/live-heldout-v1/units/delayed_dependencies-1001-r0-C-b6/agent/agent.sqlite",
+  "source_sha256": "c3a8e3b904f5144fd821e1cb18e6844f1069d3ca6f312bb5df082dae7b70be4c",
+  "target": "disposable repository-local copy; removed after check",
+  "reopens": 2,
+  "existing_tables_and_rows_preserved": true,
+  "core_schema": 2,
+  "attempt_schema": 1,
+  "backfilled_attempts": 0,
+  "legacy_calls_without_attempts": 6,
+  "integrity_check": "ok",
+  "complete_cost_total": null
+}

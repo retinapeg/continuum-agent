@@ -8,7 +8,9 @@ A reactive chat session stops at the end of a reply. CONTINUUM separates the lif
 
 **Measured result:** across **180 live Claude-backed synthetic episodes**, the hybrid agent and the strong event/deadline baseline both completed **55.56%** of tasks. The hybrid used **6.00 vs 5.11 CLI invocations per episode**; their paired completion difference was **0 percentage points, 95% interval [−11.11, +11.11]**. This experiment does **not establish a continuous-state advantage**. [Results, losses and limits](MORNING_REPORT.md) · [frozen protocol](EXPERIMENT_PROTOCOL.md).
 
-**Verification:** 106 passing tests, 3,240 reproducible offline episodes, real Chromium desktop/mobile checks, and a 600-second wall-clock fixture soak. The original v0.1 benchmark reproduces byte-for-byte. Live experiments use fictional worlds and virtual deadlines; they do not demonstrate general real-world autonomy. Frozen error telemetry is incomplete, so total cost remains unknown.
+**Original build verification:** 106 passing tests, 3,240 reproducible offline episodes, real Chromium desktop/mobile checks, and a 600-second wall-clock fixture soak. The original v0.1 benchmark reproduces byte-for-byte. Live experiments use fictional worlds and virtual deadlines; they do not demonstrate general real-world autonomy. Frozen error telemetry is incomplete, so total cost remains unknown.
+
+**24 October continuation:** 124 offline tests pass; stored results were independently re-scored and offline campaigns replayed. New per-attempt telemetry preserves failure/cost coverage without backfilling historical unknowns. Start a new engineering session with [learning.md](learning.md), [decisions.md](decisions.md) and the current [handoff](MORNING_REPORT.md). No new live verification was performed.
 
 ![Local dashboard with memory, provenance and owner controls](evidence/build/dashboard-desktop.png)
 

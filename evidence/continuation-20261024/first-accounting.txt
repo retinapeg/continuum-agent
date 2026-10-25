@@ -1,0 +1,14 @@
+test_completed_resume_still_rejects_protocol_tampering (test_accounting.CompletedResumeTests.test_completed_resume_still_rejects_protocol_tampering) ... ok
+test_completed_resume_with_source_drift_makes_no_calls (test_accounting.CompletedResumeTests.test_completed_resume_with_source_drift_makes_no_calls) ... ok
+test_unfinished_resume_rejects_source_drift (test_accounting.CompletedResumeTests.test_unfinished_resume_rejects_source_drift) ... ok
+test_error_aggregate_without_primary_usage (test_accounting.TerminalAccountingTests.test_error_aggregate_without_primary_usage) ... ok
+test_error_usage_aggregates_auxiliary_once (test_accounting.TerminalAccountingTests.test_error_usage_aggregates_auxiliary_once) ... ok
+test_failed_runtime_call_persists_available_receipt (test_accounting.TerminalAccountingTests.test_failed_runtime_call_persists_available_receipt) ... ok
+test_invalid_proposal_keeps_accounting_without_effect (test_accounting.TerminalAccountingTests.test_invalid_proposal_keeps_accounting_without_effect) ... ok
+test_missing_telemetry_unknown_and_terminal_cost_fallback (test_accounting.TerminalAccountingTests.test_missing_telemetry_unknown_and_terminal_cost_fallback) ... ok
+test_pause_discards_proposal_but_keeps_accounting (test_accounting.TerminalAccountingTests.test_pause_discards_proposal_but_keeps_accounting) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.337s
+
+OK

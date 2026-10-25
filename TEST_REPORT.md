@@ -1,5 +1,12 @@
 # Test report — 20 October 2026
 
+**24 October continuation:** the untouched baseline passed 78 runtime + 28 legacy
+tests. The final suite passes **96 runtime + 28 legacy = 124**, with 18 added
+attempt-accounting regressions. Both frozen offline reproductions and stored-data
+re-scoring passed. [Current commands and limits](learning.md) ·
+[current validation receipt](evidence/continuation-20261024/validation.json).
+The browser/live/soak results below remain historical; they were not rerun.
+
 The final local runtime suite passed **78 tests** in **2.101 seconds**. The separately preserved v0.1 suite passed **28 tests** in **0.336 seconds**, and all three original 450-run benchmark files reproduced byte-identically. These are distinct suites: **106 passing tests total**, not 106 live model trials.
 
 | Check | Actual result | Evidence |

@@ -1,0 +1,155 @@
+{
+  "CD_records": 72,
+  "HEAD": "a0ecdd5606ccb8d9629a7c4c85285f071088684f",
+  "all_180_stored_scores_reproduced": true,
+  "all_seven_failed_memory_episodes_retrieve_both_conflicts": true,
+  "audit_python_syntax_and_whitespace": "passed",
+  "branch": "main",
+  "call_error_categories": {
+    "['Failed to provide valid structured output after 5 attempts']": {
+      "calls": 4,
+      "episodes": 4,
+      "successful_episodes": 1,
+      "unsuccessful_episodes": 3
+    },
+    "unexpected ambient tool request": {
+      "calls": 20,
+      "episodes": 17,
+      "successful_episodes": 5,
+      "unsuccessful_episodes": 12
+    },
+    "unsupported goal update": {
+      "calls": 2,
+      "episodes": 2,
+      "successful_episodes": 2,
+      "unsuccessful_episodes": 0
+    }
+  },
+  "checks": [
+    {
+      "command": [
+        ".venv/bin/python",
+        "evidence/failure-diagnosis-20261024T132605Z/inspect_evidence.py"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "{\n  \"fresh_checks\": \"read-only databases, frozen scorer and independent counts; no software suite rerun\",\n  \"episodes\": 180,\n  \"persistence_statuses\": {\n    \"succeeded\": 180\n  },\n  \"completion_by_policy\": {\n    \"A\": 5,\n    \"B\": 11,\n    \"C\": 20,\n    \"D\": 20,\n    \"E\": 19\n  },\n  \"calls\": 844,\n  \"usage_coverage\": {\n    \"C\": {\n      \"calls\": 184,\n      \"missing_usage\": 2\n    },\n    \"E\": {\n      \"calls\": 216,\n      \"missing_usage\": 7\n    },\n    \"D\": {\n      \"calls\": 216,\n      \"missing_usage\": 4\n    },\n    \"B\": {\n      \"calls\": 174,\n      \"missing_usage\": 9\n    },\n    \"A\": {\n      \"calls\": 54,\n      \"missing_usage\": 2\n    }\n  },\n  \"CD_unsuccessful\": {\n    \"C\": 16,\n    \"D\": 16\n  },\n  \"CD_unsuccessful_without_call_errors\": 29,\n  \"error_calls\": 26,\n  \"error_taxonomy\": {\n    \"unexpected ambient tool request\": 20,\n    \"['Failed to provide valid structured output after 5 attempts']\": 4,\n    \"unsupported goal update\": 2\n  },\n  \"episodes_with_call_error\": 22,\n  \"unsuccessful_episodes_with_call_error\": 15,\n  \"paired_outcomes\": {\n    \"C=1,D=1\": 17,\n    \"C=0,D=1\": 3,\n    \"C=1,D=0\": 3,\n    \"C=0,D=0\": 13\n  }\n}\n"
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "evidence/failure-diagnosis-20261024T132605Z/probe_scoring.py"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "PASS: 6 in-memory scorer probes; no original record or scoring implementation changed\n"
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "evidence/failure-diagnosis-20261024T132605Z/build_tables.py"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "{\n  \"failed_rows\": 32,\n  \"primary_mechanisms\": {\n    \"clarification_suppressed\": 4,\n    \"field_layout\": 23,\n    \"clarification_message_only\": 5\n  },\n  \"call_errors\": 26,\n  \"fresh_interval_recalculation\": {\n    \"scenarios\": 18,\n    \"mean\": 0.0,\n    \"low\": -0.1111111111111111,\n    \"high\": 0.1111111111111111\n  },\n  \"D_E_schedule_pairs_equal\": 36,\n  \"review_packet_samples_checked\": 12,\n  \"human_review_status\": \"AWAITING_INDEPENDENT_HUMAN_REVIEW\",\n  \"saved_software_test_receipts\": {\n    \"runtime\": 96,\n    \"legacy\": 28,\n    \"total\": 124,\n    \"freshly_rerun\": false,\n    \"receipt_and_tested_source_hashes_match\": true\n  },\n  \"new_live_provider_validation\": false,\n  \"originals_written\": false\n}\n"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": ""
+    }
+  ],
+  "commits_or_pushes": 0,
+  "context_receipts_without_exclusions": 400,
+  "cwd_and_root": "/Users/leo/Projects/continuum-agent",
+  "diagnosis_markdown_links_checked": 213,
+  "earlier_audit_verifier_failure": {
+    "command": ".venv/bin/python evidence/failure-diagnosis-20261024T132605Z/verify_audit.py",
+    "exit_code": 1,
+    "reason": "Link checker initially treated engineering.md inside a fenced literal artifact as a rendered report link.",
+    "resolution": "Exclude fenced code from Markdown link validation; no original artifact or application code changed."
+  },
+  "external_calls": 0,
+  "final_git_status": " M MORNING_REPORT.md\n M README.md\n M TEST_REPORT.md\n M continuum/runtime/database.py\n M continuum/runtime/engine.py\n M continuum/runtime/providers.py\n M continuum/runtime/routing.py\n?? AGENTS.md\n?? continuum/runtime/telemetry.py\n?? decisions.md\n?? evidence/continuation-20261024/\n?? evidence/failure-diagnosis-20261024T132605Z/\n?? learning.md\n?? scripts/verify_stored_evidence.py\n?? tests_runtime/test_telemetry.py\n",
+  "fresh_database_integrity_checks": {
+    "distinct_databases": 181,
+    "migrations": 0,
+    "mode": "read-only immutable"
+  },
+  "frozen_protocol_sha256": "bf7f4a978b916e74733e6d63d091b6b029550d59747c5364405c38bce6dc1509",
+  "generated_world_hashes_verified": 18,
+  "installs": 0,
+  "listener_checks": [
+    {
+      "command": [
+        "lsof",
+        "-nP",
+        "-iTCP:8787",
+        "-sTCP:LISTEN"
+      ],
+      "exit_code": 1,
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "command": [
+        "lsof",
+        "-nP",
+        "-iTCP:8789",
+        "-sTCP:LISTEN"
+      ],
+      "exit_code": 1,
+      "stderr": "",
+      "stdout": ""
+    }
+  ],
+  "live_inference_calls": 0,
+  "manifest_source_files_verified": 21,
+  "matching_project_processes": [],
+  "new_files_outside_audit": [],
+  "new_live_provider_validation": false,
+  "new_runtime_or_test_changes": false,
+  "preservation": {
+    "changed_original_files": [
+      "MORNING_REPORT.md",
+      "decisions.md",
+      "learning.md"
+    ],
+    "deleted_original_files": [],
+    "notes_before_edit_copies_match": true,
+    "other_protected_bytes_unchanged": true,
+    "protected_files": 1676,
+    "scope": "All initial tracked/nonignored work, all held-out campaign files including ignored DBs, and .runtime files"
+  },
+  "python": "3.13.15 (main, Aug  5 2026, 12:25:43) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "repeated_explicit_memory_questions": {
+    "successful_episodes": 4,
+    "unsuccessful_episodes": 4
+  },
+  "review_limit": "Scorer consistency is not semantic validity; independent human review remains pending",
+  "scorer_probe_count": 6,
+  "services_started": 0,
+  "software_suite": "124 passing tests in saved receipts; hashes checked, suite NOT rerun in this audit",
+  "unmatched_call_work": {
+    "C": {
+      "available_notifications": 0,
+      "calls": 12,
+      "calls_without_new_operations": 11,
+      "new_operations": 1
+    },
+    "D": {
+      "available_notifications": 5,
+      "calls": 44,
+      "calls_without_new_operations": 40,
+      "new_operations": 4
+    }
+  },
+  "unsuccessful_records": 32,
+  "unsuccessful_without_call_error": 29,
+  "verified_at_utc": "2026-10-24T13:40:52.786963+00:00"
+}

@@ -1,0 +1,332 @@
+{
+  "campaigns": [
+    {
+      "campaign": "experiments/v02/offline-final-v2",
+      "protocol_sha256": "16c3f1a6deb645b8a5be58128af4a161939e8d5fa74e3190635db9c765fe6c97",
+      "frozen_source_files_verified": 21,
+      "declared_episodes": 3240,
+      "independently_rescored": 3240,
+      "report_reconstructed_exactly": true,
+      "database_integrity_checks": 3241,
+      "call_coverage": {
+        "A": {
+          "attempted_calls": 810,
+          "calls_with_usage": 0,
+          "calls_without_usage": 810
+        },
+        "B": {
+          "attempted_calls": 1950,
+          "calls_with_usage": 0,
+          "calls_without_usage": 1950
+        },
+        "C": {
+          "attempted_calls": 1990,
+          "calls_with_usage": 0,
+          "calls_without_usage": 1990
+        },
+        "D": {
+          "attempted_calls": 2396,
+          "calls_with_usage": 0,
+          "calls_without_usage": 2396
+        },
+        "D_no_memory": {
+          "attempted_calls": 2396,
+          "calls_with_usage": 0,
+          "calls_without_usage": 2396
+        },
+        "E": {
+          "attempted_calls": 2396,
+          "calls_with_usage": 0,
+          "calls_without_usage": 2396
+        }
+      },
+      "historical_failure_messages": {},
+      "means": {
+        "A/budget-2": {
+          "episodes": 180,
+          "goal_completion": 0.2222222222222222,
+          "provider_calls": 1.5,
+          "total_api_equivalent_usd": null
+        },
+        "A/budget-4": {
+          "episodes": 180,
+          "goal_completion": 0.2222222222222222,
+          "provider_calls": 1.5,
+          "total_api_equivalent_usd": null
+        },
+        "A/budget-8": {
+          "episodes": 180,
+          "goal_completion": 0.2222222222222222,
+          "provider_calls": 1.5,
+          "total_api_equivalent_usd": null
+        },
+        "B/budget-2": {
+          "episodes": 180,
+          "goal_completion": 0.2222222222222222,
+          "provider_calls": 2,
+          "total_api_equivalent_usd": null
+        },
+        "B/budget-4": {
+          "episodes": 180,
+          "goal_completion": 0.28888888888888886,
+          "provider_calls": 4,
+          "total_api_equivalent_usd": null
+        },
+        "B/budget-8": {
+          "episodes": 180,
+          "goal_completion": 0.28888888888888886,
+          "provider_calls": 4.833333333333333,
+          "total_api_equivalent_usd": null
+        },
+        "C/budget-2": {
+          "episodes": 180,
+          "goal_completion": 0.2222222222222222,
+          "provider_calls": 2,
+          "total_api_equivalent_usd": null
+        },
+        "C/budget-4": {
+          "episodes": 180,
+          "goal_completion": 0.3888888888888889,
+          "provider_calls": 3.9444444444444446,
+          "total_api_equivalent_usd": null
+        },
+        "C/budget-8": {
+          "episodes": 180,
+          "goal_completion": 0.3888888888888889,
+          "provider_calls": 5.111111111111111,
+          "total_api_equivalent_usd": null
+        },
+        "D/budget-2": {
+          "episodes": 180,
+          "goal_completion": 0.2222222222222222,
+          "provider_calls": 2,
+          "total_api_equivalent_usd": null
+        },
+        "D/budget-4": {
+          "episodes": 180,
+          "goal_completion": 0.3888888888888889,
+          "provider_calls": 4,
+          "total_api_equivalent_usd": null
+        },
+        "D/budget-8": {
+          "episodes": 180,
+          "goal_completion": 0.3888888888888889,
+          "provider_calls": 7.311111111111111,
+          "total_api_equivalent_usd": null
+        },
+        "D_no_memory/budget-2": {
+          "episodes": 180,
+          "goal_completion": 0.05555555555555555,
+          "provider_calls": 2,
+          "total_api_equivalent_usd": null
+        },
+        "D_no_memory/budget-4": {
+          "episodes": 180,
+          "goal_completion": 0.2222222222222222,
+          "provider_calls": 4,
+          "total_api_equivalent_usd": null
+        },
+        "D_no_memory/budget-8": {
+          "episodes": 180,
+          "goal_completion": 0.2222222222222222,
+          "provider_calls": 7.311111111111111,
+          "total_api_equivalent_usd": null
+        },
+        "E/budget-2": {
+          "episodes": 180,
+          "goal_completion": 0.2222222222222222,
+          "provider_calls": 2,
+          "total_api_equivalent_usd": null
+        },
+        "E/budget-4": {
+          "episodes": 180,
+          "goal_completion": 0.3888888888888889,
+          "provider_calls": 4,
+          "total_api_equivalent_usd": null
+        },
+        "E/budget-8": {
+          "episodes": 180,
+          "goal_completion": 0.3888888888888889,
+          "provider_calls": 7.311111111111111,
+          "total_api_equivalent_usd": null
+        }
+      },
+      "paired_scenario_bootstrap_95": {
+        "D-minus-A/budget-2": {
+          "scenarios": 180,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        "D-minus-B/budget-2": {
+          "scenarios": 180,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        "D-minus-C/budget-2": {
+          "scenarios": 180,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        "D-minus-E/budget-2": {
+          "scenarios": 180,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        "D-minus-A/budget-4": {
+          "scenarios": 180,
+          "mean": 0.16666666666666666,
+          "low": 0.1111111111111111,
+          "high": 0.21666666666666667
+        },
+        "D-minus-B/budget-4": {
+          "scenarios": 180,
+          "mean": 0.1,
+          "low": 0.044444444444444446,
+          "high": 0.15555555555555556
+        },
+        "D-minus-C/budget-4": {
+          "scenarios": 180,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        "D-minus-E/budget-4": {
+          "scenarios": 180,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        "D-minus-A/budget-8": {
+          "scenarios": 180,
+          "mean": 0.16666666666666666,
+          "low": 0.1111111111111111,
+          "high": 0.21666666666666667
+        },
+        "D-minus-B/budget-8": {
+          "scenarios": 180,
+          "mean": 0.1,
+          "low": 0.044444444444444446,
+          "high": 0.15555555555555556
+        },
+        "D-minus-C/budget-8": {
+          "scenarios": 180,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        },
+        "D-minus-E/budget-8": {
+          "scenarios": 180,
+          "mean": 0,
+          "low": 0,
+          "high": 0
+        }
+      },
+      "limits": "Stored artifacts only; no new inference, browser or soak; no missing usage inferred."
+    },
+    {
+      "campaign": "experiments/v02/live-heldout-v1",
+      "protocol_sha256": "bf7f4a978b916e74733e6d63d091b6b029550d59747c5364405c38bce6dc1509",
+      "frozen_source_files_verified": 21,
+      "declared_episodes": 180,
+      "independently_rescored": 180,
+      "report_reconstructed_exactly": true,
+      "database_integrity_checks": 181,
+      "call_coverage": {
+        "A": {
+          "attempted_calls": 54,
+          "calls_with_usage": 52,
+          "calls_without_usage": 2
+        },
+        "B": {
+          "attempted_calls": 174,
+          "calls_with_usage": 165,
+          "calls_without_usage": 9
+        },
+        "C": {
+          "attempted_calls": 184,
+          "calls_with_usage": 182,
+          "calls_without_usage": 2
+        },
+        "D": {
+          "attempted_calls": 216,
+          "calls_with_usage": 212,
+          "calls_without_usage": 4
+        },
+        "E": {
+          "attempted_calls": 216,
+          "calls_with_usage": 209,
+          "calls_without_usage": 7
+        }
+      },
+      "historical_failure_messages": {
+        "unexpected ambient tool request": 20,
+        "['Failed to provide valid structured output after 5 attempts']": 4,
+        "unsupported goal update": 2
+      },
+      "means": {
+        "A/budget-6": {
+          "episodes": 36,
+          "goal_completion": 0.1388888888888889,
+          "provider_calls": 1.5,
+          "total_api_equivalent_usd": null
+        },
+        "B/budget-6": {
+          "episodes": 36,
+          "goal_completion": 0.3055555555555556,
+          "provider_calls": 4.833333333333333,
+          "total_api_equivalent_usd": null
+        },
+        "C/budget-6": {
+          "episodes": 36,
+          "goal_completion": 0.5555555555555556,
+          "provider_calls": 5.111111111111111,
+          "total_api_equivalent_usd": null
+        },
+        "D/budget-6": {
+          "episodes": 36,
+          "goal_completion": 0.5555555555555556,
+          "provider_calls": 6,
+          "total_api_equivalent_usd": null
+        },
+        "E/budget-6": {
+          "episodes": 36,
+          "goal_completion": 0.5277777777777778,
+          "provider_calls": 6,
+          "total_api_equivalent_usd": null
+        }
+      },
+      "paired_scenario_bootstrap_95": {
+        "D-minus-A/budget-6": {
+          "scenarios": 18,
+          "mean": 0.4166666666666667,
+          "low": 0.16666666666666666,
+          "high": 0.6388888888888888
+        },
+        "D-minus-B/budget-6": {
+          "scenarios": 18,
+          "mean": 0.25,
+          "low": 0.05555555555555555,
+          "high": 0.4444444444444444
+        },
+        "D-minus-C/budget-6": {
+          "scenarios": 18,
+          "mean": 0.0,
+          "low": -0.1111111111111111,
+          "high": 0.1111111111111111
+        },
+        "D-minus-E/budget-6": {
+          "scenarios": 18,
+          "mean": 0.027777777777777776,
+          "low": -0.16666666666666666,
+          "high": 0.19444444444444445
+        }
+      },
+      "limits": "Stored artifacts only; no new inference, browser or soak; no missing usage inferred."
+    }
+  ],
+  "new_model_calls": 0
+}

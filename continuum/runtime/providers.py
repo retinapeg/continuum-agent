@@ -40,11 +40,13 @@ class Response:
 
 class ProviderError(RuntimeError):
     def __init__(self, message, status='failed', known_unsent=False, *, usage=None,
-                 reported_model=None, elapsed=None, output_bytes=None, terminal_subtype=None):
+                 reported_model=None, elapsed=None, output_bytes=None, terminal_subtype=None,
+                 failure_code='provider_error'):
         super().__init__(message)
         self.status, self.known_unsent = status, known_unsent
         self.usage, self.reported_model, self.elapsed = usage, reported_model, elapsed
         self.output_bytes, self.terminal_subtype = output_bytes, terminal_subtype
+        self.failure_code = failure_code
 
 
 class Provider(Protocol):
@@ -71,6 +73,8 @@ def normalized_usage(provider, raw):
 def claude_result_usage(event):
     """Normalize terminal accounting once, for both successful and failed requests."""
     raw, per_model = event.get('usage'), event.get('modelUsage') or {}
+    raw = raw if isinstance(raw, dict) else None
+    per_model = {key: row if isinstance(row, dict) else {} for key, row in per_model.items()} if isinstance(per_model, dict) else {}
     total_cost = event.get('total_cost_usd')
     def number(value):
         return type(value) in (int, float) and math.isfinite(value) and value >= 0
@@ -114,7 +118,7 @@ class CLIProvider:
     def command(self):
         binary = shutil.which(self.name)
         if binary is None:
-            raise ProviderError('CLI not installed', known_unsent=True)
+            raise ProviderError('CLI not installed', known_unsent=True, failure_code='unavailable')
         if self.name == 'claude':
             return [binary, '-p', '--safe-mode', '--tools', '', '--strict-mcp-config',
                     '--mcp-config', '{"mcpServers":{}}', '--disable-slash-commands',
@@ -154,7 +158,7 @@ class CLIProvider:
         try:
             res = subprocess.run(cmd, env=self.environment(), capture_output=True, text=True, timeout=15)
         except (OSError, subprocess.TimeoutExpired) as exc:
-            raise ProviderError(type(exc).__name__, known_unsent=True) from exc
+            raise ProviderError(type(exc).__name__, known_unsent=True, failure_code='authentication') from exc
         if self.name == 'codex':
             ok = 'Logged in using ChatGPT' in res.stderr + res.stdout
             result = {'authenticated': ok, 'auth_method': 'ChatGPT' if ok else 'not verified'}
@@ -167,7 +171,7 @@ class CLIProvider:
             result = {'authenticated': ok, 'auth_method': data.get('authMethod'),
                       'subscription_type': data.get('subscriptionType')}
         if not ok:
-            raise ProviderError('subscription authentication not verified', known_unsent=True)
+            raise ProviderError('subscription authentication not verified', known_unsent=True, failure_code='authentication')
         return result
 
     @staticmethod
@@ -209,9 +213,9 @@ class CLIProvider:
                 selector.register(stream, event, name)
             while selector.get_map():
                 if cancel.is_set():
-                    raise ProviderError('cancelled after request began', 'outcome-unknown')
+                    raise ProviderError('cancelled after request began', 'outcome-unknown', failure_code='cancelled')
                 if time.monotonic() - start > self.timeout:
-                    raise ProviderError('provider deadline exceeded', 'outcome-unknown')
+                    raise ProviderError('provider deadline exceeded', 'outcome-unknown', failure_code='timeout')
                 for key, _ in selector.select(.1):
                     if key.data == 'stdin':
                         try:
@@ -226,7 +230,7 @@ class CLIProvider:
                     chunk = os.read(key.fileobj.fileno(), 8192)
                     self.output_bytes += len(chunk)
                     if self.output_bytes > self.max_bytes:
-                        raise ProviderError('total provider output limit exceeded', 'outcome-unknown')
+                        raise ProviderError('total provider output limit exceeded', 'outcome-unknown', failure_code='output_limit')
                     if not chunk:
                         selector.unregister(key.fileobj)
                         if buffers[key.data]:
@@ -242,7 +246,7 @@ class CLIProvider:
 
     def propose(self, context, cancel, progress):
         if self.name == 'codex':
-            raise ProviderError('NOT VERIFIED: complete ambient-tool isolation unavailable; Codex inference disabled', known_unsent=True)
+            raise ProviderError('NOT VERIFIED: complete ambient-tool isolation unavailable; Codex inference disabled', known_unsent=True, failure_code='tool_isolation')
         if time.monotonic() - getattr(self,'_subscription_verified_at',float('-inf')) >= 60:
             self.auth()
             self._subscription_verified_at=time.monotonic()
@@ -253,38 +257,38 @@ class CLIProvider:
     def _propose(self, context, cancel, progress):
         start = time.monotonic()
         if self.name == 'codex':
-            raise ProviderError('NOT VERIFIED: installed Codex exec has no verified complete ambient-tool isolation; inference disabled', known_unsent=True)
+            raise ProviderError('NOT VERIFIED: installed Codex exec has no verified complete ambient-tool isolation; inference disabled', known_unsent=True, failure_code='tool_isolation')
         if cancel.is_set():
-            raise ProviderError('cancelled before send', 'cancelled', True)
+            raise ProviderError('cancelled before send', 'cancelled', True, failure_code='cancelled')
         prompt = SYSTEM + '\nPUBLIC_CONTEXT_JSON\n' + canonical(context)
         if len(prompt.encode()) > 64000:
-            raise ProviderError('input bound exceeded', known_unsent=True)
+            raise ProviderError('input bound exceeded', known_unsent=True, failure_code='input_limit')
         try:
             proc = subprocess.Popen(self.command(), cwd=self.work, env=self.environment(), stdin=subprocess.PIPE,
                                     stdout=subprocess.PIPE, stderr=subprocess.PIPE, start_new_session=True)
         except OSError as exc:
-            raise ProviderError(str(exc), known_unsent=True) from exc
+            raise ProviderError(str(exc), known_unsent=True, failure_code='unavailable') from exc
         final, model, usage, terminal_subtype = None, None, None, None
-        texts, errors, primary_models = [], [], set()
+        texts, primary_models = [], set()
         initialized = False
         try:
             for channel, line in self.lines(proc, prompt, cancel):
                 if channel == 'stderr':
-                    if len(errors) < 6:
-                        errors.append(redact(line.decode(errors='replace')[:300]))
+                    # Bytes count toward the stream limit; arbitrary diagnostic text
+                    # may echo context or credentials and is not an accounting field.
                     continue
                 try:
                     event = json.loads(line, parse_constant=lambda x: (_ for _ in ()).throw(ValueError('nonfinite JSON')))
                 except ValueError:
-                    raise ProviderError('invalid JSON stream') from None
+                    raise ProviderError('invalid JSON stream', failure_code='malformed_response') from None
                 if not isinstance(event, dict):
-                    raise ProviderError('stream event must be an object')
+                    raise ProviderError('stream event must be an object', failure_code='malformed_response')
                 kind = event.get('type')
                 if kind == 'system' and event.get('subtype') == 'init':
                     model = event.get('model')
                     inventory = event.get('tools')
                     if not isinstance(inventory, list) or any(t != 'StructuredOutput' for t in inventory):
-                        raise ProviderError('ambient tools present or tool inventory unavailable')
+                        raise ProviderError('ambient tools present or tool inventory unavailable', failure_code='tool_isolation')
                     initialized = True
                     progress({'type': 'provider.initialized', 'model': model, 'tools': inventory})
                 elif kind == 'stream_event':
@@ -302,36 +306,37 @@ class CLIProvider:
                         if block.get('type') == 'text':
                             texts.append(block.get('text', ''))
                         elif block.get('type') == 'tool_use' and block.get('name') != 'StructuredOutput':
-                            raise ProviderError('unexpected ambient tool request')
+                            raise ProviderError('unexpected ambient tool request', failure_code='tool_isolation')
                 elif kind == 'result':
                     # Error results can carry nonzero usage and cost; collect before raising.
                     usage = claude_result_usage(event)
                     terminal_subtype = event.get('subtype')
                     if event.get('is_error'):
-                        raise ProviderError(redact(str(event.get('result', event.get('errors', 'provider error'))))[:500])
+                        raise ProviderError('provider terminal error', failure_code=(
+                            'malformed_response' if terminal_subtype == 'error_max_structured_output_retries' else 'provider_error'))
                     final = event.get('structured_output')
                     if final is None and event.get('result'):
                         texts.append(event['result'])
                 elif kind in ('error', 'turn.failed'):
-                    raise ProviderError(redact(str(event.get('message', event.get('error'))))[:500])
+                    raise ProviderError('provider stream error')
                 # Hidden reasoning is deliberately ignored.
             code = proc.wait(timeout=2)
             if code:
-                raise ProviderError('CLI exit ' + str(code) + ': ' + ' | '.join(errors))
+                raise ProviderError('CLI exit ' + str(code), failure_code='cli_exit')
             if not initialized or not primary_models:
-                raise ProviderError('missing init/tool inventory or primary model identity')
+                raise ProviderError('missing init/tool inventory or primary model identity', failure_code='tool_isolation')
             if primary_models != {self.model} or model != self.model:
-                raise ProviderError('primary model identity mismatch')
+                raise ProviderError('primary model identity mismatch', failure_code='model_mismatch')
             if final is None:
                 try:
                     final = json.loads(texts[-1])
                 except (ValueError, IndexError):
-                    raise ProviderError('missing valid structured proposal') from None
+                    raise ProviderError('missing valid structured proposal', failure_code='malformed_response') from None
             validate(PROPOSAL, final)
-            progress({'type':'provider.proposal','proposal':redact(final)})
+            progress({'type':'provider.proposal'})
             return Response(final, model, usage, time.monotonic() - start, self.output_bytes, terminal_subtype)
         except Exception as exc:
-            error = exc if isinstance(exc, ProviderError) else ProviderError('invalid provider response: ' + type(exc).__name__)
+            error = exc if isinstance(exc, ProviderError) else ProviderError('invalid provider response: ' + type(exc).__name__, failure_code='malformed_response')
             error.usage, error.reported_model = usage, model
             error.elapsed, error.output_bytes = time.monotonic() - start, getattr(self, 'output_bytes', None)
             error.terminal_subtype = terminal_subtype

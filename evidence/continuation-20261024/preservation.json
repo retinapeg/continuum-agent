@@ -1,0 +1,20 @@
+{
+  "head": "a0ecdd5606ccb8d9629a7c4c85285f071088684f",
+  "branch": "main",
+  "initial_untracked": [
+    "AGENTS.md",
+    "learning.md",
+    "decisions.md"
+  ],
+  "files_hashed": 62585,
+  "bytes": 1793351391,
+  "manifest": ".cache/continuation-20261024-original/before-manifest.json",
+  "manifest_sha256": "1aa6e20dd15893bc8c9ea30b33540c8a545a0112817652138bf3a38e01f35163",
+  "excluded_directories": [
+    ".git",
+    ".venv",
+    ".cache",
+    "__pycache__",
+    "evidence/continuation-20261024"
+  ]
+}

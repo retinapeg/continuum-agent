@@ -1,0 +1,10 @@
+{
+  "root": "/Users/leo/Projects/continuum-agent",
+  "branch": "main",
+  "HEAD": "a0ecdd5606ccb8d9629a7c4c85285f071088684f",
+  "status": "M MORNING_REPORT.md\n M README.md\n M TEST_REPORT.md\n M continuum/runtime/database.py\n M continuum/runtime/engine.py\n M continuum/runtime/providers.py\n M continuum/runtime/routing.py\n?? AGENTS.md\n?? continuum/runtime/telemetry.py\n?? decisions.md\n?? evidence/continuation-20261024/\n?? evidence/failure-diagnosis-20261024T132605Z/\n?? learning.md\n?? scripts/verify_stored_evidence.py\n?? tests_runtime/test_telemetry.py",
+  "diff_stat": "MORNING_REPORT.md              | 43 +++++++++++++++++++++++++++++-\n README.md                      |  4 ++-\n TEST_REPORT.md                 |  7 +++++\n continuum/runtime/database.py  | 10 +++++++\n continuum/runtime/engine.py    | 42 +++++++++++++++++++++++-------\n continuum/runtime/providers.py | 59 +++++++++++++++++++++++-------------------\n continuum/runtime/routing.py   |  8 ++++--\n 7 files changed, 132 insertions(+), 41 deletions(-)",
+  "protected_files": 1676,
+  "process_check": "No matching project process; only inspecting shell and rg",
+  "audit_scope": "offline diagnosis only; frozen originals read-only"
+}

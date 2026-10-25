@@ -1,0 +1,50 @@
+[
+  {
+    "probe": "headings_to_fields",
+    "episode": "delayed_dependencies-1001-r0-C-b6",
+    "change": "Move identical field labels and values onto colon lines; preserve all facts, prose, sources and time.",
+    "original_frozen_verdict": 0,
+    "probe_only_verdict": 1,
+    "does_not_establish": "Semantic correctness or a new campaign result; originals unchanged."
+  },
+  {
+    "probe": "citation_to_next_line",
+    "episode": "interrupted_work-1003-r1-D-b6",
+    "change": "Move source citations onto the next line; all words and evidence remain identical.",
+    "original_frozen_verdict": 0,
+    "probe_only_verdict": 1,
+    "does_not_establish": "Semantic correctness or a new campaign result; originals unchanged."
+  },
+  {
+    "probe": "passing_fields_to_headings",
+    "episode": "delayed_dependencies-1003-r0-C-b6",
+    "change": "Equivalent label/value layout changed to headings; no factual change.",
+    "original_frozen_verdict": 1,
+    "probe_only_verdict": 0,
+    "does_not_establish": "Semantic correctness or a new campaign result; originals unchanged."
+  },
+  {
+    "probe": "unsupported_prose_ignored",
+    "episode": "delayed_dependencies-1003-r0-C-b6",
+    "change": "Inject a plainly unsupported factual assertion, leaving parsed fields intact.",
+    "original_frozen_verdict": 1,
+    "probe_only_verdict": 1,
+    "does_not_establish": "Semantic correctness or a new campaign result; originals unchanged."
+  },
+  {
+    "probe": "link_existing_question_to_operation",
+    "episode": "memory_revision-1001-r1-D-b6",
+    "change": "Synthetic operation link to the question already delivered at 24; no new text, time or delivery. Such a link is absent historically.",
+    "original_frozen_verdict": 0,
+    "probe_only_verdict": 1,
+    "does_not_establish": "Semantic correctness or a new campaign result; originals unchanged."
+  },
+  {
+    "probe": "hypothetical_delivery_only",
+    "episode": "deadline_followup-1001-r0-C-b6",
+    "change": "Hypothetically deliver the suppressed question; not evidence it was delivered. Isolates the failed delivery predicate.",
+    "original_frozen_verdict": 0,
+    "probe_only_verdict": 1,
+    "does_not_establish": "Semantic correctness or a new campaign result; originals unchanged."
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "failed_rows": 32,
+  "primary_mechanisms": {
+    "clarification_suppressed": 4,
+    "field_layout": 23,
+    "clarification_message_only": 5
+  },
+  "call_errors": 26,
+  "fresh_interval_recalculation": {
+    "scenarios": 18,
+    "mean": 0.0,
+    "low": -0.1111111111111111,
+    "high": 0.1111111111111111
+  },
+  "D_E_schedule_pairs_equal": 36,
+  "review_packet_samples_checked": 12,
+  "human_review_status": "AWAITING_INDEPENDENT_HUMAN_REVIEW",
+  "saved_software_test_receipts": {
+    "runtime": 96,
+    "legacy": 28,
+    "total": 124,
+    "freshly_rerun": false,
+    "receipt_and_tested_source_hashes_match": true
+  },
+  "new_live_provider_validation": false,
+  "originals_written": false
+}

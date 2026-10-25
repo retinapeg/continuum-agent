@@ -1,0 +1,1010 @@
+[
+  {
+    "C": "changed_instructions-1001-r0-C-b6",
+    "C_only_times": [],
+    "C_success": 1,
+    "C_times": [
+      0.0,
+      18.0,
+      30.0,
+      36.0,
+      84.0
+    ],
+    "D": "changed_instructions-1001-r0-D-b6",
+    "D_only_times": [
+      66.0
+    ],
+    "D_success": 1,
+    "D_times": [
+      0.0,
+      18.0,
+      30.0,
+      36.0,
+      66.0,
+      84.0
+    ],
+    "repetition": 0,
+    "scenario": "changed_instructions-1001"
+  },
+  {
+    "C": "changed_instructions-1001-r1-C-b6",
+    "C_only_times": [],
+    "C_success": 1,
+    "C_times": [
+      0.0,
+      18.0,
+      30.0,
+      36.0,
+      84.0
+    ],
+    "D": "changed_instructions-1001-r1-D-b6",
+    "D_only_times": [
+      66.0
+    ],
+    "D_success": 1,
+    "D_times": [
+      0.0,
+      18.0,
+      30.0,
+      36.0,
+      66.0,
+      84.0
+    ],
+    "repetition": 1,
+    "scenario": "changed_instructions-1001"
+  },
+  {
+    "C": "changed_instructions-1002-r0-C-b6",
+    "C_only_times": [],
+    "C_success": 1,
+    "C_times": [
+      0.0,
+      18.0,
+      30.0,
+      36.0,
+      84.0
+    ],
+    "D": "changed_instructions-1002-r0-D-b6",
+    "D_only_times": [
+      66.0
+    ],
+    "D_success": 1,
+    "D_times": [
+      0.0,
+      18.0,
+      30.0,
+      36.0,
+      66.0,
+      84.0
+    ],
+    "repetition": 0,
+    "scenario": "changed_instructions-1002"
+  },
+  {
+    "C": "changed_instructions-1002-r1-C-b6",
+    "C_only_times": [],
+    "C_success": 1,
+    "C_times": [
+      0.0,
+      18.0,
+      30.0,
+      36.0,
+      84.0
+    ],
+    "D": "changed_instructions-1002-r1-D-b6",
+    "D_only_times": [
+      66.0
+    ],
+    "D_success": 1,
+    "D_times": [
+      0.0,
+      18.0,
+      30.0,
+      36.0,
+      66.0,
+      84.0
+    ],
+    "repetition": 1,
+    "scenario": "changed_instructions-1002"
+  },
+  {
+    "C": "changed_instructions-1003-r0-C-b6",
+    "C_only_times": [],
+    "C_success": 1,
+    "C_times": [
+      0.0,
+      18.0,
+      30.0,
+      36.0,
+      84.0
+    ],
+    "D": "changed_instructions-1003-r0-D-b6",
+    "D_only_times": [
+      66.0
+    ],
+    "D_success": 1,
+    "D_times": [
+      0.0,
+      18.0,
+      30.0,
+      36.0,
+      66.0,
+      84.0
+    ],
+    "repetition": 0,
+    "scenario": "changed_instructions-1003"
+  },
+  {
+    "C": "changed_instructions-1003-r1-C-b6",
+    "C_only_times": [],
+    "C_success": 1,
+    "C_times": [
+      0.0,
+      18.0,
+      30.0,
+      36.0,
+      84.0
+    ],
+    "D": "changed_instructions-1003-r1-D-b6",
+    "D_only_times": [
+      66.0
+    ],
+    "D_success": 1,
+    "D_times": [
+      0.0,
+      18.0,
+      30.0,
+      36.0,
+      66.0,
+      84.0
+    ],
+    "repetition": 1,
+    "scenario": "changed_instructions-1003"
+  },
+  {
+    "C": "deadline_followup-1001-r0-C-b6",
+    "C_only_times": [],
+    "C_success": 0,
+    "C_times": [
+      0.0,
+      18.0,
+      42.0,
+      72.0
+    ],
+    "D": "deadline_followup-1001-r0-D-b6",
+    "D_only_times": [
+      66.0,
+      96.0
+    ],
+    "D_success": 1,
+    "D_times": [
+      0.0,
+      18.0,
+      42.0,
+      66.0,
+      72.0,
+      96.0
+    ],
+    "repetition": 0,
+    "scenario": "deadline_followup-1001"
+  },
+  {
+    "C": "deadline_followup-1001-r1-C-b6",
+    "C_only_times": [],
+    "C_success": 1,
+    "C_times": [
+      0.0,
+      18.0,
+      42.0,
+      72.0
+    ],
+    "D": "deadline_followup-1001-r1-D-b6",
+    "D_only_times": [
+      66.0,
+      96.0
+    ],
+    "D_success": 1,
+    "D_times": [
+      0.0,
+      18.0,
+      42.0,
+      66.0,
+      72.0,
+      96.0
+    ],
+    "repetition": 1,
+    "scenario": "deadline_followup-1001"
+  },
+  {
+    "C": "deadline_followup-1002-r0-C-b6",
+    "C_only_times": [],
+    "C_success": 1,
+    "C_times": [
+      0.0,
+      18.0,
+      42.0,
+      72.0
+    ],
+    "D": "deadline_followup-1002-r0-D-b6",
+    "D_only_times": [
+      66.0,
+      96.0
+    ],
+    "D_success": 1,
+    "D_times": [
+      0.0,
+      18.0,
+      42.0,
+      66.0,
+      72.0,
+      96.0
+    ],
+    "repetition": 0,
+    "scenario": "deadline_followup-1002"
+  },
+  {
+    "C": "deadline_followup-1002-r1-C-b6",
+    "C_only_times": [],
+    "C_success": 1,
+    "C_times": [
+      0.0,
+      18.0,
+      42.0,
+      72.0
+    ],
+    "D": "deadline_followup-1002-r1-D-b6",
+    "D_only_times": [
+      66.0,
+      96.0
+    ],
+    "D_success": 0,
+    "D_times": [
+      0.0,
+      18.0,
+      42.0,
+      66.0,
+      72.0,
+      96.0
+    ],
+    "repetition": 1,
+    "scenario": "deadline_followup-1002"
+  },
+  {
+    "C": "deadline_followup-1003-r0-C-b6",
+    "C_only_times": [],
+    "C_success": 1,
+    "C_times": [
+      0.0,
+      24.0,
+      72.0
+    ],
+    "D": "deadline_followup-1003-r0-D-b6",
+    "D_only_times": [
+      48.0,
+      96.0,
+      120.0
+    ],
+    "D_success": 1,
+    "D_times": [
+      0.0,
+      24.0,
+      48.0,
+      72.0,
+      96.0,
+      120.0
+    ],
+    "repetition": 0,
+    "scenario": "deadline_followup-1003"
+  },
+  {
+    "C": "deadline_followup-1003-r1-C-b6",
+    "C_only_times": [],
+    "C_success": 1,
+    "C_times": [
+      0.0,
+      24.0,
+      72.0
+    ],
+    "D": "deadline_followup-1003-r1-D-b6",
+    "D_only_times": [
+      48.0,
+      96.0,
+      120.0
+    ],
+    "D_success": 1,
+    "D_times": [
+      0.0,
+      24.0,
+      48.0,
+      72.0,
+      96.0,
+      120.0
+    ],
+    "repetition": 1,
+    "scenario": "deadline_followup-1003"
+  },
+  {
+    "C": "delayed_dependencies-1001-r0-C-b6",
+    "C_only_times": [
+      84.0
+    ],
+    "C_success": 0,
+    "C_times": [
+      0.0,
+      12.0,
+      18.0,
+      36.0,
+      42.0,
+      84.0
+    ],
+    "D": "delayed_dependencies-1001-r0-D-b6",
+    "D_only_times": [
+      72.0
+    ],
+    "D_success": 0,
+    "D_times": [
+      0.0,
+      12.0,
+      18.0,
+      36.0,
+      42.0,
+      72.0
+    ],
+    "repetition": 0,
+    "scenario": "delayed_dependencies-1001"
+  },
+  {
+    "C": "delayed_dependencies-1001-r1-C-b6",
+    "C_only_times": [
+      84.0
+    ],
+    "C_success": 0,
+    "C_times": [
+      0.0,
+      12.0,
+      18.0,
+      36.0,
+      42.0,
+      84.0
+    ],
+    "D": "delayed_dependencies-1001-r1-D-b6",
+    "D_only_times": [
+      72.0
+    ],
+    "D_success": 0,
+    "D_times": [
+      0.0,
+      12.0,
+      18.0,
+      36.0,
+      42.0,
+      72.0
+    ],
+    "repetition": 1,
+    "scenario": "delayed_dependencies-1001"
+  },
+  {
+    "C": "delayed_dependencies-1002-r0-C-b6",
+    "C_only_times": [
+      84.0
+    ],
+    "C_success": 0,
+    "C_times": [
+      0.0,
+      12.0,
+      18.0,
+      36.0,
+      42.0,
+      84.0
+    ],
+    "D": "delayed_dependencies-1002-r0-D-b6",
+    "D_only_times": [
+      72.0
+    ],
+    "D_success": 0,
+    "D_times": [
+      0.0,
+      12.0,
+      18.0,
+      36.0,
+      42.0,
+      72.0
+    ],
+    "repetition": 0,
+    "scenario": "delayed_dependencies-1002"
+  },
+  {
+    "C": "delayed_dependencies-1002-r1-C-b6",
+    "C_only_times": [
+      84.0
+    ],
+    "C_success": 0,
+    "C_times": [
+      0.0,
+      12.0,
+      18.0,
+      36.0,
+      42.0,
+      84.0
+    ],
+    "D": "delayed_dependencies-1002-r1-D-b6",
+    "D_only_times": [
+      72.0
+    ],
+    "D_success": 0,
+    "D_times": [
+      0.0,
+      12.0,
+      18.0,
+      36.0,
+      42.0,
+      72.0
+    ],
+    "repetition": 1,
+    "scenario": "delayed_dependencies-1002"
+  },
+  {
+    "C": "delayed_dependencies-1003-r0-C-b6",
+    "C_only_times": [
+      84.0
+    ],
+    "C_success": 1,
+    "C_times": [
+      0.0,
+      12.0,
+      18.0,
+      36.0,
+      42.0,
+      84.0
+    ],
+    "D": "delayed_dependencies-1003-r0-D-b6",
+    "D_only_times": [
+      72.0
+    ],
+    "D_success": 1,
+    "D_times": [
+      0.0,
+      12.0,
+      18.0,
+      36.0,
+      42.0,
+      72.0
+    ],
+    "repetition": 0,
+    "scenario": "delayed_dependencies-1003"
+  },
+  {
+    "C": "delayed_dependencies-1003-r1-C-b6",
+    "C_only_times": [
+      84.0
+    ],
+    "C_success": 0,
+    "C_times": [
+      0.0,
+      12.0,
+      18.0,
+      36.0,
+      42.0,
+      84.0
+    ],
+    "D": "delayed_dependencies-1003-r1-D-b6",
+    "D_only_times": [
+      72.0
+    ],
+    "D_success": 0,
+    "D_times": [
+      0.0,
+      12.0,
+      18.0,
+      36.0,
+      42.0,
+      72.0
+    ],
+    "repetition": 1,
+    "scenario": "delayed_dependencies-1003"
+  },
+  {
+    "C": "document_update-1001-r0-C-b6",
+    "C_only_times": [
+      84.0
+    ],
+    "C_success": 1,
+    "C_times": [
+      0.0,
+      12.0,
+      18.0,
+      36.0,
+      42.0,
+      84.0
+    ],
+    "D": "document_update-1001-r0-D-b6",
+    "D_only_times": [
+      72.0
+    ],
+    "D_success": 1,
+    "D_times": [
+      0.0,
+      12.0,
+      18.0,
+      36.0,
+      42.0,
+      72.0
+    ],
+    "repetition": 0,
+    "scenario": "document_update-1001"
+  },
+  {
+    "C": "document_update-1001-r1-C-b6",
+    "C_only_times": [
+      84.0
+    ],
+    "C_success": 1,
+    "C_times": [
+      0.0,
+      12.0,
+      18.0,
+      36.0,
+      42.0,
+      84.0
+    ],
+    "D": "document_update-1001-r1-D-b6",
+    "D_only_times": [
+      72.0
+    ],
+    "D_success": 1,
+    "D_times": [
+      0.0,
+      12.0,
+      18.0,
+      36.0,
+      42.0,
+      72.0
+    ],
+    "repetition": 1,
+    "scenario": "document_update-1001"
+  },
+  {
+    "C": "document_update-1002-r0-C-b6",
+    "C_only_times": [
+      84.0
+    ],
+    "C_success": 0,
+    "C_times": [
+      0.0,
+      12.0,
+      18.0,
+      36.0,
+      42.0,
+      84.0
+    ],
+    "D": "document_update-1002-r0-D-b6",
+    "D_only_times": [
+      72.0
+    ],
+    "D_success": 0,
+    "D_times": [
+      0.0,
+      12.0,
+      18.0,
+      36.0,
+      42.0,
+      72.0
+    ],
+    "repetition": 0,
+    "scenario": "document_update-1002"
+  },
+  {
+    "C": "document_update-1002-r1-C-b6",
+    "C_only_times": [
+      84.0
+    ],
+    "C_success": 0,
+    "C_times": [
+      0.0,
+      12.0,
+      18.0,
+      36.0,
+      42.0,
+      84.0
+    ],
+    "D": "document_update-1002-r1-D-b6",
+    "D_only_times": [
+      72.0
+    ],
+    "D_success": 0,
+    "D_times": [
+      0.0,
+      12.0,
+      18.0,
+      36.0,
+      42.0,
+      72.0
+    ],
+    "repetition": 1,
+    "scenario": "document_update-1002"
+  },
+  {
+    "C": "document_update-1003-r0-C-b6",
+    "C_only_times": [
+      84.0
+    ],
+    "C_success": 1,
+    "C_times": [
+      0.0,
+      12.0,
+      18.0,
+      36.0,
+      42.0,
+      84.0
+    ],
+    "D": "document_update-1003-r0-D-b6",
+    "D_only_times": [
+      72.0
+    ],
+    "D_success": 1,
+    "D_times": [
+      0.0,
+      12.0,
+      18.0,
+      36.0,
+      42.0,
+      72.0
+    ],
+    "repetition": 0,
+    "scenario": "document_update-1003"
+  },
+  {
+    "C": "document_update-1003-r1-C-b6",
+    "C_only_times": [
+      84.0
+    ],
+    "C_success": 0,
+    "C_times": [
+      0.0,
+      12.0,
+      18.0,
+      36.0,
+      42.0,
+      84.0
+    ],
+    "D": "document_update-1003-r1-D-b6",
+    "D_only_times": [
+      72.0
+    ],
+    "D_success": 1,
+    "D_times": [
+      0.0,
+      12.0,
+      18.0,
+      36.0,
+      42.0,
+      72.0
+    ],
+    "repetition": 1,
+    "scenario": "document_update-1003"
+  },
+  {
+    "C": "interrupted_work-1001-r0-C-b6",
+    "C_only_times": [],
+    "C_success": 0,
+    "C_times": [
+      0.0,
+      12.0,
+      42.0,
+      48.0,
+      84.0
+    ],
+    "D": "interrupted_work-1001-r0-D-b6",
+    "D_only_times": [
+      78.0
+    ],
+    "D_success": 1,
+    "D_times": [
+      0.0,
+      12.0,
+      42.0,
+      48.0,
+      78.0,
+      84.0
+    ],
+    "repetition": 0,
+    "scenario": "interrupted_work-1001"
+  },
+  {
+    "C": "interrupted_work-1001-r1-C-b6",
+    "C_only_times": [],
+    "C_success": 1,
+    "C_times": [
+      0.0,
+      12.0,
+      42.0,
+      48.0,
+      84.0
+    ],
+    "D": "interrupted_work-1001-r1-D-b6",
+    "D_only_times": [
+      78.0
+    ],
+    "D_success": 0,
+    "D_times": [
+      0.0,
+      12.0,
+      42.0,
+      48.0,
+      78.0,
+      84.0
+    ],
+    "repetition": 1,
+    "scenario": "interrupted_work-1001"
+  },
+  {
+    "C": "interrupted_work-1002-r0-C-b6",
+    "C_only_times": [],
+    "C_success": 1,
+    "C_times": [
+      0.0,
+      12.0,
+      42.0,
+      48.0,
+      84.0
+    ],
+    "D": "interrupted_work-1002-r0-D-b6",
+    "D_only_times": [
+      78.0
+    ],
+    "D_success": 1,
+    "D_times": [
+      0.0,
+      12.0,
+      42.0,
+      48.0,
+      78.0,
+      84.0
+    ],
+    "repetition": 0,
+    "scenario": "interrupted_work-1002"
+  },
+  {
+    "C": "interrupted_work-1002-r1-C-b6",
+    "C_only_times": [],
+    "C_success": 0,
+    "C_times": [
+      0.0,
+      12.0,
+      42.0,
+      48.0,
+      84.0
+    ],
+    "D": "interrupted_work-1002-r1-D-b6",
+    "D_only_times": [
+      78.0
+    ],
+    "D_success": 0,
+    "D_times": [
+      0.0,
+      12.0,
+      42.0,
+      48.0,
+      78.0,
+      84.0
+    ],
+    "repetition": 1,
+    "scenario": "interrupted_work-1002"
+  },
+  {
+    "C": "interrupted_work-1003-r0-C-b6",
+    "C_only_times": [],
+    "C_success": 0,
+    "C_times": [
+      0.0,
+      12.0,
+      42.0,
+      48.0,
+      84.0
+    ],
+    "D": "interrupted_work-1003-r0-D-b6",
+    "D_only_times": [
+      78.0
+    ],
+    "D_success": 0,
+    "D_times": [
+      0.0,
+      12.0,
+      42.0,
+      48.0,
+      78.0,
+      84.0
+    ],
+    "repetition": 0,
+    "scenario": "interrupted_work-1003"
+  },
+  {
+    "C": "interrupted_work-1003-r1-C-b6",
+    "C_only_times": [],
+    "C_success": 0,
+    "C_times": [
+      0.0,
+      12.0,
+      42.0,
+      48.0,
+      84.0
+    ],
+    "D": "interrupted_work-1003-r1-D-b6",
+    "D_only_times": [
+      78.0
+    ],
+    "D_success": 0,
+    "D_times": [
+      0.0,
+      12.0,
+      42.0,
+      48.0,
+      78.0,
+      84.0
+    ],
+    "repetition": 1,
+    "scenario": "interrupted_work-1003"
+  },
+  {
+    "C": "memory_revision-1001-r0-C-b6",
+    "C_only_times": [],
+    "C_success": 1,
+    "C_times": [
+      0.0,
+      24.0,
+      30.0,
+      36.0,
+      84.0
+    ],
+    "D": "memory_revision-1001-r0-D-b6",
+    "D_only_times": [
+      66.0
+    ],
+    "D_success": 0,
+    "D_times": [
+      0.0,
+      24.0,
+      30.0,
+      36.0,
+      66.0,
+      84.0
+    ],
+    "repetition": 0,
+    "scenario": "memory_revision-1001"
+  },
+  {
+    "C": "memory_revision-1001-r1-C-b6",
+    "C_only_times": [],
+    "C_success": 0,
+    "C_times": [
+      0.0,
+      24.0,
+      30.0,
+      36.0,
+      84.0
+    ],
+    "D": "memory_revision-1001-r1-D-b6",
+    "D_only_times": [
+      66.0
+    ],
+    "D_success": 0,
+    "D_times": [
+      0.0,
+      24.0,
+      30.0,
+      36.0,
+      66.0,
+      84.0
+    ],
+    "repetition": 1,
+    "scenario": "memory_revision-1001"
+  },
+  {
+    "C": "memory_revision-1002-r0-C-b6",
+    "C_only_times": [],
+    "C_success": 0,
+    "C_times": [
+      0.0,
+      24.0,
+      30.0,
+      36.0,
+      84.0
+    ],
+    "D": "memory_revision-1002-r0-D-b6",
+    "D_only_times": [
+      66.0
+    ],
+    "D_success": 0,
+    "D_times": [
+      0.0,
+      24.0,
+      30.0,
+      36.0,
+      66.0,
+      84.0
+    ],
+    "repetition": 0,
+    "scenario": "memory_revision-1002"
+  },
+  {
+    "C": "memory_revision-1002-r1-C-b6",
+    "C_only_times": [],
+    "C_success": 1,
+    "C_times": [
+      0.0,
+      24.0,
+      30.0,
+      36.0,
+      84.0
+    ],
+    "D": "memory_revision-1002-r1-D-b6",
+    "D_only_times": [
+      66.0
+    ],
+    "D_success": 1,
+    "D_times": [
+      0.0,
+      24.0,
+      30.0,
+      36.0,
+      66.0,
+      84.0
+    ],
+    "repetition": 1,
+    "scenario": "memory_revision-1002"
+  },
+  {
+    "C": "memory_revision-1003-r0-C-b6",
+    "C_only_times": [],
+    "C_success": 1,
+    "C_times": [
+      0.0,
+      24.0,
+      30.0,
+      36.0,
+      84.0
+    ],
+    "D": "memory_revision-1003-r0-D-b6",
+    "D_only_times": [
+      66.0
+    ],
+    "D_success": 1,
+    "D_times": [
+      0.0,
+      24.0,
+      30.0,
+      36.0,
+      66.0,
+      84.0
+    ],
+    "repetition": 0,
+    "scenario": "memory_revision-1003"
+  },
+  {
+    "C": "memory_revision-1003-r1-C-b6",
+    "C_only_times": [],
+    "C_success": 0,
+    "C_times": [
+      0.0,
+      24.0,
+      30.0,
+      36.0,
+      84.0
+    ],
+    "D": "memory_revision-1003-r1-D-b6",
+    "D_only_times": [
+      66.0
+    ],
+    "D_success": 0,
+    "D_times": [
+      0.0,
+      24.0,
+      30.0,
+      36.0,
+      66.0,
+      84.0
+    ],
+    "repetition": 1,
+    "scenario": "memory_revision-1003"
+  }
+]

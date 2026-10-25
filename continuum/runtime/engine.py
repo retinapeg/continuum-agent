@@ -12,6 +12,8 @@ from .dynamics import AnalyticDynamics, DiscreteDynamics, State, deadline_urgenc
 from .memory import Memory
 from .notifications import Notifications
 from .providers import ProviderError
+from .telemetry import (AttemptLedger, TERMINAL_SUBTYPES, failure_code, identifier,
+                        number, safe_progress, safe_usage, summarize)
 
 POLICIES = ('A', 'B', 'C', 'D', 'E')
 
@@ -42,6 +44,7 @@ class Runtime:
         self.db.recover(uid(), self.clock.now())
         self.db.event('runtime.started', {'clock': type(self.clock).__name__, 'restart_gap': getattr(self.clock, 'gap', 0)})
         self.activity = 'idle'
+        self.attempts = AttemptLedger(self.db)
 
     def observe(self, kind, content, source='owner', event_id=None):
         oid = self.db.observe(self.clock.now(), kind, content, source, event_id)
@@ -200,15 +203,23 @@ class Runtime:
             self.db.event('deliberation.started', {'call_id': call_id, 'input_hash': digest(context)}, trace=trace,
                           provider=self.provider.name, requested=self.provider.model, status='running', tx=tx)
         self.db.set('next_at', at + self.reflection)
+        stage = 'provider'
         try:
-            def progress(event):
+            def progress(event, attempt_id=call_id, provider=None):
+                provider = provider or self.provider
                 with self.db.transaction() as tx:
                     if epoch == self.db.get('epoch') and not self.cancel.is_set():
-                        self.db.event('provider.progress', event, trace=trace, provider=self.provider.name, requested=self.provider.model, status='running',tx=tx)
-            response = self.provider.propose(context, self.cancel, progress)
+                        # Proposal bodies are action data, not streaming telemetry.
+                        self.db.event('provider.progress', safe_progress(event), trace=trace, attempt=attempt_id,
+                                      provider=provider.name, requested=provider.model, status='running',tx=tx)
+            def invoke(provider):
+                return self.attempts.invoke(call_id, trace, provider, context, self.cancel, progress)
+            tracked = getattr(self.provider, 'propose_tracked', None)
+            response = tracked(context, self.cancel, progress, invoke) if tracked else invoke(self.provider)
             # Accounting is independent of accepting or executing the returned proposal.
             with self.db.transaction() as tx:
                 self._record_provider_receipt(tx, call_id, trace, response)
+            stage = 'proposal_validation'
             validate(PROPOSAL, response.proposal)
             response.proposal=redact(response.proposal)
             if self.cancel.is_set() or epoch != self.db.get('epoch') or self.db.get('control') != 'running':
@@ -218,22 +229,28 @@ class Runtime:
                 return True
             with self.db.transaction() as tx:
                 if epoch != self.db.get('epoch') or self.cancel.is_set() or self.db.get('control') != 'running':
-                    raise ProviderError('control changed before response persistence','cancelled')
+                    raise ProviderError('control changed before response persistence','cancelled',failure_code='cancelled')
                 self.db.set('pending_proposal', {'proposal':response.proposal,'context':context,'trace':trace,'at':at,'epoch':epoch,'reply_ids':[o['id'] for o in unprocessed if o['kind']=='user.message']}, tx)
                 tx.execute("UPDATE calls SET status='succeeded',reported_model=?,output_hash=?,usage=?,elapsed=? WHERE id=?",
-                           (response.reported_model, digest(response.proposal), canonical(response.usage), response.elapsed, call_id))
+                           (identifier(response.reported_model), digest(response.proposal), canonical(safe_usage(response.usage)),
+                            response.elapsed if number(response.elapsed) else None, call_id))
             if self.cancel.is_set() or epoch != self.db.get('epoch') or self.db.get('control') != 'running':
                 self.db.event('proposal.discarded', {'reason': 'control_epoch_changed', 'call_id': call_id}, trace=trace, status='cancelled')
                 return True
+            stage = 'application'
             self.apply_pending()
         except Exception as exc:
             if isinstance(exc, (KeyboardInterrupt, SystemExit)):
                 raise
             status = exc.status if isinstance(exc, ProviderError) else 'failed'
+            code = failure_code(exc) if isinstance(exc, ProviderError) else (
+                'provider_error' if stage == 'provider' else
+                'malformed_response' if stage == 'proposal_validation' else
+                'proposal_rejected' if stage == 'application' and isinstance(exc, ValueError) else 'application_error')
             with self.db.transaction() as tx:
                 self._record_provider_receipt(tx, call_id, trace, exc)
-                tx.execute('UPDATE calls SET status=?,error=? WHERE id=?', (status, redact(str(exc))[:800], call_id))
-                self.db.event('deliberation.failed', {'call_id': call_id, 'error': str(exc)[:800],
+                tx.execute('UPDATE calls SET status=?,error=? WHERE id=?', (status, code, call_id))
+                self.db.event('deliberation.failed', {'call_id': call_id, 'failure_code': code, 'stage': stage,
                               'known_unsent': getattr(exc, 'known_unsent', False)}, trace=trace,
                               provider=self.provider.name, requested=self.provider.model, status=status, tx=tx)
             # No automatic resend of ambiguous provider requests. New observation/owner resumes.
@@ -244,16 +261,20 @@ class Runtime:
         return True
 
     def _record_provider_receipt(self, tx, call_id, trace, receipt):
-        usage = getattr(receipt, 'usage', None)
-        model = getattr(receipt, 'reported_model', None)
+        usage = safe_usage(getattr(receipt, 'usage', None))
+        model = identifier(getattr(receipt, 'reported_model', None))
         elapsed = getattr(receipt, 'elapsed', None)
         output_bytes = getattr(receipt, 'output_bytes', None)
+        elapsed = elapsed if number(elapsed) else None
+        output_bytes = output_bytes if number(output_bytes) else None
+        subtype = getattr(receipt, 'terminal_subtype', None)
+        subtype = subtype if subtype in TERMINAL_SUBTYPES else None
         if all(value is None for value in (usage, model, elapsed, output_bytes)):
             return
         tx.execute('UPDATE calls SET reported_model=COALESCE(?,reported_model),usage=COALESCE(?,usage),elapsed=COALESCE(?,elapsed) WHERE id=?',
                    (model, canonical(redact(usage)) if usage is not None else None, elapsed, call_id))
         self.db.event('provider.receipt', {'call_id': call_id, 'usage': usage, 'elapsed': elapsed,
-                      'output_bytes': output_bytes, 'terminal_subtype': getattr(receipt, 'terminal_subtype', None)},
+                      'output_bytes': output_bytes, 'terminal_subtype': subtype},
                       trace=trace, provider=self.provider.name, requested=self.provider.model,
                       reported=model, status=getattr(receipt, 'status', 'succeeded'), tx=tx)
 
@@ -349,6 +370,7 @@ class Runtime:
                 'operations': self.db.rows('SELECT id,kind,status,result FROM operations ORDER BY created DESC LIMIT 30'),
                 'notifications': self.db.rows('SELECT * FROM outbox ORDER BY created DESC LIMIT 30'),
                 'calls': self.db.rows('SELECT * FROM calls ORDER BY created DESC LIMIT 30'),
+                'telemetry': summarize(self.db),
                 'memories': self.db.rows('SELECT * FROM memories ORDER BY observed DESC LIMIT 50'),
                 'artifacts': self.db.rows('SELECT * FROM artifacts ORDER BY created DESC'),
                 'conversation': [{'id':r['id'],'at':r['at'],'text':json.loads(r['content']).get('text','')} for r in self.db.rows("SELECT id,at,content FROM observations WHERE kind='user.message' ORDER BY at DESC LIMIT 30")]}

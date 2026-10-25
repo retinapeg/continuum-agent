@@ -45,6 +45,10 @@ class RoutedProvider:
             self.providers[(route.provider,route.model)]=CLIProvider(route.provider,route.model,work/route.model)
         self.router=Router(self.routes)
     def propose(self,context,cancel,progress):
+        return self.propose_tracked(context,cancel,progress,lambda provider: provider.propose(context,cancel,progress))
+
+    def propose_tracked(self,context,cancel,progress,invoke):
+        """Expose each existing fallback to the runtime's attempt recorder."""
         from .providers import ProviderError
         task_class='document' if context.get('documents') or any('brief' in g['title'].lower() or 'document' in g['title'].lower() for g in context.get('goals',[])) else 'conversation'
         maximum=2 if self.config.get('allow_known_unsent_fallback',False) else 1
@@ -52,7 +56,7 @@ class RoutedProvider:
             selected,receipt=self.router.choose(task_class,attempt,context.get('now'),known_unsent=True)
             receipt['reliability_estimator']='(measured_valid_responses+1)/(measured_attempts+2)'
             progress({'type':'routing.selected',**receipt})
-            try:return self.providers[(selected.provider,selected.model)].propose(context,cancel,progress)
+            try:return invoke(self.providers[(selected.provider,selected.model)])
             except ProviderError as exc:
                 if not exc.known_unsent or attempt+1>=maximum:raise
-                progress({'type':'routing.known_unsent','error':str(exc),'attempt_index':attempt})
+                progress({'type':'routing.known_unsent','failure_code':exc.failure_code,'attempt_index':attempt})

@@ -1,0 +1,117 @@
+{
+  "all_other_original_bytes_unchanged": true,
+  "branch": "main",
+  "checks": [
+    {
+      "command": [
+        "/Users/leo/Projects/continuum-agent/.venv/bin/python",
+        "-m",
+        "compileall",
+        "-q",
+        "continuum",
+        "scripts",
+        "tests",
+        "tests_runtime"
+      ],
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "date": "2026-10-24",
+  "dependencies_installed": false,
+  "formatter_or_type_checker_configured": false,
+  "frozen_results_and_runtime_data_unchanged": true,
+  "head_unchanged": true,
+  "jsonschema_version": "4.26.0",
+  "legacy_warning": "ResourceWarning: unclosed SQLite connection; also documented before continuation",
+  "limitations": [
+    "No live provider calls, new browser checks or fresh soak",
+    "Historical cost coverage remains incomplete",
+    "Untracked new files are not included in git diff --stat"
+  ],
+  "new_source_whitespace_and_document_links": "passed",
+  "original_files_changed": [
+    "MORNING_REPORT.md",
+    "README.md",
+    "TEST_REPORT.md",
+    "continuum/runtime/database.py",
+    "continuum/runtime/engine.py",
+    "continuum/runtime/providers.py",
+    "continuum/runtime/routing.py",
+    "decisions.md",
+    "learning.md"
+  ],
+  "original_files_checked": 62585,
+  "original_files_deleted": [],
+  "original_untracked_AGENTS_unchanged": true,
+  "python": "3.13.15 (main, Aug  5 2026, 12:25:43) [Clang 21.0.0 (clang-2100.1.1.101)]",
+  "safety": {
+    "codex_live_provider": "gated; fixture-tested fail-closed",
+    "commits_or_pushes": 0,
+    "external_network_requests": 0,
+    "live_project_model_attempts": 0,
+    "paid_benchmarks": 0,
+    "parent_coding_session_cost": "not metered",
+    "ports_8787_8789_listening": false,
+    "project_services_remaining": 0
+  },
+  "staged_changes": false,
+  "test_logs": {
+    "baseline-accounting.txt": {
+      "failed": 0,
+      "passed": 9,
+      "seconds": 0.367,
+      "sha256": "146795669cc7cf1c31a317de14471daa6a8486e54ad7e1c724e7b3f2bd3d30c8"
+    },
+    "baseline-legacy.txt": {
+      "failed": 0,
+      "passed": 28,
+      "seconds": 0.673,
+      "sha256": "f407e8a259c6b4604ddf6fe7ac9a4ad65a660c74e2cf4caaa2be212f5ceb4e48"
+    },
+    "baseline-runtime.txt": {
+      "failed": 0,
+      "passed": 78,
+      "seconds": 3.714,
+      "sha256": "0c01308f60914e73ac898d8c6b4a351101ffc84becb7191e2cac998dee2f3ef4"
+    },
+    "final-legacy.txt": {
+      "failed": 0,
+      "passed": 28,
+      "seconds": 0.616,
+      "sha256": "e018a841a7d51481c22db0cf8b5d7d1ab2da62efd22d3c02578bc7919502678e"
+    },
+    "final-runtime.txt": {
+      "failed": 0,
+      "passed": 96,
+      "seconds": 2.451,
+      "sha256": "1566c2835ec11363f9f940b77578fcd7eb1478df6ed891a5e3b786c2cc8c98d1"
+    },
+    "offline-reproduction.txt": {
+      "pass_marker": "PASS: offline per-unit metrics reproduce (elapsed wall time excluded)",
+      "sha256": "6f28155712ba0d99e8711d22a14dcb90f5fc9e437cea7654b6413075aa113809"
+    },
+    "v01-reproduction.txt": {
+      "pass_marker": "PASS: archived v0.1 tests and all benchmark artifacts reproduce byte-identically",
+      "sha256": "186449ac0f1648e0eaaf6cce77cf82c25ed5083627c11757bd9c7cd4a3caf13c"
+    }
+  },
+  "tested_source_sha256": {
+    "continuum/runtime/database.py": "4030fd517e55ea1d573a99289ab8154224462b11a575a0885e92b5d62c4c3452",
+    "continuum/runtime/engine.py": "700b0ed88e82ed41ba183b67705fbe085a1323dc87eaf1994cce1cc832b8d919",
+    "continuum/runtime/providers.py": "828e5d52142e126ca4cc5e71185b0b254f1b3fa49affbfd71731b4790eae5ac6",
+    "continuum/runtime/routing.py": "c752de859017afcfeebb46b005063940f20d39de295cd3490c0b06a0cc111f0a",
+    "continuum/runtime/telemetry.py": "8a198d00c08facbff307920f361367391475fa68f7cdc943b0437a53d37d3336",
+    "scripts/verify_stored_evidence.py": "3fa1be5f91aa7a3e99c4f581d6e3aff67b8c1e778d3ac42e32d84e987ead9fc0",
+    "tests_runtime/test_telemetry.py": "e57244eb518d2e35aac766108f606526ab63312af40cbc82758b690ef874d17b"
+  }
+}

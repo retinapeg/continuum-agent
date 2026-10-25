@@ -1,0 +1,262 @@
+[
+  {
+    "at": 60.0,
+    "call_id": "e99dcecc-eb3f-4193-b167-d0a854dee808",
+    "episode_id": "delayed_dependencies-1001-r0-B-b6",
+    "error": "unexpected ambient tool request",
+    "family": "delayed_dependencies",
+    "goal_completion": 0,
+    "policy": "B",
+    "usage_present": false
+  },
+  {
+    "at": 36.0,
+    "call_id": "c601022d-11d1-47ea-98ee-c823a0e22b67",
+    "episode_id": "delayed_dependencies-1001-r1-D-b6",
+    "error": "unexpected ambient tool request",
+    "family": "delayed_dependencies",
+    "goal_completion": 0,
+    "policy": "D",
+    "usage_present": false
+  },
+  {
+    "at": 30.0,
+    "call_id": "4dfe981a-b2bc-4c7d-860a-f7f33003aed2",
+    "episode_id": "changed_instructions-1001-r1-B-b6",
+    "error": "unexpected ambient tool request",
+    "family": "changed_instructions",
+    "goal_completion": 0,
+    "policy": "B",
+    "usage_present": false
+  },
+  {
+    "at": 30.0,
+    "call_id": "37b3471e-6182-4bcf-a5a2-0560918de6f2",
+    "episode_id": "changed_instructions-1001-r1-D-b6",
+    "error": "unexpected ambient tool request",
+    "family": "changed_instructions",
+    "goal_completion": 1,
+    "policy": "D",
+    "usage_present": false
+  },
+  {
+    "at": 30.0,
+    "call_id": "4aed4365-a0a7-43d5-b424-08d74d907902",
+    "episode_id": "changed_instructions-1001-r1-E-b6",
+    "error": "unexpected ambient tool request",
+    "family": "changed_instructions",
+    "goal_completion": 1,
+    "policy": "E",
+    "usage_present": false
+  },
+  {
+    "at": 36.0,
+    "call_id": "1e132483-b701-48e3-8612-76f8ab650363",
+    "episode_id": "changed_instructions-1001-r1-E-b6",
+    "error": "unexpected ambient tool request",
+    "family": "changed_instructions",
+    "goal_completion": 1,
+    "policy": "E",
+    "usage_present": false
+  },
+  {
+    "at": 30.0,
+    "call_id": "6f9fba3b-34c4-4337-b3c0-a7d6f6b0418e",
+    "episode_id": "document_update-1001-r0-B-b6",
+    "error": "unexpected ambient tool request",
+    "family": "document_update",
+    "goal_completion": 0,
+    "policy": "B",
+    "usage_present": false
+  },
+  {
+    "at": 48.0,
+    "call_id": "097e88f6-a265-4476-8daf-36d529383b70",
+    "episode_id": "interrupted_work-1001-r0-C-b6",
+    "error": "['Failed to provide valid structured output after 5 attempts']",
+    "family": "interrupted_work",
+    "goal_completion": 0,
+    "policy": "C",
+    "usage_present": false
+  },
+  {
+    "at": 48.0,
+    "call_id": "fe16cf37-9d28-47e4-9014-e562bbbe7d96",
+    "episode_id": "interrupted_work-1001-r0-D-b6",
+    "error": "['Failed to provide valid structured output after 5 attempts']",
+    "family": "interrupted_work",
+    "goal_completion": 1,
+    "policy": "D",
+    "usage_present": false
+  },
+  {
+    "at": 84.0,
+    "call_id": "1b133981-4712-46a3-ac80-f6b93a76ff97",
+    "episode_id": "interrupted_work-1001-r0-D-b6",
+    "error": "unsupported goal update",
+    "family": "interrupted_work",
+    "goal_completion": 1,
+    "policy": "D",
+    "usage_present": true
+  },
+  {
+    "at": 42.0,
+    "call_id": "dd550226-f235-4d73-8d3d-a7a731498bc6",
+    "episode_id": "interrupted_work-1001-r0-A-b6",
+    "error": "unexpected ambient tool request",
+    "family": "interrupted_work",
+    "goal_completion": 0,
+    "policy": "A",
+    "usage_present": false
+  },
+  {
+    "at": 42.0,
+    "call_id": "1afcc8c5-efe8-4d08-b726-5b55d47c0eac",
+    "episode_id": "interrupted_work-1001-r1-E-b6",
+    "error": "unexpected ambient tool request",
+    "family": "interrupted_work",
+    "goal_completion": 0,
+    "policy": "E",
+    "usage_present": false
+  },
+  {
+    "at": 48.0,
+    "call_id": "8e63934e-db86-4397-978e-80fe68726a43",
+    "episode_id": "interrupted_work-1001-r1-E-b6",
+    "error": "unexpected ambient tool request",
+    "family": "interrupted_work",
+    "goal_completion": 0,
+    "policy": "E",
+    "usage_present": false
+  },
+  {
+    "at": 96.0,
+    "call_id": "9e5810ed-76e3-4302-9800-1dd1423ce770",
+    "episode_id": "deadline_followup-1002-r0-D-b6",
+    "error": "unsupported goal update",
+    "family": "deadline_followup",
+    "goal_completion": 1,
+    "policy": "D",
+    "usage_present": true
+  },
+  {
+    "at": 12.0,
+    "call_id": "8b94dadc-8c53-4876-9efa-a7f9ce09dcf0",
+    "episode_id": "document_update-1002-r1-D-b6",
+    "error": "unexpected ambient tool request",
+    "family": "document_update",
+    "goal_completion": 0,
+    "policy": "D",
+    "usage_present": false
+  },
+  {
+    "at": 0.0,
+    "call_id": "077a39b2-14d6-4b62-ab04-209928620188",
+    "episode_id": "document_update-1002-r1-B-b6",
+    "error": "unexpected ambient tool request",
+    "family": "document_update",
+    "goal_completion": 0,
+    "policy": "B",
+    "usage_present": false
+  },
+  {
+    "at": 42.0,
+    "call_id": "c68ea66e-6abb-42e3-a20b-693b1ab89641",
+    "episode_id": "interrupted_work-1002-r0-A-b6",
+    "error": "unexpected ambient tool request",
+    "family": "interrupted_work",
+    "goal_completion": 0,
+    "policy": "A",
+    "usage_present": false
+  },
+  {
+    "at": 90.0,
+    "call_id": "7f69cf69-2206-4026-a4a7-c7bcf48050e7",
+    "episode_id": "memory_revision-1002-r0-B-b6",
+    "error": "['Failed to provide valid structured output after 5 attempts']",
+    "family": "memory_revision",
+    "goal_completion": 0,
+    "policy": "B",
+    "usage_present": false
+  },
+  {
+    "at": 30.0,
+    "call_id": "987746da-fd16-41da-9ac8-a4f041cf62dd",
+    "episode_id": "changed_instructions-1003-r0-B-b6",
+    "error": "unexpected ambient tool request",
+    "family": "changed_instructions",
+    "goal_completion": 0,
+    "policy": "B",
+    "usage_present": false
+  },
+  {
+    "at": 60.0,
+    "call_id": "e6e35d68-3f20-4864-9156-97f76a71e6f0",
+    "episode_id": "changed_instructions-1003-r0-B-b6",
+    "error": "unexpected ambient tool request",
+    "family": "changed_instructions",
+    "goal_completion": 0,
+    "policy": "B",
+    "usage_present": false
+  },
+  {
+    "at": 30.0,
+    "call_id": "1c9a26b8-ccbe-4f96-8971-d34322e86e78",
+    "episode_id": "changed_instructions-1003-r1-E-b6",
+    "error": "unexpected ambient tool request",
+    "family": "changed_instructions",
+    "goal_completion": 1,
+    "policy": "E",
+    "usage_present": false
+  },
+  {
+    "at": 36.0,
+    "call_id": "cc7c336b-e53b-4c09-afeb-46140d71e140",
+    "episode_id": "document_update-1003-r0-C-b6",
+    "error": "unexpected ambient tool request",
+    "family": "document_update",
+    "goal_completion": 1,
+    "policy": "C",
+    "usage_present": false
+  },
+  {
+    "at": 90.0,
+    "call_id": "4aa20ae9-62b2-4ac7-acc9-bf34f46cb3f9",
+    "episode_id": "document_update-1003-r0-B-b6",
+    "error": "['Failed to provide valid structured output after 5 attempts']",
+    "family": "document_update",
+    "goal_completion": 0,
+    "policy": "B",
+    "usage_present": false
+  },
+  {
+    "at": 30.0,
+    "call_id": "0e0c7dc0-288e-4d43-9899-fb7de5cfbd6b",
+    "episode_id": "document_update-1003-r1-B-b6",
+    "error": "unexpected ambient tool request",
+    "family": "document_update",
+    "goal_completion": 0,
+    "policy": "B",
+    "usage_present": false
+  },
+  {
+    "at": 12.0,
+    "call_id": "3eaf80a0-1451-4ef4-bf0e-c82d954e4714",
+    "episode_id": "document_update-1003-r1-E-b6",
+    "error": "unexpected ambient tool request",
+    "family": "document_update",
+    "goal_completion": 1,
+    "policy": "E",
+    "usage_present": false
+  },
+  {
+    "at": 42.0,
+    "call_id": "ad9d88d2-0a37-4717-b5d1-a0b5c885ff1b",
+    "episode_id": "interrupted_work-1003-r1-E-b6",
+    "error": "unexpected ambient tool request",
+    "family": "interrupted_work",
+    "goal_completion": 0,
+    "policy": "E",
+    "usage_present": false
+  }
+]

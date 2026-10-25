@@ -55,6 +55,8 @@ class Database:
                 self.set(key, value)
         if self.get('schema') != 2:
             raise ValueError('unsupported runtime schema')
+        from .telemetry import initialize
+        initialize(self)
 
     @contextmanager
     def transaction(self):
@@ -134,6 +136,14 @@ class Database:
                 tx.execute('UPDATE operations SET status=?,lease_owner=NULL,lease_until=NULL WHERE id=?', (status, op['id']))
                 self.event('recovery', {'operation_id': op['id'], 'status': status, 'previous_owner': op['lease_owner']}, status=status, tx=tx)
             unknown = tx.execute("UPDATE calls SET status='outcome-unknown',error='process restarted before receipt' WHERE status='running'").rowcount
+            for attempt in tx.execute("SELECT * FROM provider_attempts WHERE status='running'").fetchall():
+                tx.execute("UPDATE provider_attempts SET status='outcome-unknown',failure_code='process_restart',finished_at=? WHERE id=?",
+                           (utc(), attempt['id']))
+                self.event('attempt.finished', {'call_id': attempt['call_id'], 'failure_code': 'process_restart',
+                           'known_unsent': None}, trace=attempt['trace_id'], attempt=attempt['id'],
+                           provider=attempt['provider'], requested=attempt['requested_model'],
+                           status='outcome-unknown', tx=tx)
+                unknown += 1
             if unknown and self.get('control') != 'stopped':
                 self.set('control','paused',tx)
             self.set('owner', owner, tx)

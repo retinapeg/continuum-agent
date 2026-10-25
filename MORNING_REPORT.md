@@ -1,5 +1,77 @@
 # MORNING REPORT — CONTINUUM v0.2
 
+## Offline failure diagnosis checkpoint — 24 October 2026
+
+Completed one offline diagnosis at `a0ecdd5` on `main`; **no fix implemented**.
+All prior telemetry edits remain uncommitted. This section supersedes the earlier
+next-task recommendation; the earlier receipts and reports remain below.
+
+- **What failed:** of 32 unsuccessful C/D episodes, 23 produced timely source-linked
+  briefs rejected by field parsing, five delivered questions through an unscored
+  message path, and four had clarification notifications suppressed despite a
+  successful operation receipt. These exclusive proximate mechanisms are demonstrated;
+  they do not establish full prose correctness. Unsupported claims and repeated
+  questions also occur. **29/32 have no recorded call error.**
+- **Comparison:** C/D still score **20/36 each**, using **184/216 calls**. Paired:
+  17 both pass, 13 both fail, three wins each. D's extra calls include recovery work;
+  no advantage or equivalence is established, interval **−11.11 to +11.11 pp**.
+- **Accounting:** campaign `succeeded` means an episode saved, not a correct task.
+  All 26 call errors affect 22 episodes, including seven scored successful episodes.
+  Usage is missing for **24/844 calls**; historical total cost remains unknown.
+- **Verification:** freshly read/re-scored 180 original unit databases plus the
+  campaign DB in immutable read-only mode; checked raw results, frozen protocol/source,
+  review-packet samples, matched traces and six in-memory scorer probes. The **124
+  tests are saved receipts**, hash-checked but not rerun here. Reproducing scores does
+  not validate the rubric. Human semantic review and live telemetry remain unverified.
+- **One recommended next task:** calibrate the artifact-scoring contract with 12
+  manually labeled cases; stop at a reviewed contract and agreed verdicts. Do not
+  change historical scores or launch a benchmark. This recommendation is not a launch instruction.
+
+[Detailed diagnosis](evidence/failure-diagnosis-20261024T132605Z/DIAGNOSIS.md)
+· [every unsuccessful episode](evidence/failure-diagnosis-20261024T132605Z/FAILED_EPISODES.md)
+· [representative timelines](evidence/failure-diagnosis-20261024T132605Z/TIMELINES.md)
+· [verification and preservation](evidence/failure-diagnosis-20261024T132605Z/verification.json).
+Only the new audit directory and these handoff notes changed in this task; prior
+source, tests, frozen/ignored evidence and runtime data were preserved. No external
+calls, inference, services, installs, commits or pushes were initiated.
+
+## Continuation review checkpoint — 24 October 2026
+
+The existing implementation was already committed at `a0ecdd5` on `main`; only
+`AGENTS.md`, `learning.md` and `decisions.md` were untracked at startup. This
+continuation preserves them and all frozen/ignored runtime evidence. Its changes
+are **uncommitted**, with no branch changes or pushes.
+
+- **Fresh verification:** baseline 78 runtime + 28 legacy tests passed. Final suite
+  is **96 runtime + 28 legacy = 124**, including 18 new telemetry regressions.
+  v0.1's 450 runs reproduced byte-identically; all 3,240 final offline episodes
+  replayed with identical metrics except wall timing. Compile checks and whitespace
+  checks passed. See [validation](evidence/continuation-20261024/validation.json).
+- **Independent evidence reconstruction:** all 3,420 offline/live stored episodes
+  re-scored, both reports reconstructed exactly, 3,422 database integrity checks
+  passed. Live C and D remain **20/36 = 55.56%**; D used **216 vs C's 184 calls**.
+  All 844 historical live calls remain counted; 24 lack usage. Total cost is unknown.
+  [Reproducible verifier](scripts/verify_stored_evidence.py) · [receipt](evidence/continuation-20261024/stored-evidence.json).
+- **One engineering change:** additive provider-attempt accounting in SQLite, with
+  stable identities, retry links, explicit failure codes, sanitized usage metadata,
+  restart reconciliation and idempotent terminal receipts. Existing `calls` rows
+  and frozen results are untouched. Provider success is distinct from later action
+  rejection/control discard. The authenticated runtime status includes `telemetry`.
+- **Limits:** internal CLI retries are opaque; existing calls without attempt rows
+  are explicitly uncovered. No historical costs were backfilled. New instrumentation
+  is fixture-tested, not live-verified. Browser/demo/600-second-soak receipts were
+  located but those checks were not repeated. Human review remains incomplete.
+- **Scope:** no external network requests, live provider runs, paid benchmarks,
+  integrations, installs, persistent services, commits or pushes. Codex remains gated.
+
+Read [learning.md](learning.md) for commands, experiments, failures and evidence;
+[decisions.md](decisions.md) for architecture, tradeoffs and revisit conditions.
+**Next:** review this diff and migration evidence, then independently review the
+existing C/D human-review packet before considering broader evaluation.
+
+The original 20 October report follows. Its Git state, live availability and service
+status are historical statements, superseded by the checkpoint above.
+
 Built on the existing v0.1 simulator, with source/results preserved and no Git commit. The deliverable is a restartable local runtime with real Claude-backed chat/document work, explicit memory and owner controls, plus a frozen synthetic experimental platform. It is not production-ready or a demonstration of consciousness or general long-horizon intelligence.
 
 ## Delivery and evidence
@@ -90,6 +162,10 @@ Known limits include narrow synthetic templates, virtual deadlines, short real s
 
 ## Start, verify and inspect
 
+These are historical operational commands, not current authorization to launch.
+For this review, use `scripts/verify_stored_evidence.py`; the old `report`, `resume`
+and `analyze` commands can write into frozen campaign directories.
+
 ```sh
 .venv/bin/python -m continuum.runtime start --directory .runtime/live --provider claude --model claude-haiku-4-5-20251001
 .venv/bin/python -m continuum.runtime status --directory .runtime/live
@@ -106,4 +182,4 @@ Known limits include narrow synthetic templates, virtual deadlines, short real s
 
 Start is a foreground server; use a second terminal for controls. Stop persists and exits it; explicitly use `start ... --resume` to resume after restart. A completed campaign resume makes no new model calls, including after the telemetry repair. Source drift remains rejected if unfinished experimental units would execute. See README for initial dependency setup and browser checks.
 
-**Next step:** open the local dashboard and review the example brief, memory correction history and failed-trial evidence. The build stops here; no further scope expansion or automatic promotion is queued.
+**Historical next-step suggestion (superseded by the review checkpoint above):** open the local dashboard and review the example brief, memory correction history and failed-trial evidence. The build stops here; no further scope expansion or automatic promotion is queued.

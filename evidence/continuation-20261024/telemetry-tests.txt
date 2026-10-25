@@ -1,0 +1,22 @@
+test_codex_remains_gated_without_auth_or_subprocess (test_telemetry.AdapterClassificationTests.test_codex_remains_gated_without_auth_or_subprocess) ... ok
+test_malformed_stream_classification (test_telemetry.AdapterClassificationTests.test_malformed_stream_classification) ... ok
+test_real_local_timeout_classification (test_telemetry.AdapterClassificationTests.test_real_local_timeout_classification) ... ok
+test_additive_migration_rolls_back_on_failure (test_telemetry.TelemetryTests.test_additive_migration_rolls_back_on_failure) ... ok
+test_ambiguous_failure_never_falls_back (test_telemetry.TelemetryTests.test_ambiguous_failure_never_falls_back) ... ok
+test_application_rejection_is_separate_from_provider_failure (test_telemetry.TelemetryTests.test_application_rejection_is_separate_from_provider_failure) ... ok
+test_control_discard_is_not_a_provider_failure (test_telemetry.TelemetryTests.test_control_discard_is_not_a_provider_failure) ... ok
+test_exhausted_fallback_preserves_both_errors (test_telemetry.TelemetryTests.test_exhausted_fallback_preserves_both_errors) ... ok
+test_failure_retains_cost_without_error_text (test_telemetry.TelemetryTests.test_failure_retains_cost_without_error_text) ... ok
+test_invalid_schema_retains_usage_and_excludes_response_body (test_telemetry.TelemetryTests.test_invalid_schema_retains_usage_and_excludes_response_body) ... ok
+test_known_unsent_fallback_has_two_linked_attempts (test_telemetry.TelemetryTests.test_known_unsent_fallback_has_two_linked_attempts) ... ok
+test_malformed_usage_retains_available_terminal_cost (test_telemetry.TelemetryTests.test_malformed_usage_retains_available_terminal_cost) ... ok
+test_missing_nonfinite_and_negative_usage_remain_unknown (test_telemetry.TelemetryTests.test_missing_nonfinite_and_negative_usage_remain_unknown) ... ok
+test_restart_marks_unfinished_attempt_once_and_never_resends (test_telemetry.TelemetryTests.test_restart_marks_unfinished_attempt_once_and_never_resends) ... ok
+test_schema_two_migration_preserves_legacy_calls_and_unknown_coverage (test_telemetry.TelemetryTests.test_schema_two_migration_preserves_legacy_calls_and_unknown_coverage) ... ok
+test_success_identity_usage_and_duplicate_receipt (test_telemetry.TelemetryTests.test_success_identity_usage_and_duplicate_receipt) ... ok
+test_usage_and_progress_allowlist (test_telemetry.TelemetryTests.test_usage_and_progress_allowlist) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.384s
+
+OK
