@@ -1,0 +1,16 @@
+{
+  "result": "passed",
+  "browser": "chrome",
+  "checks": [
+    "No truth or scores before completion",
+    "Step advances real simulation",
+    "Hidden change and public event injection",
+    "Pause persists without hidden advancement",
+    "Completion unlocks actual truth and scorer outputs",
+    "Timeline opens actual operation receipt",
+    "Responsive mobile layout and controls",
+    "Replay resets view without live model inference"
+  ],
+  "page_errors": [],
+  "checked_at_unix": 1793026831.988002
+}

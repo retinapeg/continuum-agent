@@ -1,0 +1,88 @@
+{
+  "version": "continuum-lab-v1",
+  "mode": "deterministic",
+  "stage": "heldout",
+  "hypothesis": "uncertainty-aware scheduling lowers prediction RMSE relative to strong periodic and event/deadline baselines under equal caps",
+  "primary_metric": "mean per-episode fixed-grid one-second-ahead RMSE; lower is better",
+  "policies": [
+    "periodic",
+    "event_deadline",
+    "original_hybrid",
+    "uncertainty"
+  ],
+  "parameters": {
+    "event_deadline": {
+      "period_scale": 1.0
+    },
+    "original_hybrid": {
+      "period_scale": 1.0
+    },
+    "periodic": {
+      "period_scale": 0.75
+    },
+    "uncertainty": {
+      "threshold": 0.015
+    }
+  },
+  "heldout_seeds": [
+    1000,
+    1001,
+    1002,
+    1003,
+    1004,
+    1005,
+    1006,
+    1007,
+    1008,
+    1009,
+    1010,
+    1011
+  ],
+  "scenarios": [
+    "no_change",
+    "change",
+    "stale",
+    "adversarial"
+  ],
+  "budgets": [
+    12,
+    24
+  ],
+  "scoring": {
+    "prediction_horizon_seconds": 1.0,
+    "prediction_grid_seconds": 0.5,
+    "detection_window_seconds": 20.0,
+    "matching": "chronological one-to-one inclusive window",
+    "missed_detection_delay": 20.0,
+    "coverage": "Gaussian mean +/- 1.96 standard deviations",
+    "cost_weights": {
+      "observations": 1.0,
+      "inferences": 2.0,
+      "actions": 0.1
+    },
+    "failures": "all unsuccessful operation receipts retained; unit exceptions invalidate comparisons"
+  },
+  "bootstrap": {
+    "cluster": "seed",
+    "replicates": 2000,
+    "seed": 20261026,
+    "interval": "95% percentile; descriptive, not multiplicity adjusted"
+  },
+  "resource_contract": {
+    "observation_and_inference_caps": "equal to case budget",
+    "alert_cap": 30,
+    "estimator": "shared nominal two-state Kalman reference",
+    "fixed_overhead": "clock, scheduling, prior propagation, fixed-grid forecasts, scoring",
+    "inference": "paid classical measurement update, not an LLM call",
+    "model_calls": 0,
+    "initial_state": "known x=1, v=0"
+  },
+  "limitations": [
+    "single physical task family",
+    "no optimal-VOI or novelty claim",
+    "hybrid is an oscillator adaptation using preserved original analytic dynamics",
+    "nominal Kalman covariance can be miscalibrated after hidden shifts",
+    "same resource caps do not guarantee equal realized consumption"
+  ],
+  "expected_units": 384
+}

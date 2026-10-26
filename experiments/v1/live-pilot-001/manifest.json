@@ -1,0 +1,95 @@
+{
+  "kind": "fixed-public-context-live-trigger-validation",
+  "utc": "2026-10-26T15:11:30.523Z",
+  "mode": "live-Claude",
+  "requested_model": "claude-haiku-4-5-20251001",
+  "opt_in": true,
+  "limits": {
+    "max_calls": 3,
+    "deadline_seconds": 90.0,
+    "call_timeout": 25
+  },
+  "public_contexts": [
+    {
+      "at": 0,
+      "belief": {
+        "at": 0.0,
+        "innovation": -0.09638397810860157,
+        "last_observation": 0.0,
+        "std": 0.07427813527082075,
+        "v": 0.0,
+        "variance": 0.005517241379310346,
+        "x": 0.9821019445902737
+      },
+      "budget": {
+        "actions_remaining": 30,
+        "inferences_remaining": 11,
+        "observations_remaining": 11
+      },
+      "latest_observation": {
+        "id": "observation-0",
+        "measured_at": 0.0,
+        "noise_std": 0.08,
+        "status": "succeeded",
+        "time": 0.0,
+        "value": 0.9792382557247175
+      },
+      "public_events": []
+    },
+    {
+      "at": 45.0,
+      "belief": {
+        "at": 45.0,
+        "innovation": -2.197872470376799,
+        "last_observation": 40.0,
+        "std": 0.30859988886963513,
+        "v": -0.03116563611083907,
+        "variance": 0.09523389141035114,
+        "x": 0.3912902822339576
+      },
+      "budget": {
+        "actions_remaining": 30,
+        "inferences_remaining": 6,
+        "observations_remaining": 6
+      },
+      "latest_observation": {
+        "id": "observation-80",
+        "measured_at": 40.0,
+        "noise_std": 0.08,
+        "status": "succeeded",
+        "time": 40.0,
+        "value": -0.3429530315505882
+      },
+      "public_events": []
+    },
+    {
+      "at": 80.0,
+      "belief": {
+        "at": 80.0,
+        "innovation": -1.983082144323557,
+        "last_observation": 80.0,
+        "std": 0.07842687275563326,
+        "v": 0.13586146769460397,
+        "variance": 0.00615077437022829,
+        "x": -0.5302197010299299
+      },
+      "budget": {
+        "actions_remaining": 30,
+        "inferences_remaining": 1,
+        "observations_remaining": 1
+      },
+      "latest_observation": {
+        "id": "observation-160",
+        "measured_at": 80.0,
+        "noise_std": 0.08,
+        "status": "succeeded",
+        "time": 80.0,
+        "value": -0.5615263839901237
+      },
+      "public_events": []
+    }
+  ],
+  "scope": "next_delay proposals only; no performance comparison or tool effects",
+  "api_fallback": false,
+  "actual_subscription_charge": null
+}

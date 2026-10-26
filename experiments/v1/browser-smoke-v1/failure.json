@@ -1,0 +1,6 @@
+{
+  "result": "failed",
+  "stage": "browser smoke selector",
+  "error": "get_by_role(button,name=Step,exact=False) matched Step and Inject at next step; strict locator violation",
+  "simulation_failure": false
+}

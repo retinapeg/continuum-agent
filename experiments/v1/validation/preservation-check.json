@@ -1,0 +1,14 @@
+{
+  "historical_files_checked": 149,
+  "mismatches": [],
+  "historical_evidence_unchanged": true,
+  "archive_hash_matches": true,
+  "shared_quota_ledger": {
+    "original_rows": 7,
+    "current_rows": 10,
+    "original_rows_preserved": true,
+    "new_rows": 3,
+    "reason": "three explicitly authorised live pilot CLI invocations; original ledger also archived"
+  },
+  "original_runtime_other_files_unchanged": true
+}

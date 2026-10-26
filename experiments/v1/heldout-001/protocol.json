@@ -1,0 +1,4148 @@
+{
+  "bootstrap": {
+    "cluster": "seed",
+    "interval": "95% percentile; descriptive, not multiplicity adjusted",
+    "replicates": 2000,
+    "seed": 20261026
+  },
+  "budgets": [
+    12,
+    24
+  ],
+  "development": {
+    "budgets": [
+      12,
+      24
+    ],
+    "candidates": [
+      {
+        "candidate_index": 0,
+        "mean_rmse": 0.2684862035226149,
+        "parameters": {
+          "period_scale": 0.75
+        },
+        "policy": "periodic",
+        "units": 32,
+        "valid": true
+      },
+      {
+        "candidate_index": 1,
+        "mean_rmse": 0.2999430849349116,
+        "parameters": {
+          "period_scale": 1.0
+        },
+        "policy": "periodic",
+        "units": 32,
+        "valid": true
+      },
+      {
+        "candidate_index": 2,
+        "mean_rmse": 0.26936380000364035,
+        "parameters": {
+          "period_scale": 1.5
+        },
+        "policy": "periodic",
+        "units": 32,
+        "valid": true
+      },
+      {
+        "candidate_index": 0,
+        "mean_rmse": 0.27294111161921303,
+        "parameters": {
+          "period_scale": 0.75
+        },
+        "policy": "event_deadline",
+        "units": 32,
+        "valid": true
+      },
+      {
+        "candidate_index": 1,
+        "mean_rmse": 0.26925780675634864,
+        "parameters": {
+          "period_scale": 1.0
+        },
+        "policy": "event_deadline",
+        "units": 32,
+        "valid": true
+      },
+      {
+        "candidate_index": 2,
+        "mean_rmse": 0.2718427830502957,
+        "parameters": {
+          "period_scale": 1.5
+        },
+        "policy": "event_deadline",
+        "units": 32,
+        "valid": true
+      },
+      {
+        "candidate_index": 0,
+        "mean_rmse": 0.25986994705204625,
+        "parameters": {
+          "period_scale": 0.75
+        },
+        "policy": "original_hybrid",
+        "units": 32,
+        "valid": true
+      },
+      {
+        "candidate_index": 1,
+        "mean_rmse": 0.2587922487160102,
+        "parameters": {
+          "period_scale": 1.0
+        },
+        "policy": "original_hybrid",
+        "units": 32,
+        "valid": true
+      },
+      {
+        "candidate_index": 2,
+        "mean_rmse": 0.27817157500112943,
+        "parameters": {
+          "period_scale": 1.5
+        },
+        "policy": "original_hybrid",
+        "units": 32,
+        "valid": true
+      },
+      {
+        "candidate_index": 0,
+        "mean_rmse": 0.3130603675685384,
+        "parameters": {
+          "threshold": 0.015
+        },
+        "policy": "uncertainty",
+        "units": 32,
+        "valid": true
+      },
+      {
+        "candidate_index": 1,
+        "mean_rmse": 0.3130603675685384,
+        "parameters": {
+          "threshold": 0.035
+        },
+        "policy": "uncertainty",
+        "units": 32,
+        "valid": true
+      },
+      {
+        "candidate_index": 2,
+        "mean_rmse": 0.3372309465378121,
+        "parameters": {
+          "threshold": 0.08
+        },
+        "policy": "uncertainty",
+        "units": 32,
+        "valid": true
+      }
+    ],
+    "primary_metric": "mean fixed-grid one-second-ahead RMSE",
+    "results_sha256": "2329fdbd85f0311f08d07ac14fcb0d7b469af2dc1edff6bbb7ffdc5403145d2c",
+    "runtime_failures": 0,
+    "scenarios": [
+      "no_change",
+      "change",
+      "stale",
+      "adversarial"
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "selected_parameters": {
+      "event_deadline": {
+        "period_scale": 1.0
+      },
+      "original_hybrid": {
+        "period_scale": 1.0
+      },
+      "periodic": {
+        "period_scale": 0.75
+      },
+      "uncertainty": {
+        "threshold": 0.015
+      }
+    },
+    "source_hashes": {
+      "continuum/__init__.py": "112a13e36910054af8e49c0fd7af66aaaa2c743cd14a6d7bc56a668e9b89b306",
+      "continuum/__main__.py": "641741a45aa167b1da71b217b5a290076f3dba760d065b4ec0ec4c5c624fc243",
+      "continuum/agents.py": "602c28042d783844e3ea17ec1949d378dcb5883f248113a74ac94aeae2da47bb",
+      "continuum/benchmark.py": "81b68b4e757eb13940e7173c679c161c8aba5b65a19ed89068956e605fdc1226",
+      "continuum/cli.py": "98b639d2a5bfbab199c6705e27c5671f4e07d15fed5ab4a48edc98b575c2dbe2",
+      "continuum/lab/__init__.py": "7325dff4ebc5936f82a9d4bd2e248d2f99a2c44802611d6bc2dd9bed7728fa93",
+      "continuum/lab/__main__.py": "af8e98df90cdd712232a52aa3762f504b117708136af8f4bd44077eb9d7543b9",
+      "continuum/lab/campaign.py": "9e3c412655e881180e48c1e62b64101bbacd4f512606c7fce90ece9369d2455d",
+      "continuum/lab/engine.py": "23bc341c4b163b080be611014c200a2f6fd1d41f6749ec79b6b590e0edd58eae",
+      "continuum/lab/estimator.py": "45815c6c3996505976282e1897e084cc6201782d39ba775982d32af9287f9def",
+      "continuum/lab/live.py": "4400e4ca52a9f0edc814ec36024e5394f061c57a7a2d1306b9b7ca67b42bfb63",
+      "continuum/lab/policies.py": "7260d8009657fc1cfc995452ba5d56d610e9f331469586269eb78ce4cea026ef",
+      "continuum/lab/scoring.py": "8ad4f310ea2600bd5b7e72b04ec50edcb8586b8922492694cdabc53fa1ffa89b",
+      "continuum/lab/web.py": "75cdd16801c1dbfffc57e0ddbbe3cc525f055a3ac3328e4a123406a5419241c7",
+      "continuum/lab/world.py": "5df209d53621855e1b0af18716b0f03769759943164e8f9908e980674c55b878",
+      "continuum/model.py": "b39c10bee597173eaa533d6d87656784dc661d88220faa4a05166a7cc45fdaec",
+      "continuum/research/__init__.py": "5b93a6783e26c9a717119a5e088780b6082e263198f4693ab1f1c0dc64f935cd",
+      "continuum/research/campaign.py": "aedb184ccd7c0f3e150f5e06c796bdaa167680911dd846af0a9ff0e513db61fd",
+      "continuum/research/scoring.py": "8654d08a9f550dc006395e426b0fc4f49a47f8d88d53d29ceadacf7e7bbae36a",
+      "continuum/research/worlds.py": "41842c257e61a034078ee28867ece66542266643784ac829cd39ed98cd43511b",
+      "continuum/runtime/__init__.py": "82b81f77870e23e928fa964344da0fcbc572cb0d68659123e79e54a31bdd3085",
+      "continuum/runtime/__main__.py": "cf7390a2508a0fcad4777a4a629fc5212ab655cb45845975995f835676a834e3",
+      "continuum/runtime/capabilities.py": "6ca0c41a4f49abd585e2f2d03c2d8247bea4fd2b532248a39dfd81e357b6c84a",
+      "continuum/runtime/cli.py": "a8caa2149bb3602ae916c9699d22f72425348d91d72ac2290c1026ee8abcff0b",
+      "continuum/runtime/common.py": "2cbfb5857a2cd019f78cc3f9617de2957d060a6101dc87766f1067dc6f1c2e59",
+      "continuum/runtime/contracts.py": "1dd29c122d576d115bc8a22e8b64dc6c67d41afbd5eeb9d490ec1343a99d1b2e",
+      "continuum/runtime/database.py": "2f02b25902f8776702780356ce4ba9e218fcfcf98f4602cf05cb65db0294a6f7",
+      "continuum/runtime/dynamics.py": "d7d9c481c120466749e726fa101f44f7224d21a3489246fee82ea18b27d3a663",
+      "continuum/runtime/engine.py": "1dd40ce8602e0d860637bf51d3cd67cca8d26bba93e69e68fc368315d9f758e7",
+      "continuum/runtime/facade.py": "f409d8e6d70b2d5c3fcaa29c2bded7bc0b46cd975cf15da69660399cdb7496fe",
+      "continuum/runtime/integration.py": "ec9f1dba3814b6bbcd3ac77f6e20621a3d428b03c41ffeba07eff8a8a673c8a3",
+      "continuum/runtime/memory.py": "30681b0123445e267e47f0b0552de2b1db3909ecc9455802d1ee3b3d7bb663c0",
+      "continuum/runtime/notifications.py": "d4a67ebef780624c0f28568ca87ccda39e0bda6790c6af96ce54c5dc8df93024",
+      "continuum/runtime/providers.py": "5a23f9a8f41d2ae6f21aba9a278ce0895928ed3d5b2eb3c38ed89654c5e42735",
+      "continuum/runtime/quota.py": "cfde985abbf48ba4cbba0d963fef12589296f7a509d72c790bff4a91c892c0aa",
+      "continuum/runtime/routing.py": "d5376c2ad806b8e1fdc9e6368f7bd07847e3fa477216914398ea16a8351a532d",
+      "continuum/runtime/watcher.py": "f244452851482f52379a0d28a1b5b4cd25ee0b93364e5f0038de7efcdabd98ea",
+      "continuum/runtime/web.py": "f549e952ab9737fb5f36c8e5a41751197369c35c9987f60a7a8e72213be4392a",
+      "continuum/scenarios.py": "fe978e80d95b3cf6c39420a1beee492d1a7346e9631ea83d72cd02e795ca95c7",
+      "continuum/simulation.py": "b58b65b59afc9be8a618914ce7446f385fef3293b6903beecbf2bd90f8e794c9",
+      "continuum/storage.py": "f450045fa74deb7dda9dc86d87388e489a041dcb5b90226bda514e43d26cef1c",
+      "docs/PROTOCOL_V1.md": "b131156d9d494a244df80d8e6c09b958fcd6df5cdd28428982abe7e0a93a9cbc",
+      "pyproject.toml": "29713696966f05476950b54f393334cc5b0dcff97caa74c13a5196fe004442ce",
+      "tests_lab/test_campaign.py": "6deeaf75959a3b2d51b7bf2682929e794f2a09cf2a4dc6395ab46c76036bee8e",
+      "tests_lab/test_engine.py": "50707d282e661063a4bbfdd9978aeffd860a2dc6ddf8784fea1eb30c7573a4b3",
+      "tests_lab/test_reliability_audit.py": "50ba9a55ab9ca4170a690cff6446da889748577a79b568ac090ff390b70bdbdd",
+      "tests_lab/test_scenarios.py": "cc47468bde1e15cb6e2f30d72997da01caf66cdba97055b01013bd497a7ae34b",
+      "tests_lab/test_scoring.py": "fe6b04dd04e6c0ed0251a9012f7bfb1baf283807a76cd47d140c3cb547c19883",
+      "tests_lab/test_web.py": "9dde550ad653718fde081e971fdc6114ed5571a9b5f848e962fea8b31b681178",
+      "tests_lab/test_world.py": "a8d652aea23efe595b9da7e28cc3557aeccdf4a9d803d7299dca9c7c9bacac6a"
+    },
+    "stage": "development",
+    "tie_break": "first declared candidate",
+    "traces_sha256": "73cda98a625b4a2d6d9f9093e253190ecf5b04cb7141f02653d3f367644ba510",
+    "units": 384,
+    "valid": true
+  },
+  "expected_units": 384,
+  "heldout_seeds": [
+    1000,
+    1001,
+    1002,
+    1003,
+    1004,
+    1005,
+    1006,
+    1007,
+    1008,
+    1009,
+    1010,
+    1011
+  ],
+  "hypothesis": "uncertainty-aware scheduling lowers prediction RMSE relative to strong periodic and event/deadline baselines under equal caps",
+  "limitations": [
+    "single physical task family",
+    "no optimal-VOI or novelty claim",
+    "hybrid is an oscillator adaptation using preserved original analytic dynamics",
+    "nominal Kalman covariance can be miscalibrated after hidden shifts",
+    "same resource caps do not guarantee equal realized consumption"
+  ],
+  "mode": "deterministic",
+  "parameters": {
+    "event_deadline": {
+      "period_scale": 1.0
+    },
+    "original_hybrid": {
+      "period_scale": 1.0
+    },
+    "periodic": {
+      "period_scale": 0.75
+    },
+    "uncertainty": {
+      "threshold": 0.015
+    }
+  },
+  "policies": [
+    "periodic",
+    "event_deadline",
+    "original_hybrid",
+    "uncertainty"
+  ],
+  "primary_metric": "mean per-episode fixed-grid one-second-ahead RMSE; lower is better",
+  "resource_contract": {
+    "alert_cap": 30,
+    "estimator": "shared nominal two-state Kalman reference",
+    "fixed_overhead": "clock, scheduling, prior propagation, fixed-grid forecasts, scoring",
+    "inference": "paid classical measurement update, not an LLM call",
+    "initial_state": "known x=1, v=0",
+    "model_calls": 0,
+    "observation_and_inference_caps": "equal to case budget"
+  },
+  "scenarios": [
+    "no_change",
+    "change",
+    "stale",
+    "adversarial"
+  ],
+  "scoring": {
+    "cost_weights": {
+      "actions": 0.1,
+      "inferences": 2.0,
+      "observations": 1.0
+    },
+    "coverage": "Gaussian mean +/- 1.96 standard deviations",
+    "detection_window_seconds": 20.0,
+    "failures": "all unsuccessful operation receipts retained; unit exceptions invalidate comparisons",
+    "matching": "chronological one-to-one inclusive window",
+    "missed_detection_delay": 20.0,
+    "prediction_grid_seconds": 0.5,
+    "prediction_horizon_seconds": 1.0
+  },
+  "source_hashes": {
+    "continuum/__init__.py": "112a13e36910054af8e49c0fd7af66aaaa2c743cd14a6d7bc56a668e9b89b306",
+    "continuum/__main__.py": "641741a45aa167b1da71b217b5a290076f3dba760d065b4ec0ec4c5c624fc243",
+    "continuum/agents.py": "602c28042d783844e3ea17ec1949d378dcb5883f248113a74ac94aeae2da47bb",
+    "continuum/benchmark.py": "81b68b4e757eb13940e7173c679c161c8aba5b65a19ed89068956e605fdc1226",
+    "continuum/cli.py": "98b639d2a5bfbab199c6705e27c5671f4e07d15fed5ab4a48edc98b575c2dbe2",
+    "continuum/lab/__init__.py": "7325dff4ebc5936f82a9d4bd2e248d2f99a2c44802611d6bc2dd9bed7728fa93",
+    "continuum/lab/__main__.py": "af8e98df90cdd712232a52aa3762f504b117708136af8f4bd44077eb9d7543b9",
+    "continuum/lab/campaign.py": "9e3c412655e881180e48c1e62b64101bbacd4f512606c7fce90ece9369d2455d",
+    "continuum/lab/engine.py": "23bc341c4b163b080be611014c200a2f6fd1d41f6749ec79b6b590e0edd58eae",
+    "continuum/lab/estimator.py": "45815c6c3996505976282e1897e084cc6201782d39ba775982d32af9287f9def",
+    "continuum/lab/live.py": "4400e4ca52a9f0edc814ec36024e5394f061c57a7a2d1306b9b7ca67b42bfb63",
+    "continuum/lab/policies.py": "7260d8009657fc1cfc995452ba5d56d610e9f331469586269eb78ce4cea026ef",
+    "continuum/lab/scoring.py": "8ad4f310ea2600bd5b7e72b04ec50edcb8586b8922492694cdabc53fa1ffa89b",
+    "continuum/lab/web.py": "75cdd16801c1dbfffc57e0ddbbe3cc525f055a3ac3328e4a123406a5419241c7",
+    "continuum/lab/world.py": "5df209d53621855e1b0af18716b0f03769759943164e8f9908e980674c55b878",
+    "continuum/model.py": "b39c10bee597173eaa533d6d87656784dc661d88220faa4a05166a7cc45fdaec",
+    "continuum/research/__init__.py": "5b93a6783e26c9a717119a5e088780b6082e263198f4693ab1f1c0dc64f935cd",
+    "continuum/research/campaign.py": "aedb184ccd7c0f3e150f5e06c796bdaa167680911dd846af0a9ff0e513db61fd",
+    "continuum/research/scoring.py": "8654d08a9f550dc006395e426b0fc4f49a47f8d88d53d29ceadacf7e7bbae36a",
+    "continuum/research/worlds.py": "41842c257e61a034078ee28867ece66542266643784ac829cd39ed98cd43511b",
+    "continuum/runtime/__init__.py": "82b81f77870e23e928fa964344da0fcbc572cb0d68659123e79e54a31bdd3085",
+    "continuum/runtime/__main__.py": "cf7390a2508a0fcad4777a4a629fc5212ab655cb45845975995f835676a834e3",
+    "continuum/runtime/capabilities.py": "6ca0c41a4f49abd585e2f2d03c2d8247bea4fd2b532248a39dfd81e357b6c84a",
+    "continuum/runtime/cli.py": "a8caa2149bb3602ae916c9699d22f72425348d91d72ac2290c1026ee8abcff0b",
+    "continuum/runtime/common.py": "2cbfb5857a2cd019f78cc3f9617de2957d060a6101dc87766f1067dc6f1c2e59",
+    "continuum/runtime/contracts.py": "1dd29c122d576d115bc8a22e8b64dc6c67d41afbd5eeb9d490ec1343a99d1b2e",
+    "continuum/runtime/database.py": "2f02b25902f8776702780356ce4ba9e218fcfcf98f4602cf05cb65db0294a6f7",
+    "continuum/runtime/dynamics.py": "d7d9c481c120466749e726fa101f44f7224d21a3489246fee82ea18b27d3a663",
+    "continuum/runtime/engine.py": "1dd40ce8602e0d860637bf51d3cd67cca8d26bba93e69e68fc368315d9f758e7",
+    "continuum/runtime/facade.py": "f409d8e6d70b2d5c3fcaa29c2bded7bc0b46cd975cf15da69660399cdb7496fe",
+    "continuum/runtime/integration.py": "ec9f1dba3814b6bbcd3ac77f6e20621a3d428b03c41ffeba07eff8a8a673c8a3",
+    "continuum/runtime/memory.py": "30681b0123445e267e47f0b0552de2b1db3909ecc9455802d1ee3b3d7bb663c0",
+    "continuum/runtime/notifications.py": "d4a67ebef780624c0f28568ca87ccda39e0bda6790c6af96ce54c5dc8df93024",
+    "continuum/runtime/providers.py": "5a23f9a8f41d2ae6f21aba9a278ce0895928ed3d5b2eb3c38ed89654c5e42735",
+    "continuum/runtime/quota.py": "cfde985abbf48ba4cbba0d963fef12589296f7a509d72c790bff4a91c892c0aa",
+    "continuum/runtime/routing.py": "d5376c2ad806b8e1fdc9e6368f7bd07847e3fa477216914398ea16a8351a532d",
+    "continuum/runtime/watcher.py": "f244452851482f52379a0d28a1b5b4cd25ee0b93364e5f0038de7efcdabd98ea",
+    "continuum/runtime/web.py": "f549e952ab9737fb5f36c8e5a41751197369c35c9987f60a7a8e72213be4392a",
+    "continuum/scenarios.py": "fe978e80d95b3cf6c39420a1beee492d1a7346e9631ea83d72cd02e795ca95c7",
+    "continuum/simulation.py": "b58b65b59afc9be8a618914ce7446f385fef3293b6903beecbf2bd90f8e794c9",
+    "continuum/storage.py": "f450045fa74deb7dda9dc86d87388e489a041dcb5b90226bda514e43d26cef1c",
+    "docs/PROTOCOL_V1.md": "b131156d9d494a244df80d8e6c09b958fcd6df5cdd28428982abe7e0a93a9cbc",
+    "pyproject.toml": "29713696966f05476950b54f393334cc5b0dcff97caa74c13a5196fe004442ce",
+    "tests_lab/test_campaign.py": "6deeaf75959a3b2d51b7bf2682929e794f2a09cf2a4dc6395ab46c76036bee8e",
+    "tests_lab/test_engine.py": "50707d282e661063a4bbfdd9978aeffd860a2dc6ddf8784fea1eb30c7573a4b3",
+    "tests_lab/test_reliability_audit.py": "50ba9a55ab9ca4170a690cff6446da889748577a79b568ac090ff390b70bdbdd",
+    "tests_lab/test_scenarios.py": "cc47468bde1e15cb6e2f30d72997da01caf66cdba97055b01013bd497a7ae34b",
+    "tests_lab/test_scoring.py": "fe6b04dd04e6c0ed0251a9012f7bfb1baf283807a76cd47d140c3cb547c19883",
+    "tests_lab/test_web.py": "9dde550ad653718fde081e971fdc6114ed5571a9b5f848e962fea8b31b681178",
+    "tests_lab/test_world.py": "a8d652aea23efe595b9da7e28cc3557aeccdf4a9d803d7299dca9c7c9bacac6a"
+  },
+  "stage": "heldout",
+  "version": "continuum-lab-v1",
+  "world_cases": [
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "no_change",
+      "seed": 1000,
+      "world_config": {
+        "changes": [],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1000,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "no_change",
+      "seed": 1000,
+      "world_config": {
+        "changes": [],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1000,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "change",
+      "seed": 1000,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 30.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 71.0
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1000,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "change",
+      "seed": 1000,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 30.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 71.0
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1000,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "stale",
+      "seed": 1000,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 30.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 71.0
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1000,
+        "stale": [
+          [
+            42.0,
+            62.0,
+            12.0
+          ]
+        ]
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "stale",
+      "seed": 1000,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 30.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 71.0
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1000,
+        "stale": [
+          [
+            42.0,
+            62.0,
+            12.0
+          ]
+        ]
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "adversarial",
+      "seed": 1000,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 30.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 71.0
+          }
+        ],
+        "contradictions": [
+          [
+            50.0,
+            57.0,
+            1.5
+          ],
+          [
+            83.0,
+            87.0,
+            -1.5
+          ]
+        ],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1000,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "adversarial",
+      "seed": 1000,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 30.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 71.0
+          }
+        ],
+        "contradictions": [
+          [
+            50.0,
+            57.0,
+            1.5
+          ],
+          [
+            83.0,
+            87.0,
+            -1.5
+          ]
+        ],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1000,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "no_change",
+      "seed": 1001,
+      "world_config": {
+        "changes": [],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1001,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "no_change",
+      "seed": 1001,
+      "world_config": {
+        "changes": [],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1001,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "change",
+      "seed": 1001,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 44.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 70.0
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1001,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "change",
+      "seed": 1001,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 44.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 70.0
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1001,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "stale",
+      "seed": 1001,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 44.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 70.0
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1001,
+        "stale": [
+          [
+            42.0,
+            62.0,
+            12.0
+          ]
+        ]
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "stale",
+      "seed": 1001,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 44.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 70.0
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1001,
+        "stale": [
+          [
+            42.0,
+            62.0,
+            12.0
+          ]
+        ]
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "adversarial",
+      "seed": 1001,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 44.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 70.0
+          }
+        ],
+        "contradictions": [
+          [
+            50.0,
+            57.0,
+            1.5
+          ],
+          [
+            83.0,
+            87.0,
+            -1.5
+          ]
+        ],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1001,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "adversarial",
+      "seed": 1001,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 44.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 70.0
+          }
+        ],
+        "contradictions": [
+          [
+            50.0,
+            57.0,
+            1.5
+          ],
+          [
+            83.0,
+            87.0,
+            -1.5
+          ]
+        ],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1001,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "no_change",
+      "seed": 1002,
+      "world_config": {
+        "changes": [],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1002,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "no_change",
+      "seed": 1002,
+      "world_config": {
+        "changes": [],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1002,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "change",
+      "seed": 1002,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 40.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 70.0
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1002,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "change",
+      "seed": 1002,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 40.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 70.0
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1002,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "stale",
+      "seed": 1002,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 40.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 70.0
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1002,
+        "stale": [
+          [
+            42.0,
+            62.0,
+            12.0
+          ]
+        ]
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "stale",
+      "seed": 1002,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 40.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 70.0
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1002,
+        "stale": [
+          [
+            42.0,
+            62.0,
+            12.0
+          ]
+        ]
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "adversarial",
+      "seed": 1002,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 40.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 70.0
+          }
+        ],
+        "contradictions": [
+          [
+            50.0,
+            57.0,
+            1.5
+          ],
+          [
+            83.0,
+            87.0,
+            -1.5
+          ]
+        ],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1002,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "adversarial",
+      "seed": 1002,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 40.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 70.0
+          }
+        ],
+        "contradictions": [
+          [
+            50.0,
+            57.0,
+            1.5
+          ],
+          [
+            83.0,
+            87.0,
+            -1.5
+          ]
+        ],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1002,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "no_change",
+      "seed": 1003,
+      "world_config": {
+        "changes": [],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1003,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "no_change",
+      "seed": 1003,
+      "world_config": {
+        "changes": [],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1003,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "change",
+      "seed": 1003,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 38.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 75.5
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1003,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "change",
+      "seed": 1003,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 38.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 75.5
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1003,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "stale",
+      "seed": 1003,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 38.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 75.5
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1003,
+        "stale": [
+          [
+            42.0,
+            62.0,
+            12.0
+          ]
+        ]
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "stale",
+      "seed": 1003,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 38.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 75.5
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1003,
+        "stale": [
+          [
+            42.0,
+            62.0,
+            12.0
+          ]
+        ]
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "adversarial",
+      "seed": 1003,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 38.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 75.5
+          }
+        ],
+        "contradictions": [
+          [
+            50.0,
+            57.0,
+            1.5
+          ],
+          [
+            83.0,
+            87.0,
+            -1.5
+          ]
+        ],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1003,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "adversarial",
+      "seed": 1003,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 38.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 75.5
+          }
+        ],
+        "contradictions": [
+          [
+            50.0,
+            57.0,
+            1.5
+          ],
+          [
+            83.0,
+            87.0,
+            -1.5
+          ]
+        ],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1003,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "no_change",
+      "seed": 1004,
+      "world_config": {
+        "changes": [],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1004,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "no_change",
+      "seed": 1004,
+      "world_config": {
+        "changes": [],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1004,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "change",
+      "seed": 1004,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 42.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 79.5
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1004,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "change",
+      "seed": 1004,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 42.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 79.5
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1004,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "stale",
+      "seed": 1004,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 42.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 79.5
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1004,
+        "stale": [
+          [
+            42.0,
+            62.0,
+            12.0
+          ]
+        ]
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "stale",
+      "seed": 1004,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 42.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 79.5
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1004,
+        "stale": [
+          [
+            42.0,
+            62.0,
+            12.0
+          ]
+        ]
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "adversarial",
+      "seed": 1004,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 42.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 79.5
+          }
+        ],
+        "contradictions": [
+          [
+            50.0,
+            57.0,
+            1.5
+          ],
+          [
+            83.0,
+            87.0,
+            -1.5
+          ]
+        ],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1004,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "adversarial",
+      "seed": 1004,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 42.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 79.5
+          }
+        ],
+        "contradictions": [
+          [
+            50.0,
+            57.0,
+            1.5
+          ],
+          [
+            83.0,
+            87.0,
+            -1.5
+          ]
+        ],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1004,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "no_change",
+      "seed": 1005,
+      "world_config": {
+        "changes": [],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1005,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "no_change",
+      "seed": 1005,
+      "world_config": {
+        "changes": [],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1005,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "change",
+      "seed": 1005,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 32.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 81.0
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1005,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "change",
+      "seed": 1005,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 32.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 81.0
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1005,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "stale",
+      "seed": 1005,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 32.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 81.0
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1005,
+        "stale": [
+          [
+            42.0,
+            62.0,
+            12.0
+          ]
+        ]
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "stale",
+      "seed": 1005,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 32.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 81.0
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1005,
+        "stale": [
+          [
+            42.0,
+            62.0,
+            12.0
+          ]
+        ]
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "adversarial",
+      "seed": 1005,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 32.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 81.0
+          }
+        ],
+        "contradictions": [
+          [
+            50.0,
+            57.0,
+            1.5
+          ],
+          [
+            83.0,
+            87.0,
+            -1.5
+          ]
+        ],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1005,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "adversarial",
+      "seed": 1005,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 32.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 81.0
+          }
+        ],
+        "contradictions": [
+          [
+            50.0,
+            57.0,
+            1.5
+          ],
+          [
+            83.0,
+            87.0,
+            -1.5
+          ]
+        ],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1005,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "no_change",
+      "seed": 1006,
+      "world_config": {
+        "changes": [],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1006,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "no_change",
+      "seed": 1006,
+      "world_config": {
+        "changes": [],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1006,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "change",
+      "seed": 1006,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 44.0
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 77.5
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1006,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "change",
+      "seed": 1006,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 44.0
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 77.5
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1006,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "stale",
+      "seed": 1006,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 44.0
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 77.5
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1006,
+        "stale": [
+          [
+            42.0,
+            62.0,
+            12.0
+          ]
+        ]
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "stale",
+      "seed": 1006,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 44.0
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 77.5
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1006,
+        "stale": [
+          [
+            42.0,
+            62.0,
+            12.0
+          ]
+        ]
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "adversarial",
+      "seed": 1006,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 44.0
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 77.5
+          }
+        ],
+        "contradictions": [
+          [
+            50.0,
+            57.0,
+            1.5
+          ],
+          [
+            83.0,
+            87.0,
+            -1.5
+          ]
+        ],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1006,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "adversarial",
+      "seed": 1006,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 44.0
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 77.5
+          }
+        ],
+        "contradictions": [
+          [
+            50.0,
+            57.0,
+            1.5
+          ],
+          [
+            83.0,
+            87.0,
+            -1.5
+          ]
+        ],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1006,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "no_change",
+      "seed": 1007,
+      "world_config": {
+        "changes": [],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1007,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "no_change",
+      "seed": 1007,
+      "world_config": {
+        "changes": [],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1007,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "change",
+      "seed": 1007,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 31.0
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 80.5
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1007,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "change",
+      "seed": 1007,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 31.0
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 80.5
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1007,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "stale",
+      "seed": 1007,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 31.0
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 80.5
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1007,
+        "stale": [
+          [
+            42.0,
+            62.0,
+            12.0
+          ]
+        ]
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "stale",
+      "seed": 1007,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 31.0
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 80.5
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1007,
+        "stale": [
+          [
+            42.0,
+            62.0,
+            12.0
+          ]
+        ]
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "adversarial",
+      "seed": 1007,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 31.0
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 80.5
+          }
+        ],
+        "contradictions": [
+          [
+            50.0,
+            57.0,
+            1.5
+          ],
+          [
+            83.0,
+            87.0,
+            -1.5
+          ]
+        ],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1007,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "adversarial",
+      "seed": 1007,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 31.0
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 80.5
+          }
+        ],
+        "contradictions": [
+          [
+            50.0,
+            57.0,
+            1.5
+          ],
+          [
+            83.0,
+            87.0,
+            -1.5
+          ]
+        ],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1007,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "no_change",
+      "seed": 1008,
+      "world_config": {
+        "changes": [],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1008,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "no_change",
+      "seed": 1008,
+      "world_config": {
+        "changes": [],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1008,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "change",
+      "seed": 1008,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 42.0
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 83.5
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1008,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "change",
+      "seed": 1008,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 42.0
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 83.5
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1008,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "stale",
+      "seed": 1008,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 42.0
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 83.5
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1008,
+        "stale": [
+          [
+            42.0,
+            62.0,
+            12.0
+          ]
+        ]
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "stale",
+      "seed": 1008,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 42.0
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 83.5
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1008,
+        "stale": [
+          [
+            42.0,
+            62.0,
+            12.0
+          ]
+        ]
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "adversarial",
+      "seed": 1008,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 42.0
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 83.5
+          }
+        ],
+        "contradictions": [
+          [
+            50.0,
+            57.0,
+            1.5
+          ],
+          [
+            83.0,
+            87.0,
+            -1.5
+          ]
+        ],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1008,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "adversarial",
+      "seed": 1008,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 42.0
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 83.5
+          }
+        ],
+        "contradictions": [
+          [
+            50.0,
+            57.0,
+            1.5
+          ],
+          [
+            83.0,
+            87.0,
+            -1.5
+          ]
+        ],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1008,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "no_change",
+      "seed": 1009,
+      "world_config": {
+        "changes": [],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1009,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "no_change",
+      "seed": 1009,
+      "world_config": {
+        "changes": [],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1009,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "change",
+      "seed": 1009,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 41.0
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 84.0
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1009,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "change",
+      "seed": 1009,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 41.0
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 84.0
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1009,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "stale",
+      "seed": 1009,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 41.0
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 84.0
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1009,
+        "stale": [
+          [
+            42.0,
+            62.0,
+            12.0
+          ]
+        ]
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "stale",
+      "seed": 1009,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 41.0
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 84.0
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1009,
+        "stale": [
+          [
+            42.0,
+            62.0,
+            12.0
+          ]
+        ]
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "adversarial",
+      "seed": 1009,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 41.0
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 84.0
+          }
+        ],
+        "contradictions": [
+          [
+            50.0,
+            57.0,
+            1.5
+          ],
+          [
+            83.0,
+            87.0,
+            -1.5
+          ]
+        ],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1009,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "adversarial",
+      "seed": 1009,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 41.0
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 84.0
+          }
+        ],
+        "contradictions": [
+          [
+            50.0,
+            57.0,
+            1.5
+          ],
+          [
+            83.0,
+            87.0,
+            -1.5
+          ]
+        ],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1009,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "no_change",
+      "seed": 1010,
+      "world_config": {
+        "changes": [],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1010,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "no_change",
+      "seed": 1010,
+      "world_config": {
+        "changes": [],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1010,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "change",
+      "seed": 1010,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 32.0
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 81.5
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1010,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "change",
+      "seed": 1010,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 32.0
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 81.5
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1010,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "stale",
+      "seed": 1010,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 32.0
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 81.5
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1010,
+        "stale": [
+          [
+            42.0,
+            62.0,
+            12.0
+          ]
+        ]
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "stale",
+      "seed": 1010,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 32.0
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 81.5
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1010,
+        "stale": [
+          [
+            42.0,
+            62.0,
+            12.0
+          ]
+        ]
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "adversarial",
+      "seed": 1010,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 32.0
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 81.5
+          }
+        ],
+        "contradictions": [
+          [
+            50.0,
+            57.0,
+            1.5
+          ],
+          [
+            83.0,
+            87.0,
+            -1.5
+          ]
+        ],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1010,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "adversarial",
+      "seed": 1010,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 32.0
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 81.5
+          }
+        ],
+        "contradictions": [
+          [
+            50.0,
+            57.0,
+            1.5
+          ],
+          [
+            83.0,
+            87.0,
+            -1.5
+          ]
+        ],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1010,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "no_change",
+      "seed": 1011,
+      "world_config": {
+        "changes": [],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1011,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "no_change",
+      "seed": 1011,
+      "world_config": {
+        "changes": [],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1011,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "change",
+      "seed": 1011,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 30.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 81.0
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1011,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "change",
+      "seed": 1011,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 30.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 81.0
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1011,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "stale",
+      "seed": 1011,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 30.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 81.0
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1011,
+        "stale": [
+          [
+            42.0,
+            62.0,
+            12.0
+          ]
+        ]
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "stale",
+      "seed": 1011,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 30.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 81.0
+          }
+        ],
+        "contradictions": [],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1011,
+        "stale": [
+          [
+            42.0,
+            62.0,
+            12.0
+          ]
+        ]
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 12,
+      "observation_budget": 12,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "adversarial",
+      "seed": 1011,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 30.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 81.0
+          }
+        ],
+        "contradictions": [
+          [
+            50.0,
+            57.0,
+            1.5
+          ],
+          [
+            83.0,
+            87.0,
+            -1.5
+          ]
+        ],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1011,
+        "stale": []
+      }
+    },
+    {
+      "deadlines": [
+        30.0,
+        60.0,
+        90.0
+      ],
+      "inference_budget": 24,
+      "observation_budget": 24,
+      "public_events": [
+        19.0,
+        49.0,
+        89.0
+      ],
+      "scenario": "adversarial",
+      "seed": 1011,
+      "world_config": {
+        "changes": [
+          {
+            "damping": 0.012,
+            "omega": 1.25,
+            "time": 30.5
+          },
+          {
+            "damping": 0.025,
+            "omega": 0.55,
+            "time": 81.0
+          }
+        ],
+        "contradictions": [
+          [
+            50.0,
+            57.0,
+            1.5
+          ],
+          [
+            83.0,
+            87.0,
+            -1.5
+          ]
+        ],
+        "damping": 0.015,
+        "dt": 0.5,
+        "horizon": 120.0,
+        "noise": 0.08,
+        "omega": 0.8,
+        "seed": 1011,
+        "stale": []
+      }
+    }
+  ]
+}

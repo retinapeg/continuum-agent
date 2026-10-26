@@ -1,0 +1,6 @@
+{
+  "result": "failed",
+  "stage": "truth reveal control",
+  "error": "Checkbox was enabled, but visual switch span intercepted pointer events; fixed with pointer-events:none on decoration",
+  "simulation_failure": false
+}

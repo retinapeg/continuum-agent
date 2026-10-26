@@ -1,0 +1,6 @@
+{
+  "result": "failed",
+  "stage": "timeline receipt click",
+  "error": "Observe and Think operation marks overlapped at identical timestamps. Separate vertical event lanes added; unchanged polling no longer replaces DOM.",
+  "simulation_failure": false
+}

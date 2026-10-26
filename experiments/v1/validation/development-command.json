@@ -1,0 +1,162 @@
+{
+  "stage": "development",
+  "valid": true,
+  "primary_metric": "mean fixed-grid one-second-ahead RMSE",
+  "seeds": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "scenarios": [
+    "no_change",
+    "change",
+    "stale",
+    "adversarial"
+  ],
+  "budgets": [
+    12,
+    24
+  ],
+  "candidates": [
+    {
+      "policy": "periodic",
+      "candidate_index": 0,
+      "parameters": {
+        "period_scale": 0.75
+      },
+      "units": 32,
+      "valid": true,
+      "mean_rmse": 0.2684862035226149
+    },
+    {
+      "policy": "periodic",
+      "candidate_index": 1,
+      "parameters": {
+        "period_scale": 1.0
+      },
+      "units": 32,
+      "valid": true,
+      "mean_rmse": 0.2999430849349116
+    },
+    {
+      "policy": "periodic",
+      "candidate_index": 2,
+      "parameters": {
+        "period_scale": 1.5
+      },
+      "units": 32,
+      "valid": true,
+      "mean_rmse": 0.26936380000364035
+    },
+    {
+      "policy": "event_deadline",
+      "candidate_index": 0,
+      "parameters": {
+        "period_scale": 0.75
+      },
+      "units": 32,
+      "valid": true,
+      "mean_rmse": 0.27294111161921303
+    },
+    {
+      "policy": "event_deadline",
+      "candidate_index": 1,
+      "parameters": {
+        "period_scale": 1.0
+      },
+      "units": 32,
+      "valid": true,
+      "mean_rmse": 0.26925780675634864
+    },
+    {
+      "policy": "event_deadline",
+      "candidate_index": 2,
+      "parameters": {
+        "period_scale": 1.5
+      },
+      "units": 32,
+      "valid": true,
+      "mean_rmse": 0.2718427830502957
+    },
+    {
+      "policy": "original_hybrid",
+      "candidate_index": 0,
+      "parameters": {
+        "period_scale": 0.75
+      },
+      "units": 32,
+      "valid": true,
+      "mean_rmse": 0.25986994705204625
+    },
+    {
+      "policy": "original_hybrid",
+      "candidate_index": 1,
+      "parameters": {
+        "period_scale": 1.0
+      },
+      "units": 32,
+      "valid": true,
+      "mean_rmse": 0.2587922487160102
+    },
+    {
+      "policy": "original_hybrid",
+      "candidate_index": 2,
+      "parameters": {
+        "period_scale": 1.5
+      },
+      "units": 32,
+      "valid": true,
+      "mean_rmse": 0.27817157500112943
+    },
+    {
+      "policy": "uncertainty",
+      "candidate_index": 0,
+      "parameters": {
+        "threshold": 0.015
+      },
+      "units": 32,
+      "valid": true,
+      "mean_rmse": 0.3130603675685384
+    },
+    {
+      "policy": "uncertainty",
+      "candidate_index": 1,
+      "parameters": {
+        "threshold": 0.035
+      },
+      "units": 32,
+      "valid": true,
+      "mean_rmse": 0.3130603675685384
+    },
+    {
+      "policy": "uncertainty",
+      "candidate_index": 2,
+      "parameters": {
+        "threshold": 0.08
+      },
+      "units": 32,
+      "valid": true,
+      "mean_rmse": 0.3372309465378121
+    }
+  ],
+  "selected_parameters": {
+    "periodic": {
+      "period_scale": 0.75
+    },
+    "event_deadline": {
+      "period_scale": 1.0
+    },
+    "original_hybrid": {
+      "period_scale": 1.0
+    },
+    "uncertainty": {
+      "threshold": 0.015
+    }
+  },
+  "tie_break": "first declared candidate",
+  "units": 384,
+  "runtime_failures": 0,
+  "results_sha256": "2329fdbd85f0311f08d07ac14fcb0d7b469af2dc1edff6bbb7ffdc5403145d2c",
+  "traces_sha256": "73cda98a625b4a2d6d9f9093e253190ecf5b04cb7141f02653d3f367644ba510"
+}

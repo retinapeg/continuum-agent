@@ -1,140 +1,79 @@
-# CONTINUUM
+# Continuum 1.0 — Attention Laboratory
 
-**Persistent work, visible decisions.** A local Python agent that retains goals and evidence across model calls, notices approved document changes, proposes work, and leaves inspectable receipts for every action.
+**When is it worth looking?** A hidden oscillator keeps moving while four agents decide when to spend limited observations and numerical inference. Continuum measures whether better attention scheduling produces better predictions, earlier detection, and fewer false alarms.
 
-A reactive chat session stops at the end of a reply. CONTINUUM separates the lifetime of the **runtime** from the lifetime of an **LLM request**: SQLite holds the work; activation policies decide when to reconsider it; a tool-less model proposes actions; deterministic code enforces scope and owner control.
+This is a focused research laboratory. Agent Exchange and LeoOS are independent projects. The laboratory does not connect to either.
 
-**Working live demo:** Claude Haiku noticed a newly available fictional project review, produced a source-backed readiness brief and asked a necessary owner clarification without another user message: **3 model calls, 40.2 seconds of real elapsed time**. [Generated brief](experiments/v02/live-runtime-demo-v1/agent/artifacts/juniper_readiness_brief.md) · [demo receipt](experiments/v02/live-runtime-demo-v1/receipt.json). This is a bounded local demonstration, not evidence of general long-horizon intelligence.
+**Strongest historical failed hypothesis:** the original hand-designed continuous-state hybrid demonstrated **no completion advantage** over the event/deadline baseline: both completed **55.56%** across 180 live episodes, while the hybrid used **6.00 vs 5.11 CLI invocations**. The paired difference was **0 percentage points**, reported 95% interval **[−11.11, +11.11]**. [Original results and limitations](MORNING_REPORT.md), [frozen original protocol](EXPERIMENT_PROTOCOL.md).
 
-**Measured result:** across **180 live Claude-backed synthetic episodes**, the hybrid agent and the strong event/deadline baseline both completed **55.56%** of tasks. The hybrid used **6.00 vs 5.11 CLI invocations per episode**; their paired completion difference was **0 percentage points, 95% interval [−11.11, +11.11]**. This experiment does **not establish a continuous-state advantage**. [Results, losses and limits](MORNING_REPORT.md) · [frozen protocol](EXPERIMENT_PROTOCOL.md).
+**Strongest new result:** in 384 frozen held-out oscillator runs, the uncertainty heuristic had worse mean RMSE (**0.3135**) than fixed-period (**0.2700**), event/deadline (**0.2620**) and the hybrid adaptation (**0.2521**). Its paired RMSE excess over fixed-period was **+0.0434**, descriptive 95% interval **[0.0331, 0.0552]**. All 384 traces and scores reproduce exactly. The proposed uncertainty advantage failed under this protocol. [Exact results, calibration, misses and failures](docs/RESULTS_V1.md). No novelty or general agent-intelligence claim is made. [Related research](docs/RELATED_WORK.md) covers SentinelBench, active sensing/POMDPs, variance-triggered estimation, proactive triggering, and budget-aware tools.
 
-**Verification:** 106 passing tests, 3,240 reproducible offline episodes, real Chromium desktop/mobile checks, and a 600-second wall-clock fixture soak. The original v0.1 benchmark reproduces byte-for-byte. Live experiments use fictional worlds and virtual deadlines; they do not demonstrate general real-world autonomy. Frozen error telemetry is incomplete, so total cost remains unknown.
+## Run the laboratory
 
-![Local dashboard with memory, provenance and owner controls](evidence/build/dashboard-desktop.png)
-
-## Run it locally
-
-Python 3.11+ on macOS/Linux. Dependencies, caches, data and artifacts remain inside this repository. No API key is required for the fixture demo.
+Python 3.11+, the existing Python environment, SQLite, and a browser are sufficient. No Claude subscription is needed for the experiment or comparisons.
 
 ```sh
+# If the local environment does not already exist:
 python3 -m venv .venv
-mkdir -p .cache/pip .cache/tmp
-PIP_CACHE_DIR="$PWD/.cache/pip" .venv/bin/python -m pip install -r requirements-runtime.txt
-.venv/bin/python -m continuum.runtime start --directory .runtime/owner --provider fixture
+.venv/bin/python -m pip install -r requirements-runtime.txt
+
+# Default experience: the physical attention laboratory
+.venv/bin/python -m continuum
+# Open http://127.0.0.1:8787
+
+# One reproducible comparison, without the browser
+.venv/bin/python -m continuum compare --scenario change --seed 7 --budget 24
 ```
 
-Open **http://127.0.0.1:8787**. Enter the token from `.runtime/owner/control-token` in the local login form. The fixture provider exercises plumbing with deterministic rules; it is not an LLM.
+Press **Run**. Coloured lines show each policy's estimate; shaded bands show estimated uncertainty. Gaps between observations are sleep. After the run, reveal the real trajectory and compare independent scores. Click timeline marks for actual operation receipts. The same screen supports pause, step, replay, budgets, noise, damping, and public-event or hidden-parameter injection. Interactive injections are exploratory, outside the frozen evaluation.
 
-For the verified subscription path, use an existing Claude Code login:
+![Attention laboratory with real measured trajectories and policy comparison](experiments/v1/validation/browser-v5/desktop.png)
 
-```sh
-.venv/bin/python -m continuum.runtime start --directory .runtime/live \
-  --provider claude --model claude-haiku-4-5-20251001 --port 8787 \
-  --quiet-hours 22,23,0,1,2,3,4,5,6 --interruption-budget 8
-```
+State persists in `.runtime/lab/`. A restart restores the latest checkpoint, paused. New comparisons and replays create new databases; they do not overwrite past runs. The server accepts only loopback, same-origin controls. No frontend framework or new frontend dependency is required.
 
-A live provider receives selected conversation and approved source context. Notifications are delivered only to this local interface. Start with fictional data. Claude authentication is checked without reading login secrets; API-key environments are stripped. Codex inference is **disabled / NOT VERIFIED**, with the exact isolation blocker documented in [MODEL_SUPPORT.md](MODEL_SUPPORT.md).
+## What is measured
 
-In a second terminal, using the same directory/port as the server:
+The private world follows `x'' + 2γx' + ω²x = 0`, with exact analytical transitions and hidden changes in frequency/damping. Time is simulated, independent of render speed or wall time. The seed determines world changes and the sensor's noise at each timestamp, independently of observation order.
 
-```sh
-.venv/bin/python -m continuum.runtime status --directory .runtime/live
-.venv/bin/python -m continuum.runtime goal --directory .runtime/live \
-  'Monitor the fictional project and create a source-backed readiness brief when a review arrives.'
-.venv/bin/python -m continuum.runtime message --directory .runtime/live \
-  'Use only the approved fictional documents and ask about unresolved owner decisions.'
-.venv/bin/python -m continuum.runtime fact --directory .runtime/live format 'Prefer concise tables'
-.venv/bin/python -m continuum.runtime pause --directory .runtime/live
-.venv/bin/python -m continuum.runtime resume --directory .runtime/live
-.venv/bin/python -m continuum.runtime events --directory .runtime/live
-.venv/bin/python -m continuum.runtime stop --directory .runtime/live
-```
+All schedulers share the same classical two-state Kalman estimator, nominal physical model, sensor noise, detector, budget caps, and scoring grid. A policy receives only its immutable public clock, belief, remaining budgets, authorised observations and public event/deadline information. Hidden changes do not emit free notifications. This is an API information boundary for trusted research policies, not a sandbox against malicious Python introspection.
 
-The dashboard also supports fact correction with provenance, forgetting, goal cancellation, muting, concrete action approval and artifact reading. Add/update a fictional `.md` file in `fixtures/documents/` to trigger the approved watcher. Use `--fixtures` for a different **repository-local** folder. Stop exits the server and persists the stop; restarting requires `start ... --resume` to explicitly continue. Do not run two owners on the same runtime directory.
-
-## How it works
-
-```mermaid
-flowchart LR
-    I[Chat / approved fixture changes] --> O[Persist observation]
-    O --> DB[(SQLite state + memory + event log)]
-    DB --> S[Activation policy + analytic state]
-    S --> R[Lexical retrieval + context receipt]
-    R --> L[Tool-less structured LLM proposal]
-    L --> V[Schema / evidence / permission checks]
-    V --> A[Durable local operation + outcome]
-    A --> DB
-    A --> N[Local notification outbox]
-    N --> UI[Dashboard / read-only status API]
-    W[Private experiment world] -->|Due observations only| O
-    W --> E[Independent deterministic scoring]
-    DB --> E
-```
-
-The continuous-time model is an interpretable hybrid system: analytic exponential evolution between event impulses. Timestamp-only updates are mathematically equivalent to continuously stepping that equation. Faster polling is not additional cognition. Memory contents persist independently of activation-score decay.
-
-Operations use stable IDs, transactions, leases, checkpoint versions and an outbox. Restart reconciliation distinguishes completed effects from **outcome-unknown** work. Unknown inference outcomes pause recovery instead of being blindly resent. Owner pause, stop and revocation bypass the model. See [ARCHITECTURE.md](ARCHITECTURE.md) and [SECURITY.md](SECURITY.md).
-
-## What is actually verified
-
-| Capability | Evidence level |
+| Policy | Scheduling rule |
 |---|---|
-| Persistent goals, memory revisions, lexical receipts, restart/control handling | Implemented and locally tested |
-| Chat, own-message history, artifact reading, correction, pause/resume, mobile layout | Real Chromium smoke tested |
-| Claude structured proposals and autonomous local document work | Live verified with installed subscription CLI |
-| A/B/C/D/E policies and separate retrieval ablation | Versioned synthetic experiments; limited causal scope |
-| Local exchange envelope, deduplication/cursor and HTTP adapter | Tested against a local stub; no cross-project interoperability claim |
-| Rule-based model routing | Operational adapter plus separate small development comparison |
-| Improvement cycle | Candidate configuration evaluated; diff queued; never self-applied |
-| Codex inference, embeddings, A2A/MCP integration, payments, matchmaking | Unverified or unimplemented; [future research](FUTURE_RESEARCH.md) |
+| Fixed period | Regular sampling, with cadence selected on development seeds |
+| Event / deadline | Public events and explicit deadlines plus periodic fallback |
+| Original hybrid | Oscillator adaptation of the preserved v0.2 continuous-state equations and scheduling rule |
+| Uncertainty aware | Greedy expected variance-reduction proxy with budget pacing; VOI-inspired, not optimal VOI |
 
-## Reproduce the evidence
+Predictions are scored one simulated second ahead at every half-second tick, including sleep. Primary outcome is episode RMSE. Secondary outcomes include Gaussian negative log likelihood, 95% interval coverage, conditional and miss-censored detection delay, missed changes, false alarms, resource use, rejected operations and runtime failures. A zero-position predictor provides a reference for natural amplitude decay. Observation, measurement-update and alert costs are separately counted; total declared cost is `observations + 2 × updates + 0.1 × alerts`.
+
+Cheap shared covariance propagation and forecast arithmetic are fixed numerical bookkeeping; **paid inference means a measurement update**, not an LLM call. Deterministic runs make **zero model calls**. Forecasts never incorporate future measurements. Old timestamps are rejected, gross contradictory readings are recorded/rejected, and failed operations remain failed. Gaussian intervals may be poorly calibrated after model changes; coverage is measured rather than assumed.
+
+## Reproduce and verify
+
+**Verified:** 167 tests (51 laboratory, 88 runtime, 28 legacy); nine real-browser acceptance checks on desktop/mobile; exact historical and held-out reproduction. [Acceptance evidence](docs/ACCEPTANCE_V1.md).
 
 ```sh
-# Original simulator: unchanged source/results, 28 tests and 450 runs
+TMPDIR="$PWD/.cache/tmp" .venv/bin/python -m unittest discover -s tests_lab -v
+TMPDIR="$PWD/.cache/tmp" .venv/bin/python -m unittest discover -s tests_runtime -v
+TMPDIR="$PWD/.cache/tmp" .venv/bin/python -m unittest discover -s tests -v
+
+# Reproduce every final score and complete trace without rewriting evidence
+.venv/bin/python -m continuum.lab.campaign verify --directory experiments/v1/heldout-001 --reproduce
+
+# Historical v0.1 source and results reproduce without overwriting originals
 .venv/bin/python scripts/reproduce.py v01
-
-# Runtime, security, scorer, HTTP integration and failure tests
-.venv/bin/python -m unittest discover -s tests_runtime -v
-
-# Regenerate a frozen offline campaign in a disposable repository-local copy
-.venv/bin/python scripts/reproduce.py experiments/v02/offline-final-v2
-
-# New offline campaign: never reuse/overwrite an existing frozen directory
-.venv/bin/python -m continuum.research.campaign freeze --directory experiments/v02/my-offline
-.venv/bin/python -m continuum.research.campaign run --directory experiments/v02/my-offline
-.venv/bin/python -m continuum.research.campaign resume --directory experiments/v02/my-offline
-.venv/bin/python -m continuum.research.campaign report --directory experiments/v02/my-offline
-
-# Actual wall-clock soak; fixture provider, finite limit, not simulated days
-.venv/bin/python scripts/soak.py --seconds 120
 ```
 
-Live campaign commands, budgets and resume rules are in [EXPERIMENT_PROTOCOL.md](EXPERIMENT_PROTOCOL.md). A repeated model call is a new trial, never deterministic replay. Source drift blocks unfinished execution; a completed campaign can regenerate its report without new inference. Completed experimental units are not rerun.
+The [Phase 0 audit](docs/REDESIGN_AUDIT.md) records specific keep/replace/retire decisions. All v0.1/v0.2 experiments, manifests, failed-run evidence, original reports and archived source remain in place. [Pre-redesign snapshot](preserved/pre-v1/manifest.json) covers the original source and available evidence, including local runtime state; its archive is local evidence and should be reviewed before publication. Historical per-unit SQLite files were not all present in this checkout; missing telemetry remains unknown.
 
-For browser checks, install repository-local development dependencies and Chromium, start a fixture server in one terminal, then run the smoke command in another:
+The old assistant executable remains available through `python -m continuum.runtime`, and the original simulator through `python -m continuum demo` / `benchmark` or `continuum-legacy`. They are historical compatibility paths, outside the laboratory's default workflow. The receipt fix also makes old runtime execution messages report actual operation statuses rather than unverified completion prose.
 
-```sh
-PIP_CACHE_DIR="$PWD/.cache/pip" .venv/bin/python -m pip install -r requirements-dev.txt
-PLAYWRIGHT_BROWSERS_PATH="$PWD/.cache/ms-playwright" .venv/bin/python -m playwright install chromium
-.venv/bin/python -m continuum.runtime start --directory .runtime/browser-check --port 8789 --seconds 180
-# In another terminal:
-PLAYWRIGHT_BROWSERS_PATH="$PWD/.cache/ms-playwright" .venv/bin/python scripts/browser_smoke.py \
-  --port 8789 --directory .runtime/browser-check
-```
+## Live Claude validation
 
-[Test evidence](TEST_REPORT.md) includes failure cases and known limits. The original [OVERNIGHT_REPORT.md](OVERNIGHT_REPORT.md), [raw v0.1 results](results/) and [recoverable untracked-source snapshot](preserved/v0.1/RESTORE.md) remain available; no commit was required to preserve the baseline.
+Live inference is separate and requires explicit opt-in. The existing subscription CLI adapter is reused with bounded calls, a wall-clock deadline, exact model identity, strict output validation and no separately billed API fallback. Version/help compatibility is recorded in [the CLI probe](experiments/v1/claude-cli-probe.json); a successful flag probe alone does not establish live inference compatibility.
 
-![Offline performance versus mean call cost](evidence/figures/offline-resource-curve.svg)
+**Live pilot:** 3/3 valid trigger proposals, zero failures, **51.824 seconds**, exact Haiku model identity verified. Suggested delays were 5, 5 and 10 simulated seconds. [Exact inputs, outputs, usage and limits](docs/LIVE_RESULTS_V1.md).
 
-Offline fixture results: D and E coincide; C reaches the same completion with fewer calls at the higher budget. These curves describe the declared synthetic task/rule combination.
+This small fixed-public-context pilot validates trigger suggestions and receipt accounting. It does not establish a closed-loop Claude scheduling advantage. Its contexts, all attempted calls, failures, usage and model receipts are preserved. Subscription charges are unknown. The deterministic dashboard never silently invokes Claude.
 
-## Engineering demonstrated
-
-- **AI engineering:** strict proposals, context selection, model identity checks, bounded streaming adapters, inspectable routing and tool permissions.
-- **Python and databases:** typed interfaces, analytical state dynamics, SQLite transactions, leases, event logs, recovery and durable ownership.
-- **Experimental methods:** paired conditions, schedule/state/retrieval ablations, hidden scorer data, frozen manifests, clustered uncertainty and published losses.
-- **Reliability and security:** failure injection, cancellation, unknown outcomes, path confinement, provenance, retention, authenticated same-origin controls and real browser testing.
-- **Long-horizon autonomy:** durable goals, event-driven continuation and proactive local communication, with measured interruptions and explicit limits.
-
-The six workloads are narrow synthetic templates with 120-second virtual horizons. Model service time does not advance those virtual deadlines; provider elapsed time is logged separately. Structured-field scoring does not certify unrestricted prose factuality; the real wall-clock soak is short. There is no production-readiness, consciousness, continuous neural inference or self-preservation claim. Actual subscription charges are unknown; API-equivalent estimates are labelled separately.
+The stopping point is the independently measured oscillator comparison and its evidence-backed dashboard. A learned trigger, new orchestrator, personal assistant, integrations and extra product features are deliberately outside this release.

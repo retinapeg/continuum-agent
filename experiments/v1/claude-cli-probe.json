@@ -1,0 +1,31 @@
+{
+  "kind": "claude-cli-compatibility",
+  "utc": "2026-10-26T14:56:50.844Z",
+  "inference_calls": 0,
+  "authentication_checked": false,
+  "installed": true,
+  "commands": [
+    {
+      "argv": [
+        "claude",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "03c71ebd08ddd569558734d42a29ae8c6a2a049e4a7fb78126979867e6f941d2",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "claude",
+        "--help"
+      ],
+      "exit_code": 0,
+      "stdout_sha256": "b10f5c36adfe3285f6c5a0d18284f466e6c4486499de56ef62745e13312a7fbc",
+      "stderr": ""
+    }
+  ],
+  "live_compatibility": "unverified: no model inference performed",
+  "version": "2.1.310 (Claude Code)",
+  "missing_flags": [],
+  "status": "flags-compatible"
+}

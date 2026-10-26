@@ -1,0 +1,9 @@
+{
+  "completed": true,
+  "protocol_sha256": "1bb7d4e27362491f637e1fb42527a2b9fd5cf0b75217efa2379df39bc8cae727",
+  "report_sha256": "04dd846a50dc6295ed1d57d3a6332e446ebebbcb0608809a50558456d6fa9026",
+  "results_sha256": "e2ce5fe16f8cc1778370b090f7b4a245b852da409d6d9fbd5cdd468dbc50e6e6",
+  "traces_sha256": "4c0b2faef59ded5874c182d5df2d7c8630db17eb98bf97fb4774b03f40843eec",
+  "units": 384,
+  "valid_comparison": true
+}

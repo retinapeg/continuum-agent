@@ -1,2 +1,2 @@
-"""CONTINUUM: synthetic persistent-agent scheduling research."""
-__version__ = "0.1.0"
+"""Continuum: resource-bounded attention research in partially observed worlds."""
+__version__ = "1.0.0"

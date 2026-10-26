@@ -4,13 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "continuum-research"
-version = "0.2.0"
-description = "Reproducible experiments in persistent agent scheduling"
+version = "1.0.0"
+description = "A physical laboratory for resource-bounded attention scheduling"
 requires-python = ">=3.11"
 dependencies = ["jsonschema==4.26.0"]
 
 [project.scripts]
-continuum = "continuum.cli:main"
+continuum = "continuum.lab.__main__:main"
+continuum-legacy = "continuum.cli:main"
 continuum-runtime = "continuum.runtime.cli:main"
 
 [tool.setuptools.packages.find]
@@ -18,3 +19,5 @@ include = ["continuum*"]
 
 [tool.setuptools.package-data]
 "continuum.runtime" = ["ui/*.html", "ui/*.js", "ui/*.css"]
+
+"continuum.lab" = ["ui/*.html", "ui/*.js", "ui/*.css"]

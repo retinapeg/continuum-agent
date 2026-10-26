@@ -290,10 +290,12 @@ class Runtime:
                 continue
             self.memory.add(update['kind'], update['subject'], update['content'], at, update['evidence_ids'],
                             confirmed=False, supersedes=update['supersedes'])
+        operation_ids = []
         for action in proposal['actions']:
             if cancelled(): return
             opid = self.capabilities.queue(action, trace, at)
             self.capabilities.execute(opid, at, evidence)
+            operation_ids.append(opid)
         for goal in proposal['goal_updates']:
             if cancelled(): return
             if not set(goal['evidence_ids']) <= evidence:
@@ -307,6 +309,35 @@ class Runtime:
                 tx.execute("UPDATE goals SET status=?,updated=? WHERE id=? AND status!='cancelled'", (goal['status'], at, goal['id']))
         if cancelled(): return
         message = proposal['message']
+        # Model text is a proposal, never an operation receipt. Report action
+        # outcomes from the durable ledger, including failures and approval waits.
+        # Also regenerate messages citing past operations: a successful receipt
+        # for one effect must not license an arbitrary claim about another effect.
+        referenced = set(message['evidence_ids'])
+        operation_ids.extend(r['id'] for r in self.db.rows('SELECT id FROM operations')
+                             if r['id'] in referenced)
+        operation_ids = list(dict.fromkeys(operation_ids))
+        if operation_ids:
+            receipts = [self.db.rows('SELECT id,kind,status,result FROM operations WHERE id=?', (oid,))[0]
+                        for oid in operation_ids]
+            lines = []
+            for receipt in receipts:
+                result = json.loads(receipt['result']) if receipt['result'] else {}
+                detail = ': ' + result['path'] if receipt['status'] == 'succeeded' and result.get('path') else ''
+                lines.append(f"{receipt['kind']}: {receipt['status']}{detail} (receipt {receipt['id']}).")
+            message = {**message, 'text': '\n'.join(lines), 'evidence_ids': operation_ids,
+                       'reason': 'new_evidence' if all(r['status'] == 'succeeded' for r in receipts) else 'conflict'}
+            evidence.update(operation_ids)
+            self.db.event('message.receipt_backed', {'operation_ids': operation_ids,
+                          'statuses': {r['id']: r['status'] for r in receipts}}, trace=trace, refs=operation_ids)
+        elif message['text']:
+            # No prose classifier can prove that arbitrary model text contains
+            # no completion claim. Keep it in the proposal event for inspection;
+            # the user-facing execution channel reports only verified effects.
+            message = {**message, 'text': 'A proposal was recorded. No operation receipt is attached; '
+                                         'completed work has not been verified.'}
+            self.db.event('message.unverified', {'reason': 'no operation receipt',
+                          'proposal_trace': trace}, trace=trace)
         if set(message['evidence_ids']) <= evidence:
             is_reply = message['reason'] == 'reply' and bool(set(message['evidence_ids']) & (reply_ids or set()))
             self.notifications.offer(message['text'], message['topic'], message['reason'], message['evidence_ids'], at, reply=is_reply)
